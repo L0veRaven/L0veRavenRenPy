@@ -3,12 +3,22 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define e = Character("Claudia")
+define claudia = Character("Claudia")
+define persona = Character("Person A")
+define personb = Character("Person B")
+define personc = Character("Person C")
+define persond = Character("Person D")
 
 
 # The game starts here.
 
 label start:
+
+    scene black
+
+    claudia "Hey..."
+
+    persona "Hey! Wake up!"
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
@@ -24,9 +34,9 @@ label start:
 
     # These display lines of dialogue.
 
-    e "You've created a new Ren'Py game."
+    claudia "You've created a new Ren'Py game."
 
-    e "Once you add a story, pictures, and music, you can release it to the world!"
+    claudia "Once you add a story, pictures, and music, you can release it to the world!"
 
     # This ends the game.
 
