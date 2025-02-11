@@ -286,17 +286,25 @@ style quick_button_text:
 
 screen navigation():
 
-    vbox:
+    fixed:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        yalign 0.5
+        #xpos gui.navigation_xpos
+        #yalign 0.5
 
         spacing gui.navigation_spacing
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            #textbutton _("Start") action Start()
+            
+            imagebutton auto "gui/mm_start_%s.png" xpos 19 ypos 682 focus_mask True action Start()
+        
+            imagebutton auto "gui/mm_load_%s.png" xpos 441 ypos 697 focus_mask True action ShowMenu("load")
+        
+            imagebutton auto "gui/mm_credits_%s.png" xpos 858 ypos 660 focus_mask True action ShowMenu("about")
+
+            imagebutton auto "gui/mm_exit_%s.png" xpos 1424 ypos 663 focus_mask True action Quit(confirm=not main_menu)
 
         else:
 
@@ -304,9 +312,9 @@ screen navigation():
 
             textbutton _("Save") action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
+            textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+            textbutton _("Preferences") action ShowMenu("preferences")
 
         if _in_replay:
 
@@ -316,7 +324,7 @@ screen navigation():
 
             textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+            textbutton _("About") action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
@@ -327,6 +335,7 @@ screen navigation():
 
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
+            
             textbutton _("Quit") action Quit(confirm=not main_menu)
 
 

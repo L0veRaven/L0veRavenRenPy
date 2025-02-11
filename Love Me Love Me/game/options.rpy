@@ -30,10 +30,70 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-hello
-my name is dora
+"Love Me Love Me" was created by L0veRaven.
 
-jeje
+This project wouldn't be possible without using resources from other creatives.
+
+Game Engine: {a=https://www.renpy.org/}RenPy{/a} (Free)
+
+========= Art Software =========
+
+{a=jump:more_text}Procreate{/a} ($12.99 iOS only)
+
+{a=jump:more_text}FireAlpaca{/a} (Free)
+
+{a=jump:more_text}Krita{/a} (Free)
+
+{a=jump:more_text}Visual Studio Code{/a} (Free)
+
+========= Hardware =========
+
+iPad 10
+
+Windows 10
+
+Windows 11
+
+========= Tutorials Followed =========
+
+{a=https://www.youtube.com/watch?v=q5svrv2KN8g}Custom Imagebuttons instead of Basic Textbuttons in RenPy Main Menu Guide{/a}
+
+{a=https://www.youtube.com/watch?v=C3Ldd-5PKCw}RenPy Tutorial for Beginners | Create a Visual Novel Game with Ren'Py{/a}
+
+{a=https://www.youtube.com/watch?v=_-hNdKUygxE}Simplified Ren'py Tutorial{/a}
+
+{a=https://www.youtube.com/watch?v=xwW8Plpz1RQ}Live2d Tutorial for Ren'py{/a} (Not Implemented)
+
+{a=https://www.youtube.com/watch?v=9Cw8ombRvC8}100 Terms Visual Novel Devs Must Learn, or DIE{/a} (Useful information)
+
+{a=jump:more_text}Procreate{/a}
+
+{a=jump:more_text}Procreate{/a}
+
+========= Animation Software =========
+
+{a=https://www.live2d.com/en/}Live2D Cubism{/a}
+
+{a=jump:more_text}Procreate{/a}
+
+{a=jump:more_text}Procreate{/a}
+
+{a=jump:more_text}Procreate{/a}
+
+{a=jump:more_text}Procreate{/a}
+
+{a=jump:more_text}Procreate{/a}
+
+{a=jump:more_text}Procreate{/a}
+
+{a=jump:more_text}Procreate{/a}
+
+{a=jump:more_text}Procreate{/a}
+
+{a=jump:more_text}Procreate{/a}
+
+{a=jump:more_text}Procreate{/a}
+
 """)
 
 

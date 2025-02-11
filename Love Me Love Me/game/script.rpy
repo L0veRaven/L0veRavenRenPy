@@ -16,6 +16,20 @@ label start:
 
     scene black
 
+    "Claudia..."
+
+    "I wish you knew how much I care about you."
+
+    "You're so kind... So beautiful..."
+
+    "It hurts to see you show that same kindness to other people."
+
+    "It should be just me and you."
+
+    "No..."
+
+    "It NEEDS to be just me and you."
+
     claudia "Hey..."
 
     persona "Hey! Wake up!"
