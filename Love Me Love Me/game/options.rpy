@@ -18,7 +18,7 @@ define config.name = _("Love Me Love Me")
 ## Determines if the title given above is shown on the main menu screen. Set
 ## this to False to hide the title.
 
-define gui.show_name = True
+define gui.show_name = False
 
 
 ## The version of the game.
@@ -36,7 +36,7 @@ This project wouldn't be possible without using resources from other creatives.
 
 ========= Art Software =========
 
-{a=jump:more_text}Procreate{/a} ($12.99 iOS only)
+{a=jump:more_text}Procreate{/a} (12.99 USD)
 
 {a=jump:more_text}FireAlpaca{/a} (Free)
 
