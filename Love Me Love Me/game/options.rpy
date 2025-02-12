@@ -30,11 +30,9 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-"Love Me Love Me" was created by L0veRaven.
+"Love Me Love Me" was developed by L0veRaven.
 
 This project wouldn't be possible without using resources from other creatives.
-
-Game Engine: {a=https://www.renpy.org/}RenPy{/a} (Free)
 
 ========= Art Software =========
 
@@ -45,6 +43,20 @@ Game Engine: {a=https://www.renpy.org/}RenPy{/a} (Free)
 {a=jump:more_text}Krita{/a} (Free)
 
 {a=jump:more_text}Visual Studio Code{/a} (Free)
+
+========= Procreate Brushes =========
+
+-
+
+-
+
+-
+
+-
+
+-
+
+-
 
 ========= Hardware =========
 
@@ -66,33 +78,11 @@ Windows 11
 
 {a=https://www.youtube.com/watch?v=9Cw8ombRvC8}100 Terms Visual Novel Devs Must Learn, or DIE{/a} (Useful information)
 
-{a=jump:more_text}Procreate{/a}
-
-{a=jump:more_text}Procreate{/a}
-
 ========= Animation Software =========
 
-{a=https://www.live2d.com/en/}Live2D Cubism{/a}
+{a=https://www.live2d.com/en/}Live2D Cubism{/a} (Not Implemented)
 
-{a=jump:more_text}Procreate{/a}
-
-{a=jump:more_text}Procreate{/a}
-
-{a=jump:more_text}Procreate{/a}
-
-{a=jump:more_text}Procreate{/a}
-
-{a=jump:more_text}Procreate{/a}
-
-{a=jump:more_text}Procreate{/a}
-
-{a=jump:more_text}Procreate{/a}
-
-{a=jump:more_text}Procreate{/a}
-
-{a=jump:more_text}Procreate{/a}
-
-{a=jump:more_text}Procreate{/a}
+========= Game Engine =========
 
 """)
 
