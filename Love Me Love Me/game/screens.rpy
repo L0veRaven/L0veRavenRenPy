@@ -284,59 +284,9 @@ style quick_button_text:
 ## This screen is included in the main and game menus, and provides navigation
 ## to other menus, and to start the game.
 
-screen navigation():
+#screen navigation():
 
-    fixed:
-        style_prefix "navigation"
-
-        #xpos gui.navigation_xpos
-        #yalign 0.5
-
-        spacing gui.navigation_spacing
-
-        if main_menu:
-
-            #textbutton _("Start") action Start()
-            
-            imagebutton auto "gui/mm_start_%s.png" xpos 19 ypos 682 focus_mask True action Start()
-        
-            imagebutton auto "gui/mm_load_%s.png" xpos 441 ypos 697 focus_mask True action ShowMenu("load")
-        
-            imagebutton auto "gui/mm_credits_%s.png" xpos 858 ypos 660 focus_mask True action ShowMenu("about")
-
-            imagebutton auto "gui/mm_exit_%s.png" xpos 1424 ypos 663 focus_mask True action Quit(confirm=not main_menu)
-
-        #else:
-
-            #textbutton _("History") action ShowMenu("history")
-
-            #textbutton _("Save") action ShowMenu("save")
-
-            #textbutton _("Load") action ShowMenu("load")
-
-            #textbutton _("Preferences") action ShowMenu("preferences")
-
-        #if _in_replay:
-
-            #textbutton _("End Replay") action EndReplay(confirm=True)
-
-        #elif not main_menu:
-
-            #textbutton _("Main Menu") action MainMenu()
-
-            #textbutton _("About") action ShowMenu("about")
-
-        #if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Help isn't necessary or relevant to mobile devices.
-            #textbutton _("Help") action ShowMenu("help")
-
-        #if renpy.variant("pc"):
-
-            ## The quit button is banned on iOS and unnecessary on Android and
-            ## Web.
-            
-            #textbutton _("Quit") action Quit(confirm=not main_menu)
+    
 
 
 style navigation_button is gui_button
@@ -369,47 +319,66 @@ screen main_menu():
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+    #use navigation
+    fixed:
+        style_prefix "navigation"
 
-    #if gui.show_name:
+        #xpos gui.navigation_xpos
+        #yalign 0.5
 
-        #vbox:
-            #style "main_menu_vbox"
+        spacing gui.navigation_spacing
 
-            #text "[config.name!t]":
-                #style "main_menu_title"
+        if main_menu:
 
-            #text "[config.version]":
-                #style "main_menu_version"
+            #textbutton _("Start") action Start()
+            
+            imagebutton auto "gui/mm_start_%s.png" xpos 19 ypos 682 focus_mask True action Start()
+        
+            imagebutton auto "gui/mm_load_%s.png" xpos 441 ypos 697 focus_mask True action ShowMenu("load")
+        
+            imagebutton auto "gui/mm_credits_%s.png" xpos 858 ypos 660 focus_mask True action ShowMenu("about")
+
+            imagebutton auto "gui/mm_exit_%s.png" xpos 1424 ypos 663 focus_mask True action Quit(confirm=not main_menu)
+
+    if gui.show_name:
+
+        vbox:
+            style "main_menu_vbox"
+
+            text "[config.name!t]":
+                style "main_menu_title"
+
+            text "[config.version]":
+                style "main_menu_version"
 
 
-#style main_menu_frame is empty
-#style main_menu_vbox is vbox
-#style main_menu_text is gui_text
-#style main_menu_title is main_menu_text
-#style main_menu_version is main_menu_text
+style main_menu_frame is empty
+style main_menu_vbox is vbox
+style main_menu_text is gui_text
+style main_menu_title is main_menu_text
+style main_menu_version is main_menu_text
 
-#style main_menu_frame:
-    #xsize 420
-    #yfill True
+style main_menu_frame:
+    xsize 420
+    yfill True
 
-    #background "gui/overlay/main_menu.png"
+    background "gui/overlay/main_menu.png"
 
-#style main_menu_vbox:
-    #xalign 1.0
-    #xoffset -30
-    #xmaximum 1200
-    #yalign 1.0
-    #yoffset -30
+style main_menu_vbox:
+    xalign 1.0
+    xoffset -30
+    xmaximum 1200
+    yalign 1.0
+    yoffset -30
 
-#style main_menu_text:
-    #properties gui.text_properties("main_menu", accent=True)
+style main_menu_text:
+    properties gui.text_properties("main_menu", accent=True)
 
-#style main_menu_title:
-    #properties gui.text_properties("title")
+style main_menu_title:
+    properties gui.text_properties("title")
 
-#style main_menu_version:
-    #properties gui.text_properties("version")
+style main_menu_version:
+    properties gui.text_properties("version")
 
 
 ## Game Menu screen ############################################################
@@ -479,7 +448,7 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
                     transclude
 
-    use navigation
+    #use navigation
 
     textbutton _("Return"):
         style "return_button"
