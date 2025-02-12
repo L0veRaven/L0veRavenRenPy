@@ -338,6 +338,8 @@ screen main_menu():
         
             imagebutton auto "gui/mm_credits_%s.png" xpos 858 ypos 660 focus_mask True action ShowMenu("about")
 
+            imagebutton auto "gui/mm_credits_%s.png" xpos 858 ypos 360 focus_mask True action ShowMenu("preferences")
+
             imagebutton auto "gui/mm_exit_%s.png" xpos 1424 ypos 663 focus_mask True action Quit(confirm=not main_menu)
 
     if gui.show_name:

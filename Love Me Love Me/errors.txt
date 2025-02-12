@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 349: text expects a non-empty block.
-    text "[config.name!t]":
-                           ^
+File "game/screens.rpy", line 341: expected a keyword argument, colon, or end of line.
+    imagebutton "gui/window_icon.png" xpos 858 ypos 360 action ShowMenu("prefrences")
+                ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Wed Feb 12 10:55:28 2025
+Wed Feb 12 11:51:07 2025
