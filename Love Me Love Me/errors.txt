@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 341: expected a keyword argument, colon, or end of line.
-    imagebutton "gui/window_icon.png" xpos 858 ypos 360 action ShowMenu("prefrences")
-                ^
+The label start is defined twice, at File "game/script.rpy", line 19:
+label start:
+and File "game/scripts/script.rpy", line 1:
+﻿label start:
+
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Wed Feb 12 11:51:07 2025
+Wed Feb 12 18:59:16 2025

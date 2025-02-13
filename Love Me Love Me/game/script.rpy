@@ -4,10 +4,12 @@
 # name of the character.
 
 define claudia = Character('Claudia')
-define nvl_claudia = Character('Claudia', kind-nvl, color="#000000")
+define nvl_claudia = Character('Claudia', kind=nvl, color="#000000")
 
-define claudia = Character('Taro')
-define nvl_claudia = Character('Taro', kind-nvl, color="#000000")
+define taro = Character('Taro')
+define nvl_taro = Character('Taro', kind=nvl, color="#000000")
+
+define narrator = nvl_narrator
 
 define witness = Character('Witness', color="#000000")
 
@@ -16,41 +18,42 @@ define witness = Character('Witness', color="#000000")
 
 label start:
 
-    scene black
+    scene main_menu
 
-    "Claudia..."
+    narrator """
+    Claudia... I wish you knew how much I care about you.
 
-    "I wish you knew how much I care about you."
+    You're so kind... So beautiful...
 
-    "You're so kind... So beautiful..."
+    It hurts to see you show that same kindness to other people.
 
-    "It hurts to see you show that same kindness to other people."
+    It should be just me and you.
+    
+    {clear}
 
-    "It should be just me and you."
+    No...
 
-    "No..."
-
-    "It NEEDS to be just me and you."
+    It NEEDS to be just me and you.
+    """
 
     claudia "Hey..."
-
-    persona "Hey! Wake up!"
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
 
     scene bg room
+    with fade
 
     # This shows a character sprite. A placeholder is used, but you can
     # replace it by adding a file named "claudia happy.png" to the images
     # directory.
 
-    show claudia happy
+    show claudia neutral
 
     # These display lines of dialogue.
 
-    claudia "You've created a new Ren'Py game."
+    claudia "Whatcha writing there?"
 
     claudia "Once you add a story, pictures, and music, you can release it to the world!"
 
