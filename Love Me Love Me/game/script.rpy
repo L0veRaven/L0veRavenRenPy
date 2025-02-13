@@ -53,10 +53,8 @@ label start:
 
     # These display lines of dialogue.
 
-    claudia "Whatcha writing there?"
-
-    claudia "Once you add a story, pictures, and music, you can release it to the world!"
-
+    claudia "Whatcha writing there?" 
+    
     # This ends the game.
 
     return
