@@ -3,11 +3,13 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define claudia = Character("Claudia")
-define persona = Character("Person A")
-define personb = Character("Person B")
-define personc = Character("Person C")
-define persond = Character("Person D")
+define claudia = Character('Claudia')
+define nvl_claudia = Character('Claudia', kind-nvl, color="#000000")
+
+define claudia = Character('Taro')
+define nvl_claudia = Character('Taro', kind-nvl, color="#000000")
+
+define witness = Character('Witness', color="#000000")
 
 
 # The game starts here.
