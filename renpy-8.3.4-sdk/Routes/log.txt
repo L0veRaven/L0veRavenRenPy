@@ -1,0 +1,98 @@
+2025-02-13 20:11:54 UTC
+Windows-10-10.0.22631
+Ren'Py 8.3.4.24120703
+
+Early init took 0.12s
+Loading error handling took 0.05s
+Loading script took 1.20s
+Loading save slot metadata took 0.00s
+Loading persistent took 0.00s
+Running init code took 0.08s
+Loading analysis data took 0.00s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.00s
+Index archives took 0.00s
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.04s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.03s
+Save screen analysis took 0.02s
+Prepare screens took 0.13s
+Save pyanalysis. took 0.02s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.13s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Plus Graphics'
+Version: b'4.6.0 - Build 31.0.101.2125'
+Display Info: None
+Screen sizes: virtual=(800, 600) physical=(1600, 1200) drawable=(1600, 1200)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(800, 600) physical=(2736, 1683) drawable=(2736, 1683)
+Could not open 'cache/shaders.txt':
+Maximum texture size: 4096x4096
+Cleaning stores took 0.00s
+Init translation took 0.00s
+Build styles took 0.00s
+Load screen analysis took 0.04s
+Analyze screens took 0.00s
+Prepare screens took 0.00s
+Running _start took 0.00s
+
+Full traceback:
+  File "game/script.rpyc", line 2, in script
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\ast.py", line 1980, in execute
+    self.call("execute")
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\ast.py", line 1959, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\statements.py", line 374, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\exports\statementexports.py", line 345, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\display\core.py", line 3117, in interact_core
+    self.quit_event()
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\display\core.py", line 1815, in quit_event
+    renpy.display.behavior.run(renpy.config.quit_action)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\display\behavior.py", line 401, in run
+    return action(*args, **kwargs)
+  File "renpy/common/00action_menu.rpy", line 271, in __call__
+    layout.yesno_screen(layout.QUIT, Quit(False))
+  File "renpy/common/00layout.rpy", line 516, in yesno_screen
+    elif renpy.invoke_in_new_context(layout.invoke_yesno_prompt, None, message):
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\game.py", line 303, in invoke_in_new_context
+    return callable(*args, **kwargs)
+  File "renpy/common/00layout.rpy", line 472, in invoke_yesno_prompt
+    rv = layout.yesno_prompt(*args)
+AttributeError: 'Layout' object has no attribute 'yesno_prompt'
+
+While running game code:
+  File "renpy/common/000statements.rpy", line 671, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "renpy/common/00action_menu.rpy", line 271, in __call__
+    layout.yesno_screen(layout.QUIT, Quit(False))
+  File "renpy/common/00layout.rpy", line 516, in yesno_screen
+    elif renpy.invoke_in_new_context(layout.invoke_yesno_prompt, None, message):
+  File "renpy/common/00layout.rpy", line 472, in invoke_yesno_prompt
+    rv = layout.yesno_prompt(*args)
+AttributeError: 'Layout' object has no attribute 'yesno_prompt'
