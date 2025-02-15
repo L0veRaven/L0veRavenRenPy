@@ -230,34 +230,6 @@ style choice_button_text is default:
     properties gui.text_properties("choice_button")
 
 
-## Quick Menu screen ###########################################################
-##
-## The quick menu is displayed in-game to provide easy access to the out-of-game
-## menus.
-
-screen quick_menu():
-
-    ## Ensure this appears on top of other screens.
-    zorder 100
-
-    if quick_menu:
-
-        hbox:
-            style_prefix "quick"
-
-            xalign 0.5
-            yalign 1.0
-
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
-
-
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
 ## the player has not explicitly hidden the interface.
 init python:
@@ -284,11 +256,19 @@ style quick_button_text:
 ## This screen is included in the main and game menus, and provides navigation
 ## to other menus, and to start the game.
 
-#screen navigation():
+screen navigation():
+    fixed:
+        style_prefix "navigation"
 
+        xpos gui.navigation_xpos
+        yalign 0.5
+
+        spacing gui.navigation_spacing
+
+        if main_menu:
+
+            textbutton _("Start") action Start()
     
-
-
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text
 
@@ -336,7 +316,7 @@ screen main_menu():
         
             imagebutton auto "gui/mm_load_%s.png" xpos 441 ypos 697 focus_mask True action ShowMenu("load")
         
-            imagebutton auto "gui/mm_credits_%s.png" xpos 858 ypos 660 focus_mask True action ShowMenu("about")
+            imagebutton auto "gui/mm_credits_%s.png" xpos 858 ypos 660 focus_mask True action ShowMenu("credits")
 
             imagebutton auto "gui/button/settings_%s.png" xpos 1725 ypos 100 focus_mask True action ShowMenu("preferences")
 
@@ -363,8 +343,6 @@ style main_menu_version is main_menu_text
 style main_menu_frame:
     xsize 420
     yfill True
-
-    background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
@@ -551,6 +529,73 @@ style about_text is gui_text
 
 style about_label_text:
     size gui.label_text_size
+    
+###################################### ending credit screen
+
+transform credits_scroll(speed):
+    xcenter 0.5 yanchor 0.0 ypos 1.0
+    ypos 600
+    linear speed ypos -66000
+
+screen credits():
+
+    ## Ensure that the game_menu screens can't be stopped
+    key "K_ESCAPE" action NullAction()
+    key "K_MENU" action NullAction()
+    key "mouseup_3" action NullAction()
+
+    style_prefix "credits"
+
+    timer 5 action Return() #46.5 seconds
+    ## Adjust this number to control when the Credits screen is hidden and the game
+    ## returns to its normal flow.
+
+    frame at credits_scroll(500.0): #bigger is slower
+        ## Adjust this number to control the speed at which the credits scroll.
+        background None
+        xalign 0.5
+
+        vbox:
+            label "Created By" xalign 0.5
+            null height 75
+            text "L0veRaven"
+            null height 50
+            label "Audio Credits" xalign 0.5
+            null height 75
+            label "Special Thanks" xalign 0.5
+            null height 50
+            label "To all my" xalign 0.5
+            null height 10
+            label "Patron's" xalign 0.5
+            null height 10
+            text "redacted"
+            null height 10
+            text "redacted"
+            null height 10
+            text "redacted"
+
+
+style credits_hbox:
+    spacing 40
+    ysize 30
+
+style credits_vbox:
+    xalign 0.5
+    text_align 0.5
+
+style credits_label_text:
+    xalign 0.5
+    justify True
+    size 125
+    text_align 0.5
+    color "#9f1b47ff"
+
+style credits_text:
+    xalign 0.5
+    size 60
+    justify True
+    text_align 0.5
+    color "#000000"
 
 
 ## Load and Save screens #######################################################
@@ -629,6 +674,10 @@ screen file_slots(title):
                         key "save_delete" action FileDelete(slot)
 
             ## Buttons to access other pages.
+
+            fixed:
+                imagebutton auto "gui/button/settings_%s.png" xpos 1725 ypos 100 focus_mask True action ShowMenu('preferences')
+
             vbox:
                 style_prefix "page"
 
@@ -696,7 +745,7 @@ style slot_button:
     properties gui.button_properties("slot_button")
 
 style slot_button_text:
-    properties gui.text_properties("slot_button")
+    properties gui.text_properties("slot_button")   
 
 
 ## Preferences screen ##########################################################

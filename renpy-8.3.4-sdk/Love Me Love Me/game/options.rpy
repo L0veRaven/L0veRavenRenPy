@@ -83,7 +83,7 @@ Windows 11
 
 ========= Animation Software =========
 
-{a=https://www.live2d.com/en/}Live2D Cubism{/a} (Not Implemented)
+{a=https://www.live2d.com/en/}Live2D Cubism{/a} Pro Version (14.99 USD/month)
 
 
 ========= Game Engine =========

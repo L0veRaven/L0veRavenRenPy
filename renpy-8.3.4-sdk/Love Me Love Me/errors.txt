@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 343: 'width' is not a keyword argument or valid child of the imagebutton statement.
-    imagebutton auto "gui/mm_exit_%s.png" xpos 1424 ypos 663 focus_mask True width="150" action Quit(confirm=not main_menu)
-                                                                                  ^
+File "game/script.rpy", line 38: The screen statement is not a valid child of the screen statement.
+    screen say(who, what):
+          ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Feb 14 08:22:37 2025
+Fri Feb 14 15:50:17 2025
