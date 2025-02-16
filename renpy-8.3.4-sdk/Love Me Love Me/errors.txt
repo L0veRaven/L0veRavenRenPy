@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 38: The screen statement is not a valid child of the screen statement.
-    screen say(who, what):
+File "game/scripts/about.rpy", line 67: 'xalign' is not a keyword argument or valid child of the screen statement.
+    xalign 0.5
           ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Feb 14 15:50:17 2025
+Sat Feb 15 08:04:49 2025

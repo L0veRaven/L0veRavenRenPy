@@ -7,9 +7,7 @@ label chapter_0_part_1:
     junetenth """
     Claudia... I wish you knew how much I care about you. You're so kind... So beautiful... It hurts to see you show that same kindness to other people. It should be just me and you.{w=0.5}
 
-    {clear}
-
-    No... It NEEDS to be just me and you.{w=0.5}
+    /n No... It NEEDS to be just me and you.{w=0.5}
     """
 
     nvl clear
@@ -174,10 +172,19 @@ label chapter_0_question_1b:
 
 label chapter_0_part_2:
 
-    scene bg_you_apartment_living_room
+    scene bg_you_apartment_living_room with fade
 
     you "Well then... I guess that's all I'm gonna learn for now. Actually, I need to check my notes!"
     
+    scene bg_sidewalk
+
     stop music
+
+    jump chapter_0_end
+
+label chapter_0_end:
+    scene bg_you_apartment_living_room
+
+    you "Well then... I guess that's all I'm gonna learn for now. Actually, I need to check my notes!"
 
     jump chapter_1_part_1

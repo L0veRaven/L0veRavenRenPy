@@ -1,39 +1,39 @@
-2025-02-14 13:23:06 UTC
+2025-02-15 13:43:05 UTC
 Windows-10-10.0.22631
 Ren'Py 8.3.4.24120703
 
-Early init took 0.26s
-Loading error handling took 0.30s
-Loading script took 20.23s
+Early init took 0.54s
+Loading error handling took 0.50s
+Loading script took 36.80s
 Loading save slot metadata took 0.07s
 Loading persistent took 0.00s
 Set script version to: None (alternate path)
- - Init at launcher/game/options.rpyc:31 took 0.35998 s.
- - Init at launcher/game/download.rpyc:22 took 1.36741 s.
-Running init code took 2.76s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.02s
+ - Init at launcher/game/download.rpyc:22 took 1.97343 s.
+ - Init at launcher/game/web.rpyc:26 took 0.27396 s.
+Running init code took 3.61s
+Loading analysis data took 0.09s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.05s
 Index archives took 0.00s
 Dump and make backups took 0.00s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.05s
+Initial gc took 0.11s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.09s
+Creating interface object took 0.01s
 Cleaning stores took 0.00s
-Init translation took 0.04s
-Build styles took 0.00s
-Load screen analysis took 0.05s
+Init translation took 0.10s
+Build styles took 0.01s
+Load screen analysis took 0.15s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.10s
+Prepare screens took 0.31s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
-Interface start took 0.09s
+Interface start took 0.16s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2736, 1824)
@@ -45,3 +45,4 @@ Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
 Screen sizes: virtual=(800, 600) physical=(1600, 1200) drawable=(1600, 1200)
 Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Nefarius Software Solutions e.U. Controller (Xbox One For Windows)' 1

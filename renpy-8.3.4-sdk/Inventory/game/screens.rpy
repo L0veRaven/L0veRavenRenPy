@@ -126,7 +126,6 @@ screen nvl:
     window:
         style "nvl_window"
 
-
         has vbox:
             style "nvl_vbox"
 

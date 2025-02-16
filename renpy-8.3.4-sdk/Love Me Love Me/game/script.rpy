@@ -26,19 +26,19 @@ image ctc_arrow:
     linear 0.3 alpha 0.0
     pause 0.2
     repeat
-        
-screen say(who, what):
-    on "show" action SetVariable("nvl_showing", False)
-
-screen nvl(dialogue, items=None):
-
-    on "show" action SetVariable("nvl_showing", True)
 
 
 ## Quick Menu screen ###########################################################
 ##
 ## The quick menu is displayed in-game to provide easy access to the out-of-game
 ## menus.
+
+default quick_menu = True
+
+## This code ensures that the quick_menu screen is displayed in-game, whenever
+## the player has not explicitly hidden the interface.
+init python:
+    config.overlay_screens.append("quick_menu")
 
 screen quick_menu():
 
@@ -49,48 +49,48 @@ screen quick_menu():
         ## Reverse Dialogue/Nvl Button
         imagebutton:
             auto "gui/button/left_arrow_%s.png"
-            xpos 5
-            ypos 700
+            xpos 10
+            ypos 20
             focus_mask True
             action Rollback()
         
         ## History Button
         imagebutton:
             auto "gui/button/history_%s.png"
-            xpos 150
-            ypos 700
+            xpos 15
+            ypos 150
             focus_mask True
             action ShowMenu('history')
         
         ## Skip Button
         imagebutton:
             auto "gui/button/double_arrow_right_%s.png"
-            xpos 300
-            ypos 700
+            xpos 15
+            ypos 280
             focus_mask True
             action Skip() alternate Skip(fast=True, confirm=True)
-        
-        ## Save Button
-        imagebutton:
-            auto "gui/button/save_%s.png"
-            xpos 1500
-            ypos 700
-            focus_mask True
-            action ShowMenu('save')
         
         ## Auto Progress Button
         imagebutton:
             auto "gui/button/auto_%s.png"
-            xpos 450
-            ypos 700
+            xpos 15
+            ypos 415
             focus_mask True
             action Preference("auto-forward", "toggle")
+        
+        ## Save Button
+        imagebutton:
+            auto "gui/button/save_%s.png"
+            xpos 1800
+            ypos 600
+            focus_mask True
+            action ShowMenu('save')
         
         ## Quick Save Button
         imagebutton:
             auto "gui/button/quick_save_%s.png"
-            xpos 1650
-            ypos 700
+            xpos 1800
+            ypos 475
             focus_mask True
             action QuickSave()
 
@@ -98,7 +98,7 @@ screen quick_menu():
         imagebutton:
             auto "gui/button/quick_load_%s.png"
             xpos 1800
-            ypos 700
+            ypos 350
             focus_mask True
             action QuickLoad()
         
@@ -109,6 +109,14 @@ screen quick_menu():
             ypos 20
             focus_mask True
             action MainMenu()
+        
+        ## Settings Button
+        imagebutton:
+            auto "gui/button/settings_%s.png"
+            xpos 1800
+            ypos 150
+            focus_mask True
+            action ShowMenu('preferences')
     else:
         ## Reverse Dialogue/Nvl Button
         imagebutton:
@@ -121,7 +129,7 @@ screen quick_menu():
         ## History Button
         imagebutton:
             auto "gui/button/history_%s.png"
-            xpos 150
+            xpos 135
             ypos 700
             focus_mask True
             action ShowMenu('history')
@@ -129,31 +137,31 @@ screen quick_menu():
         ## Skip Button
         imagebutton:
             auto "gui/button/double_arrow_right_%s.png"
-            xpos 300
+            xpos 275
             ypos 700
             focus_mask True
             action Skip() alternate Skip(fast=True, confirm=True)
         
-        ## Save Button
-        imagebutton:
-            auto "gui/button/save_%s.png"
-            xpos 1500
-            ypos 700
-            focus_mask True
-            action ShowMenu('save')
-        
         ## Auto Progress Button
         imagebutton:
             auto "gui/button/auto_%s.png"
-            xpos 450
+            xpos 400
             ypos 700
             focus_mask True
             action Preference("auto-forward", "toggle")
         
+        ## Save Button
+        imagebutton:
+            auto "gui/button/save_%s.png"
+            xpos 1550
+            ypos 700
+            focus_mask True
+            action ShowMenu('save')
+        
         ## Quick Save Button
         imagebutton:
             auto "gui/button/quick_save_%s.png"
-            xpos 1650
+            xpos 1675
             ypos 700
             focus_mask True
             action QuickSave()
@@ -165,6 +173,14 @@ screen quick_menu():
             ypos 700
             focus_mask True
             action QuickLoad()
+
+        ## Settings Button
+        imagebutton:
+            auto "gui/button/settings_%s.png"
+            xpos 1800
+            ypos 150
+            focus_mask True
+            action ShowMenu('preferences')
         
         ## Title Screen Button
         imagebutton:

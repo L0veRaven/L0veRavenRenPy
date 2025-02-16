@@ -4,6 +4,12 @@
 
 init offset = -1
 
+init -2:
+    style say_thought:
+        line_spacing 45
+    style say_dialogue:
+        line_spacing 45
+
 
 ################################################################################
 ## Styles
@@ -108,6 +114,8 @@ screen say(who, what):
                 text who id "who"
 
         text what id "what"
+
+        on "show" action SetVariable("nvl_showing", False)
 
 
     ## If there's a side image, display it above the text. Do not display on the
@@ -229,13 +237,10 @@ style choice_button is default:
 style choice_button_text is default:
     properties gui.text_properties("choice_button")
 
-
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
 ## the player has not explicitly hidden the interface.
 init python:
     config.overlay_screens.append("quick_menu")
-
-default quick_menu = True
 
 style quick_button is default
 style quick_button_text is button_text
@@ -312,27 +317,40 @@ screen main_menu():
 
             #textbutton _("Start") action Start()
             
-            imagebutton auto "gui/mm_start_%s.png" xpos 19 ypos 682 focus_mask True action Start()
+            imagebutton:
+                auto "gui/mm_start_%s.png"
+                xpos 19
+                ypos 682
+                focus_mask True
+                action Start()
         
-            imagebutton auto "gui/mm_load_%s.png" xpos 441 ypos 697 focus_mask True action ShowMenu("load")
+            imagebutton:
+                auto "gui/mm_load_%s.png"
+                xpos 441
+                ypos 697
+                focus_mask True
+                action ShowMenu("load")
         
-            imagebutton auto "gui/mm_credits_%s.png" xpos 858 ypos 660 focus_mask True action ShowMenu("credits")
+            imagebutton:
+                auto "gui/mm_credits_%s.png"
+                xpos 858
+                ypos 660
+                focus_mask True
+                action ShowMenu('about')
 
-            imagebutton auto "gui/button/settings_%s.png" xpos 1725 ypos 100 focus_mask True action ShowMenu("preferences")
+            imagebutton:
+                auto "gui/button/settings_%s.png"
+                xpos 1725
+                ypos 100
+                focus_mask True
+                action ShowMenu("preferences")
 
-            imagebutton auto "gui/mm_exit_%s.png" xpos 1424 ypos 663 focus_mask True action Quit(confirm=not main_menu)
-
-    if gui.show_name:
-
-        vbox:
-            style "main_menu_vbox"
-
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
-
+            imagebutton:
+                auto "gui/mm_exit_%s.png"
+                xpos 1424
+                ypos 663
+                focus_mask True
+                action Quit(confirm=not main_menu)
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -430,9 +448,11 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     #use navigation
 
-    textbutton _("Return"):
-        style "return_button"
-
+    imagebutton:
+        auto "gui/button/home_%s.png"
+        xpos 1800
+        ypos 20
+        focus_mask True
         action Return()
 
     label title
@@ -455,17 +475,17 @@ style return_button is navigation_button
 style return_button_text is navigation_button_text
 
 style game_menu_outer_frame:
-    bottom_padding 45
-    top_padding 180
+    bottom_padding 15
+    top_padding 10
 
-    background "gui/overlay/game_menu.png"
+    background "gui/game_menu.png"
 
 style game_menu_navigation_frame:
     xsize 420
     yfill True
 
 style game_menu_content_frame:
-    left_margin 60
+    left_margin -65
     right_margin 30
     top_margin 15
 
@@ -479,7 +499,7 @@ style game_menu_side:
     spacing 15
 
 style game_menu_label:
-    xpos 75
+    xpos 165
     ysize 180
 
 style game_menu_label_text:
@@ -492,110 +512,6 @@ style return_button:
     yalign 1.0
     yoffset -45
 
-
-## About screen ################################################################
-##
-## This screen gives credit and copyright information about the game and Ren'Py.
-##
-## There's nothing special about this screen, and hence it also serves as an
-## example of how to make a custom screen.
-
-screen about():
-
-    tag menu
-
-    ## This use statement includes the game_menu screen inside this one. The
-    ## vbox child is then included inside the viewport inside the game_menu
-    ## screen.
-    use game_menu(_("About"), scroll="viewport"):
-
-        style_prefix "about"
-
-        vbox:
-
-            label "[config.name!t]"
-            text _("Version [config.version!t]\n")
-
-            ## gui.about is usually set in options.rpy.
-            if gui.about:
-                text "[gui.about!t]"
-
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].")
-
-
-style about_label is gui_label
-style about_label_text is gui_label_text
-style about_text is gui_text
-
-style about_label_text:
-    size gui.label_text_size
-    
-###################################### ending credit screen
-
-transform credits_scroll(speed):
-    xcenter 0.5 yanchor 0.0 ypos 1.0
-    ypos 600
-    linear speed ypos -66000
-
-screen credits():
-
-    ## Ensure that the game_menu screens can't be stopped
-    key "K_ESCAPE" action NullAction()
-    key "K_MENU" action NullAction()
-    key "mouseup_3" action NullAction()
-
-    style_prefix "credits"
-
-    timer 5 action Return() #46.5 seconds
-    ## Adjust this number to control when the Credits screen is hidden and the game
-    ## returns to its normal flow.
-
-    frame at credits_scroll(500.0): #bigger is slower
-        ## Adjust this number to control the speed at which the credits scroll.
-        background None
-        xalign 0.5
-
-        vbox:
-            label "Created By" xalign 0.5
-            null height 75
-            text "L0veRaven"
-            null height 50
-            label "Audio Credits" xalign 0.5
-            null height 75
-            label "Special Thanks" xalign 0.5
-            null height 50
-            label "To all my" xalign 0.5
-            null height 10
-            label "Patron's" xalign 0.5
-            null height 10
-            text "redacted"
-            null height 10
-            text "redacted"
-            null height 10
-            text "redacted"
-
-
-style credits_hbox:
-    spacing 40
-    ysize 30
-
-style credits_vbox:
-    xalign 0.5
-    text_align 0.5
-
-style credits_label_text:
-    xalign 0.5
-    justify True
-    size 125
-    text_align 0.5
-    color "#9f1b47ff"
-
-style credits_text:
-    xalign 0.5
-    size 60
-    justify True
-    text_align 0.5
-    color "#000000"
 
 
 ## Load and Save screens #######################################################
@@ -674,9 +590,6 @@ screen file_slots(title):
                         key "save_delete" action FileDelete(slot)
 
             ## Buttons to access other pages.
-
-            fixed:
-                imagebutton auto "gui/button/settings_%s.png" xpos 1725 ypos 100 focus_mask True action ShowMenu('preferences')
 
             vbox:
                 style_prefix "page"
@@ -1359,6 +1272,8 @@ screen nvl(dialogue, items=None):
                 style "nvl_button"
 
     add SideImage() xalign 0.0 yalign 1.0
+
+    on "show" action SetVariable("nvl_showing", True)
 
 
 screen nvl_dialogue(dialogue):
