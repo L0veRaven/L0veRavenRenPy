@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/about.rpy", line 67: 'xalign' is not a keyword argument or valid child of the screen statement.
+File "game/scripts/about.rpy", line 96: Line is indented, but the preceding style statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
     xalign 0.5
-          ^
+    ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Sat Feb 15 08:04:49 2025
+Sat Feb 15 20:39:46 2025

@@ -7,7 +7,9 @@ label chapter_0_part_1:
     junetenth """
     Claudia... I wish you knew how much I care about you. You're so kind... So beautiful... It hurts to see you show that same kindness to other people. It should be just me and you.{w=0.5}
 
-    /n No... It NEEDS to be just me and you.{w=0.5}
+    {clear}
+
+    No... It NEEDS to be just me and you.{w=0.5}
     """
 
     nvl clear

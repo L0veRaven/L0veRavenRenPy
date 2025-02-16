@@ -1,36 +1,20 @@
-2025-02-15 13:45:21 UTC
+2025-02-16 04:34:33 UTC
 Windows-10-10.0.22631
 Ren'Py 8.3.4.24120703
 
-Early init took 0.67s
-Loading error handling took 0.06s
-Loading script took 0.34s
-Loading save slot metadata took 0.11s
+Early init took 0.38s
+Loading error handling took 0.57s
+Loading script took 1.11s
+Loading save slot metadata took 0.41s
 Loading persistent took 0.00s
-Running init code took 0.14s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.08s
-Index archives took 0.00s
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
+
+File "game/screens.rpy", line 464: 'xalign' is not a keyword argument or valid child of the screen statement.
+    xalign 0.5
+          ^
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.01s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.01s
-Load screen analysis took 0.05s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Interface start took 0.25s
+Interface start took 0.45s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2736, 1824)
@@ -40,43 +24,35 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
 Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
+Screen sizes: virtual=(1920, 1080) physical=(2732, 1537) drawable=(2732, 1537)
 Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.06s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
 Resetting cache.
-Early init took 195.49s
-Loading error handling took 0.05s
-Loading script took 0.42s
-Loading save slot metadata took 0.05s
+Early init took 16.38s
+Loading error handling took 0.04s
+Loading script took 0.24s
+Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
+Running init code took 0.22s
+Loading analysis data took 0.04s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
+Reloading save slot metadata took 0.24s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.09s
+Dump and make backups took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.07s
+Initial gc took 0.04s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.05s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.02s
+Build styles took 0.00s
+Load screen analysis took 0.06s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Interface start took 0.10s
@@ -89,99 +65,24 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
 Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
+Screen sizes: virtual=(1920, 1080) physical=(2732, 1537) drawable=(2732, 1537)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 370.21s
-Loading error handling took 0.03s
-Loading script took 0.20s
+Early init took 69.18s
+Loading error handling took 0.04s
+Loading script took 0.54s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-
-File "game/scripts/credits.rpy", line 24: vbox expects a non-empty block.
-    vbox:
-         ^
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.15s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 426.58s
-Loading error handling took 0.05s
-Loading script took 0.25s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-
-File "game/scripts/credits.rpy", line 39: vbox expects a non-empty block.
-    vbox:
-         ^
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.13s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 431.48s
-Loading error handling took 0.03s
-Loading script took 0.17s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-
-File "game/scripts/credits.rpy", line 39: vbox expects a non-empty block.
-    vbox:
-         ^
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.13s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 443.77s
-Loading error handling took 0.03s
-Loading script took 0.22s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.08s
+Running init code took 0.05s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
+Reloading save slot metadata took 0.05s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.06s
+Dump and make backups took 0.09s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.05s
+Initial gc took 0.07s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
@@ -192,11 +93,11 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.03s
-Prepare screens took 0.10s
+Prepare screens took 0.09s
 Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
+Save bytecode. took 0.03s
 Running _start took 0.00s
-Interface start took 0.09s
+Interface start took 0.11s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2736, 1824)
@@ -206,22 +107,15 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
 Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
+Screen sizes: virtual=(1920, 1080) physical=(2731, 1536) drawable=(2731, 1536)
 Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.05s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
 Resetting cache.
-Early init took 556.84s
-Loading error handling took 0.03s
-Loading script took 0.21s
+Early init took 189.10s
+Loading error handling took 0.08s
+Loading script took 0.43s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.06s
+Running init code took 0.04s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.04s
@@ -230,20 +124,62 @@ Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Lo
 Dump and make backups took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.08s
+Initial gc took 0.06s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.05s
+Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
 Save screen analysis took 0.02s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.03s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Plus Graphics'
+Version: b'4.6.0 - Build 31.0.101.2125'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 201.72s
+Loading error handling took 0.03s
+Loading script took 0.34s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.07s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Interface start took 0.09s
 
@@ -255,123 +191,39 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
 Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 598.74s
-Loading error handling took 0.04s
-Loading script took 0.35s
-Loading save slot metadata took 0.09s
+Early init took 211.13s
+Loading error handling took 0.02s
+Loading script took 0.34s
+Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
-Running init code took 0.11s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.06s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 670.95s
-Loading error handling took 0.05s
-Loading script took 0.52s
-Loading save slot metadata took 0.06s
-Loading persistent took 0.00s
-Running init code took 0.12s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.07s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.04s
-Prepare screens took 0.15s
-Save pyanalysis. took 0.04s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Interface start took 0.16s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 705.00s
-Loading error handling took 0.03s
-Loading script took 0.23s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.06s
+Running init code took 0.04s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.04s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
+Dump and make backups took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.07s
+Initial gc took 0.06s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.05s
+Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.02s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.10s
+Interface start took 0.11s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2736, 1824)
@@ -381,81 +233,39 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
 Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 770.10s
-Loading error handling took 0.03s
-Loading script took 0.29s
-Loading save slot metadata took 0.07s
+Early init took 219.31s
+Loading error handling took 0.06s
+Loading script took 0.63s
+Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
-Running init code took 0.07s
+Running init code took 0.04s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.04s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
+Dump and make backups took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.08s
+Initial gc took 0.06s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.06s
-Build styles took 0.00s
+Build styles took 0.01s
 Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.04s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 797.03s
-Loading error handling took 0.03s
-Loading script took 0.20s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
+Analyze screens took 0.02s
 Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.10s
+Interface start took 0.11s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2736, 1824)
@@ -465,15 +275,15 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
 Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 835.48s
+Early init took 230.31s
 Loading error handling took 0.02s
-Loading script took 0.20s
+Loading script took 0.34s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
-Running init code took 0.05s
+Running init code took 0.04s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.03s
@@ -482,22 +292,22 @@ Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Lo
 Dump and make backups took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.07s
+Initial gc took 0.06s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.05s
+Init translation took 0.04s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.04s
+Save screen analysis took 0.02s
 Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.09s
+Interface start took 0.11s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2736, 1824)
@@ -507,15 +317,57 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
 Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 853.13s
+Early init took 244.84s
 Loading error handling took 0.03s
-Loading script took 0.21s
+Loading script took 0.30s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Plus Graphics'
+Version: b'4.6.0 - Build 31.0.101.2125'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 256.00s
+Loading error handling took 0.02s
+Loading script took 0.37s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.07s
+Running init code took 0.04s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.04s
@@ -531,189 +383,14 @@ nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 867.56s
-Loading error handling took 0.03s
-Loading script took 0.19s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 901.29s
-Loading error handling took 0.02s
-Loading script took 0.20s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.07s
 Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Interface start took 0.15s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.01s
-Build styles took 0.01s
-Load screen analysis took 0.08s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Early init took 1007.05s
-Loading error handling took 0.03s
-Loading script took 0.34s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.06s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
 Save screen analysis took 0.02s
 Prepare screens took 0.09s
 Save pyanalysis. took 0.02s
 Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1069.23s
-Loading error handling took 0.03s
-Loading script took 0.22s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
 Interface start took 0.11s
 
 Initializing gl2 renderer:
@@ -724,22 +401,22 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
 Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1151.07s
-Loading error handling took 0.03s
-Loading script took 0.22s
-Loading save slot metadata took 0.05s
+Early init took 313.45s
+Loading error handling took 0.04s
+Loading script took 0.24s
+Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
 
-File "game/scripts/credits.rpy", line 44: 'action' is not a keyword argument or valid child of the vbox statement.
-    action MainMenu()
-          ^
+File "game/scripts/about.rpy", line 96: Line is indented, but the preceding style statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    xalign 0.5
+    ^
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.18s
+Interface start took 0.14s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2736, 1824)
@@ -749,46 +426,21 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
 Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1163.45s
-Loading error handling took 0.03s
-Loading script took 0.23s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-
-File "game/scripts/credits.rpy", line 44: 'action' is not a keyword argument or valid child of the vbox statement.
-    action auto MainMenu()
-          ^
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.15s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1225.88s
-Loading error handling took 0.03s
-Loading script took 0.23s
+Early init took 316.79s
+Loading error handling took 0.05s
+Loading script took 0.21s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
 Running init code took 0.08s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.01s
+Reloading save slot metadata took 0.06s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
+Dump and make backups took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.05s
@@ -797,260 +449,16 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
+Init translation took 0.07s
+Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.05s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Early init took 1293.67s
-Loading error handling took 0.05s
-Loading script took 0.45s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.05s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.10s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.10s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Early init took 1384.44s
-Loading error handling took 0.04s
-Loading script took 0.33s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.05s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1386.25s
-Loading error handling took 0.04s
-Loading script took 0.19s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.05s
-Index archives took 0.00s
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.03s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 1428.28s
-Loading error handling took 0.03s
-Loading script took 0.23s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.07s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Early init took 1897.72s
-Loading error handling took 0.04s
-Loading script took 0.33s
-Loading save slot metadata took 0.08s
-Loading persistent took 0.00s
-Running init code took 0.11s
-Loading analysis data took 0.07s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.05s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.11s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.16s
-Save pyanalysis. took 0.02s
 Save bytecode. took 0.03s
 Running _start took 0.00s
-Interface start took 0.18s
+Interface start took 0.10s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2736, 1824)
@@ -1060,13 +468,13 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
 Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 1907.55s
+Early init took 332.49s
 Loading error handling took 0.03s
-Loading script took 0.20s
-Loading save slot metadata took 0.04s
+Loading script took 0.23s
+Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
 Running init code took 0.05s
 Loading analysis data took 0.02s
@@ -1077,7 +485,7 @@ Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Lo
 Dump and make backups took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.07s
+Initial gc took 0.08s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
@@ -1086,11 +494,11 @@ Cleaning stores took 0.00s
 Init translation took 0.05s
 Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.03s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
 Interface start took 0.12s
 
@@ -1102,21 +510,315 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
 Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 2671.00s
-Loading error handling took 0.07s
-Loading script took 0.43s
-Loading save slot metadata took 0.08s
+Early init took 405.56s
+Loading error handling took 0.03s
+Loading script took 0.22s
+Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-Running init code took 0.12s
+Running init code took 0.06s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.08s
+Reloading save slot metadata took 0.04s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.14s
+Dump and make backups took 0.09s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.07s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Plus Graphics'
+Version: b'4.6.0 - Build 31.0.101.2125'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 427.70s
+Loading error handling took 0.03s
+Loading script took 0.20s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.03s
+Running _start took 0.00s
+Interface start took 0.11s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Plus Graphics'
+Version: b'4.6.0 - Build 31.0.101.2125'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 471.78s
+Loading error handling took 0.02s
+Loading script took 0.19s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Plus Graphics'
+Version: b'4.6.0 - Build 31.0.101.2125'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 485.86s
+Loading error handling took 0.03s
+Loading script took 0.19s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.07s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.06s
+Build styles took 0.01s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.03s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Plus Graphics'
+Version: b'4.6.0 - Build 31.0.101.2125'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 500.07s
+Loading error handling took 0.03s
+Loading script took 0.23s
+Loading save slot metadata took 0.03s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.07s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Plus Graphics'
+Version: b'4.6.0 - Build 31.0.101.2125'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 727.12s
+Loading error handling took 0.03s
+Loading script took 0.35s
+Loading save slot metadata took 0.05s
+Loading persistent took 0.00s
+Running init code took 0.06s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
+Dump and make backups took 0.06s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Plus Graphics'
+Version: b'4.6.0 - Build 31.0.101.2125'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 735.15s
+Loading error handling took 0.02s
+Loading script took 0.23s
+Loading save slot metadata took 0.04s
+Loading persistent took 0.00s
+Running init code took 0.04s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.03s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
+Dump and make backups took 0.08s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
+DPI scale factor: 2.000000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: b"Couldn't load nvlib." (can be ignored)
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.10s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 2736, 1824)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'Intel'"
+Renderer: b'Intel(R) Iris(R) Plus Graphics'
+Version: b'4.6.0 - Build 31.0.101.2125'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
+Maximum texture size: 4096x4096
+Resetting cache.
+Early init took 746.94s
+Loading error handling took 0.04s
+Loading script took 0.31s
+Loading save slot metadata took 0.07s
+Loading persistent took 0.00s
+Running init code took 0.07s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
+Dump and make backups took 0.07s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.12s
@@ -1125,412 +827,13 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.09s
+Init translation took 0.10s
 Build styles took 0.01s
 Load screen analysis took 0.00s
 Analyze screens took 0.03s
-Save screen analysis took 0.05s
-Prepare screens took 0.17s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.05s
-Running _start took 0.00s
-Interface start took 0.13s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 3289.13s
-Loading error handling took 0.04s
-Loading script took 0.36s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.05s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
 Save screen analysis took 0.03s
-Prepare screens took 0.08s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Interface start took 0.12s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.06s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Early init took 3316.46s
-Loading error handling took 0.04s
-Loading script took 0.26s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Interface start took 0.12s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 3350.96s
-Loading error handling took 0.03s
-Loading script took 0.21s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 3524.63s
-Loading error handling took 0.08s
-Loading script took 0.44s
-Loading save slot metadata took 0.08s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.05s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Early init took 3558.56s
-Loading error handling took 0.03s
-Loading script took 0.24s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.10s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.13s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 3561.84s
-Loading error handling took 0.03s
-Loading script took 0.22s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Early init took 3701.72s
-Loading error handling took 0.03s
-Loading script took 0.22s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.10s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.11s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.13s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 3770.82s
-Loading error handling took 0.03s
-Loading script took 0.23s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.17s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 3791.20s
-Loading error handling took 0.03s
-Loading script took 0.21s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
 Save bytecode. took 0.02s
 Running _start took 0.00s
 Interface start took 0.11s
@@ -1543,119 +846,34 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
 Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 3799.48s
-Loading error handling took 0.06s
-Loading script took 0.26s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 3834.57s
+Early init took 758.26s
 Loading error handling took 0.03s
-Loading script took 0.21s
-Loading save slot metadata took 0.04s
+Loading script took 0.19s
+Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.02s
+Running init code took 0.05s
+Loading analysis data took 0.01s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.04s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
+Dump and make backups took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.09s
+Initial gc took 0.06s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
-Init translation took 0.05s
+Init translation took 0.04s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.12s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 3896.78s
-Loading error handling took 0.03s
-Loading script took 0.22s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.10s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.07s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
@@ -1669,54 +887,39 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
 Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.00s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Early init took 4012.57s
-Loading error handling took 0.03s
-Loading script took 0.42s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-
-File "game/screens.rpy", line 340: keyword argument 'action' appears more than once in a imagebutton statement.
-    action MainMenu()
-          ^
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.22s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 4024.93s
-Loading error handling took 0.03s
+Early init took 813.35s
+Loading error handling took 0.02s
 Loading script took 0.31s
 Loading save slot metadata took 0.04s
 Loading persistent took 0.00s
-
-File "game/screens.rpy", line 339: 'MainMenu' is not a keyword argument or valid child of the imagebutton statement.
-    action ShowMenu('finalcredits') MainMenu()
-                                            ^
+Running init code took 0.05s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
+Dump and make backups took 0.07s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc took 0.06s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.12s
+Creating interface object took 0.00s
+Cleaning stores took 0.00s
+Init translation took 0.04s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.08s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
+Running _start took 0.00s
+Interface start took 0.10s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2736, 1824)
@@ -1726,21 +929,21 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
 Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
 Maximum texture size: 4096x4096
 Resetting cache.
-Early init took 4031.18s
-Loading error handling took 0.03s
-Loading script took 0.40s
-Loading save slot metadata took 0.04s
+Early init took 858.82s
+Loading error handling took 0.02s
+Loading script took 0.28s
+Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
-Running init code took 0.07s
+Running init code took 0.06s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
+Reloading save slot metadata took 0.04s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
+Dump and make backups took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc took 0.07s
@@ -1750,15 +953,15 @@ nvdrs: b"Couldn't load nvlib." (can be ignored)
 Creating interface object took 0.00s
 Cleaning stores took 0.00s
 Init translation took 0.05s
-Build styles took 0.01s
+Build styles took 0.00s
 Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.17s
-Save pyanalysis. took 0.04s
-Save bytecode. took 0.05s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.09s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.02s
 Running _start took 0.00s
-Interface start took 0.14s
+Interface start took 0.10s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2736, 1824)
@@ -1768,2338 +971,18 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
 Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
 Maximum texture size: 4096x4096
 Cleaning stores took 0.00s
 Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.03s
 Analyze screens took 0.00s
 Prepare screens took 0.00s
 Running _start took 0.00s
 Resetting cache.
-Early init took 4179.51s
-Loading error handling took 0.03s
-Loading script took 0.36s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 4196.95s
-Loading error handling took 0.03s
-Loading script took 0.19s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.09s
-Build styles took 0.01s
-Load screen analysis took 0.07s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.21s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Interface start took 0.19s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 4339.28s
-Loading error handling took 0.04s
-Loading script took 0.39s
-Loading save slot metadata took 0.06s
-Loading persistent took 0.00s
-
-File "game/scripts/credits.rpy", line 118: text expects a non-empty block.
-    text "- \"Title\"":
-                       ^
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.18s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 4398.68s
-Loading error handling took 0.03s
-Loading script took 0.23s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.10s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.05s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 4567.35s
-Loading error handling took 0.03s
-Loading script took 0.21s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/scripts/credits.rpy", line 126: keyword argument 'xalign' is incompatible with 'xpos'.
-    xalign 0.5
-          ^
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.15s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 4582.83s
-Loading error handling took 0.03s
-Loading script took 0.19s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.05s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 4624.92s
-Loading error handling took 0.03s
-Loading script took 0.41s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.15s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Cleaning stores took 0.00s
-Init translation took 0.00s
-Build styles took 0.01s
-Load screen analysis took 0.10s
-Analyze screens took 0.00s
-Prepare screens took 0.00s
-Running _start took 0.00s
-Resetting cache.
-Early init took 4675.23s
-Loading error handling took 0.03s
-Loading script took 0.35s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5256.80s
-Loading error handling took 0.04s
-Loading script took 0.36s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5280.36s
-Loading error handling took 0.03s
-Loading script took 0.25s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5282.23s
-Loading error handling took 0.03s
-Loading script took 0.20s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.04s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5328.73s
-Loading error handling took 0.03s
-Loading script took 0.22s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5339.76s
+Early init took 882.36s
 Loading error handling took 0.02s
-Loading script took 0.21s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5397.91s
-Loading error handling took 0.04s
-Loading script took 0.48s
-Loading save slot metadata took 0.07s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.05s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.12s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.11s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.16s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Interface start took 0.13s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5407.73s
-Loading error handling took 0.03s
-Loading script took 0.24s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.12s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5441.81s
-Loading error handling took 0.03s
-Loading script took 0.18s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.05s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5893.12s
-Loading error handling took 0.04s
-Loading script took 0.55s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.06s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5936.82s
-Loading error handling took 0.04s
-Loading script took 0.39s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.03s
-Prepare screens took 0.15s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.12s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5946.32s
-Loading error handling took 0.03s
-Loading script took 0.38s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 5957.28s
-Loading error handling took 0.03s
-Loading script took 0.38s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6102.68s
-Loading error handling took 0.02s
-Loading script took 0.34s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6118.26s
-Loading error handling took 0.03s
-Loading script took 0.39s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6138.66s
-Loading error handling took 0.03s
-Loading script took 0.38s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6188.55s
-Loading error handling took 0.03s
-Loading script took 0.35s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6201.15s
-Loading error handling took 0.02s
-Loading script took 0.38s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6383.86s
-Loading error handling took 0.03s
-Loading script took 0.35s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6404.30s
-Loading error handling took 0.03s
-Loading script took 0.37s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6412.43s
-Loading error handling took 0.04s
-Loading script took 0.39s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6434.06s
-Loading error handling took 0.02s
-Loading script took 0.34s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6455.89s
-Loading error handling took 0.04s
-Loading script took 0.35s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.05s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6500.96s
-Loading error handling took 0.03s
-Loading script took 0.37s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6511.99s
-Loading error handling took 0.03s
-Loading script took 0.39s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.13s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6521.61s
-Loading error handling took 0.03s
-Loading script took 0.41s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6534.11s
-Loading error handling took 0.02s
-Loading script took 0.32s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.14s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6545.15s
-Loading error handling took 0.02s
-Loading script took 0.33s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6551.86s
-Loading error handling took 0.03s
-Loading script took 0.39s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6566.13s
-Loading error handling took 0.02s
-Loading script took 0.32s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6597.30s
-Loading error handling took 0.08s
-Loading script took 0.44s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.13s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6609.88s
-Loading error handling took 0.04s
-Loading script took 0.38s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.05s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.04s
-Save screen analysis took 0.03s
-Prepare screens took 0.21s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6635.00s
-Loading error handling took 0.03s
-Loading script took 0.39s
-Loading save slot metadata took 0.06s
-Loading persistent took 0.00s
-Running init code took 0.12s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.05s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.10s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.08s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.05s
-Prepare screens took 0.21s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.05s
-Running _start took 0.00s
-Interface start took 0.08s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6725.31s
-Loading error handling took 0.04s
-Loading script took 0.49s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6747.66s
-Loading error handling took 0.03s
-Loading script took 0.39s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6763.34s
-Loading error handling took 0.03s
-Loading script took 0.41s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6798.96s
-Loading error handling took 0.03s
-Loading script took 0.41s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.05s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.11s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.10s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.04s
-Save screen analysis took 0.05s
-Prepare screens took 0.20s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 6808.41s
-Loading error handling took 0.03s
-Loading script took 0.45s
-Loading save slot metadata took 0.07s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7006.77s
-Loading error handling took 0.03s
-Loading script took 0.35s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.05s
-Index archives took 0.00s
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.01s
-Load screen analysis took 0.05s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.12s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7014.65s
-Loading error handling took 0.02s
-Loading script took 0.36s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7022.56s
-Loading error handling took 0.03s
-Loading script took 0.38s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.13s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7024.32s
-Loading error handling took 0.03s
-Loading script took 0.29s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.11s
-Loading analysis data took 0.04s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.05s
-Index archives took 0.00s
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.01s
-Load screen analysis took 0.06s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Interface start took 0.14s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7043.07s
-Loading error handling took 0.03s
-Loading script took 0.34s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7057.19s
-Loading error handling took 0.04s
-Loading script took 0.62s
-Loading save slot metadata took 0.08s
-Loading persistent took 0.00s
-Running init code took 0.11s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.03s
-Prepare screens took 0.14s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.12s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7099.19s
-Loading error handling took 0.02s
-Loading script took 0.34s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.07s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.09s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.16s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Interface start took 0.23s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7131.86s
-Loading error handling took 0.03s
-Loading script took 0.39s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7204.21s
-Loading error handling took 0.03s
-Loading script took 0.32s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7223.60s
-Loading error handling took 0.04s
-Loading script took 0.21s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.07s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7230.10s
-Loading error handling took 0.03s
-Loading script took 0.22s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7281.34s
-Loading error handling took 0.03s
 Loading script took 0.24s
 Loading save slot metadata took 0.03s
 Loading persistent took 0.00s
@@ -4109,781 +992,6 @@ Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.03s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7314.26s
-Loading error handling took 0.06s
-Loading script took 0.21s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.06s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7550.86s
-Loading error handling took 0.04s
-Loading script took 0.38s
-Loading save slot metadata took 0.06s
-Loading persistent took 0.00s
-Running init code took 0.08s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.07s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.11s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.04s
-Save screen analysis took 0.04s
-Prepare screens took 0.15s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.13s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\ast.py", line 827, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-    ui.interact()
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\display\core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\display\core.py", line 2745, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\display\screen.py", line 480, in visit_all
-    callback(self)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\display\core.py", line 2745, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\display\screen.py", line 491, in per_interact
-    self.update()
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\display\screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 521, in execute
-    screen about():
-  File "game/screens.rpy", line 521, in execute
-    screen about():
-  File "game/screens.rpy", line 528, in execute
-    use game_menu(_("About"), scroll="viewport"):
-  File "game/screens.rpy", line 391, in execute
-    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
-  File "game/screens.rpy", line 391, in execute
-    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
-  File "game/screens.rpy", line 400, in execute
-    frame:
-  File "game/screens.rpy", line 403, in execute
-    hbox:
-  File "game/screens.rpy", line 409, in execute
-    frame:
-  File "game/screens.rpy", line 412, in execute
-    if scroll == "viewport":
-  File "game/screens.rpy", line 414, in execute
-    viewport:
-  File "game/screens.rpy", line 423, in execute
-    vbox:
-  File "game/screens.rpy", line 426, in execute
-    transclude
-  File "game/screens.rpy", line 528, in execute
-    use game_menu(_("About"), scroll="viewport"):
-  File "game/screens.rpy", line 532, in execute
-    vbox:
-  File "game/screens.rpy", line 538, in execute
-    if gui.about:
-  File "game/screens.rpy", line 538, in <module>
-    if gui.about:
-AttributeError: 'StoreModule' object has no attribute 'about'
-
-While running game code:
-  File "game/screens.rpy", line 521, in execute
-    screen about():
-  File "game/screens.rpy", line 521, in execute
-    screen about():
-  File "game/screens.rpy", line 528, in execute
-    use game_menu(_("About"), scroll="viewport"):
-  File "game/screens.rpy", line 391, in execute
-    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
-  File "game/screens.rpy", line 391, in execute
-    screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
-  File "game/screens.rpy", line 400, in execute
-    frame:
-  File "game/screens.rpy", line 403, in execute
-    hbox:
-  File "game/screens.rpy", line 409, in execute
-    frame:
-  File "game/screens.rpy", line 412, in execute
-    if scroll == "viewport":
-  File "game/screens.rpy", line 414, in execute
-    viewport:
-  File "game/screens.rpy", line 423, in execute
-    vbox:
-  File "game/screens.rpy", line 426, in execute
-    transclude
-  File "game/screens.rpy", line 528, in execute
-    use game_menu(_("About"), scroll="viewport"):
-  File "game/screens.rpy", line 532, in execute
-    vbox:
-  File "game/screens.rpy", line 538, in execute
-    if gui.about:
-  File "game/screens.rpy", line 538, in <module>
-    if gui.about:
-AttributeError: 'StoreModule' object has no attribute 'about'
-Resetting cache.
-Early init took 7567.92s
-Loading error handling took 0.03s
-Loading script took 0.23s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.12s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7596.52s
-Loading error handling took 0.03s
-Loading script took 0.39s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.12s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-
-Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\ast.py", line 827, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 33, in _execute_python_hide
-    renpy.show_screen(name, *args, **kwargs)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\display\screen.py", line 1325, in show_screen
-    raise Exception("Screen %s is not known.\n" % (name[0],))
-Exception: Screen about is not known.
-
-
-While running game code:
-Exception: Screen about is not known.
-
-Resetting cache.
-Early init took 7601.24s
-Loading error handling took 0.03s
-Loading script took 0.23s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.14s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7643.32s
-Loading error handling took 0.03s
-Loading script took 0.23s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7655.83s
-Loading error handling took 0.02s
-Loading script took 0.18s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.12s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 7873.72s
-Loading error handling took 0.06s
-Loading script took 0.56s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.05s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 8178.52s
-Loading error handling took 0.03s
-Loading script took 0.51s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.06s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.03s
-Save screen analysis took 0.04s
-Prepare screens took 0.13s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.05s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 8208.21s
-Loading error handling took 0.03s
-Loading script took 0.34s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 8214.50s
-Loading error handling took 0.03s
-Loading script took 0.41s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.13s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 8242.76s
-Loading error handling took 0.03s
-Loading script took 0.37s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.04s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.05s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.02s
-Prepare screens took 0.12s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.03s
-Running _start took 0.00s
-Interface start took 0.18s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 8341.85s
-Loading error handling took 0.03s
-Loading script took 0.21s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.09s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 8368.37s
-Loading error handling took 0.04s
-Loading script took 0.20s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-
-File "game/scripts/about.rpy", line 67: 'xalign' is not a keyword argument or valid child of the screen statement.
-    xalign 0.5
-          ^
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Interface start took 0.15s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 8388.30s
-Loading error handling took 0.03s
-Loading script took 0.21s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.08s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.06s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 8408.32s
-Loading error handling took 0.03s
-Loading script took 0.24s
-Loading save slot metadata took 0.05s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
 Dump and make backups took 0.06s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
@@ -4897,136 +1005,10 @@ Init translation took 0.05s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.03s
+Save screen analysis took 0.02s
 Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
+Save pyanalysis. took 0.00s
 Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 8416.21s
-Loading error handling took 0.03s
-Loading script took 0.27s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.08s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.08s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.10s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.04s
-Running _start took 0.00s
-Interface start took 0.15s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 8448.60s
-Loading error handling took 0.02s
-Loading script took 0.20s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.07s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.08s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.09s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 8484.30s
-Loading error handling took 0.03s
-Loading script took 0.19s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.06s
-Build styles took 0.01s
-Load screen analysis took 0.00s
-Analyze screens took 0.02s
-Save screen analysis took 0.03s
-Prepare screens took 0.11s
-Save pyanalysis. took 0.03s
-Save bytecode. took 0.03s
 Running _start took 0.00s
 Interface start took 0.12s
 
@@ -5038,92 +1020,5 @@ Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
 Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 8509.26s
-Loading error handling took 0.02s
-Loading script took 0.23s
-Loading save slot metadata took 0.04s
-Loading persistent took 0.00s
-Running init code took 0.06s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.03s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.03s
-Prepare screens took 0.09s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 8534.00s
-Loading error handling took 0.03s
-Loading script took 0.17s
-Loading save slot metadata took 0.03s
-Loading persistent took 0.00s
-Running init code took 0.05s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.00s
-Reloading save slot metadata took 0.04s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\cryst\\AppData\\Roaming/RenPy/backups\\Love Me Love Me':
-Dump and make backups took 0.07s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.07s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.05s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.08s
-Save pyanalysis. took 0.02s
-Save bytecode. took 0.02s
-Running _start took 0.00s
-Interface start took 0.10s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(2734, 1538) drawable=(2734, 1538)
-Maximum texture size: 4096x4096
-controller: '030000005e040000ff02000000007200' 'Nefarius Software Solutions e.U. Controller (Xbox One For Windows)' 1
-Screen sizes: virtual=(1920, 1080) physical=(2732, 1538) drawable=(2732, 1538)
+Screen sizes: virtual=(1920, 1080) physical=(2730, 1536) drawable=(2730, 1536)
 Maximum texture size: 4096x4096
