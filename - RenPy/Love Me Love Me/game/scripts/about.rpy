@@ -80,7 +80,6 @@ screen about():
             ## gui.about is usually set in options.rpy.
             if gui.about:
                 text "[gui.about!t]"
-                xalign 0.5
 
             text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].") xalign 0.5
 
@@ -91,3 +90,6 @@ style about_text is gui_text
 
 style about_label_text:
     size gui.label_text_size
+
+style about_text:
+    textalign 0.5

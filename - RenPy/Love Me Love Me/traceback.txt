@@ -1,28 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-Exception: Screen about is not known.
-
+After initialization, but before game start.
+  File "renpy/common/00start.rpy", line 83, in _init_language
+    renpy.change_language(language)
+SyntaxError: positional argument follows keyword argument (game/screens.rpy, line 373)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\ast.py", line 827, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 33, in _execute_python_hide
-    renpy.show_screen(name, *args, **kwargs)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\renpy-8.3.4-sdk\renpy\display\screen.py", line 1325, in show_screen
-    raise Exception("Screen %s is not known.\n" % (name[0],))
-Exception: Screen about is not known.
-
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\bootstrap.py", line 359, in bootstrap
+    renpy.main.main()
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\main.py", line 652, in main
+    run(restart)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\main.py", line 75, in run
+    renpy.translation.init_translation()
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\translation\__init__.py", line 702, in init_translation
+    renpy.store._init_language() # type: ignore
+  File "renpy/common/00start.rpy", line 83, in _init_language
+    renpy.change_language(language)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\translation\__init__.py", line 796, in change_language
+    new_change_language(tl, language)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\translation\__init__.py", line 748, in new_change_language
+    i.apply()
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 2806, in apply
+    value = renpy.python.py_eval(expr)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\python.py", line 1207, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\python.py", line 1144, in py_compile
+    raise e
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\python.py", line 1081, in py_compile
+    raise orig_e
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\python.py", line 1073, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: positional argument follows keyword argument (game/screens.rpy, line 373)
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 Love Me Love Me 1.0
-Sat Feb 15 07:51:59 2025
+Sun Feb 16 21:09:00 2025
