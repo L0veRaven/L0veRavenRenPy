@@ -190,9 +190,36 @@ screen quick_menu():
             focus_mask True
             action MainMenu()
 
+init python:
+    max_love=100
+    current_love_Claudia=0
+    current_love_Taro=50
+    show_stats=False
+   
+    def stats_overlay():
+        if show_stats:
+            ui.frame()
+            ui.vbox()
+            ui.text("Claudia")
+            ui.bar(max_love,current_love_Claudia, xmaximum=150)
+
+            ui.text("Taro")
+            ui.bar(max_love,current_love_Taro, xmaximum=150)
+
+            ui.close()
+                       
+    config.overlay_functions.append(stats_overlay)
+
 # The game starts here.
 
 label start:
+    $ show_stats=True
+    "Game start"
+    $ current_love_Claudia+=10
+    "Increase Olivia love point"
+    $ current_love_Taro-=10
+    "Decrease McKenzie love point"
+    $ show_stats=False
 
     stop music
 
