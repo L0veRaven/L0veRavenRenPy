@@ -1,0 +1,32 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/scripts/chapter_0.rpy", line 7, in script
+    junetenth """
+  File "renpy/common/00nvl_mode.rpy", line 395, in do_display
+    renpy.display_say(
+Exception: The say screen (or show_function) must return a Text object.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/scripts/chapter_0.rpy", line 7, in script
+    junetenth """
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 2579, in execute
+    Say.execute(self)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 621, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "renpy/common/00nvl_mode.rpy", line 395, in do_display
+    renpy.display_say(
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\character.py", line 759, in display_say
+    raise Exception("The say screen (or show_function) must return a Text object.")
+Exception: The say screen (or show_function) must return a Text object.
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.3.4.24120703
+Love Me Love Me 1.0
+Sun Feb 16 20:18:17 2025
