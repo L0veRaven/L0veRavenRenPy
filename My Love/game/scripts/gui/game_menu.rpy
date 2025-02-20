@@ -91,7 +91,6 @@ style game_menu_outer_frame:
 ## Position of game menu content
 style game_menu_content_frame:
     left_margin 725
-    right_margin 50
     top_margin 125
     bottom_margin 100
 
@@ -102,8 +101,9 @@ style game_menu_viewport:
 style game_menu_vscrollbar:
     unscrollable gui.unscrollable
 
+## Spacing of scrollbar
 style game_menu_side:
-    spacing 15
+    spacing 0
 
 style return_button:
     xpos gui.navigation_xpos
