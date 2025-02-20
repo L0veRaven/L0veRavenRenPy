@@ -19,51 +19,45 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
     frame:
         style "game_menu_outer_frame"
 
-        hbox:
+    frame:
+        style "game_menu_content_frame"
 
-            ## Reserve space for the navigation section.
-            frame:
-                style "game_menu_navigation_frame"
+        if scroll == "viewport":
 
-            frame:
-                style "game_menu_content_frame"
+            viewport:
+                yinitial yinitial
+                scrollbars "vertical"
+                mousewheel True
+                draggable True
+                pagekeys True
 
-                if scroll == "viewport":
+                side_yfill True
 
-                    viewport:
-                        yinitial yinitial
-                        scrollbars "vertical"
-                        mousewheel True
-                        draggable True
-                        pagekeys True
-
-                        side_yfill True
-
-                        vbox:
-                            spacing spacing
-
-                            transclude
-
-                elif scroll == "vpgrid":
-
-                    vpgrid:
-                        cols 1
-                        yinitial yinitial
-
-                        scrollbars "vertical"
-                        mousewheel True
-                        draggable True
-                        pagekeys True
-
-                        side_yfill True
-
-                        spacing spacing
-
-                        transclude
-
-                else:
+                vbox:
+                    spacing spacing
 
                     transclude
+
+        elif scroll == "vpgrid":
+
+            vpgrid:
+                cols 1
+                yinitial yinitial
+
+                scrollbars "vertical"
+                mousewheel True
+                draggable True
+                pagekeys True
+
+                side_yfill True
+
+                spacing spacing
+
+                transclude
+
+        else:
+
+            transclude
 
     use navigation
 
@@ -85,9 +79,6 @@ style game_menu_viewport is gui_viewport
 style game_menu_side is gui_side
 style game_menu_scrollbar is gui_vscrollbar
 
-style game_menu_label is gui_label
-style game_menu_label_text is gui_label_text
-
 style return_button is navigation_button
 style return_button_text is navigation_button_text
 
@@ -97,17 +88,16 @@ style game_menu_outer_frame:
 
     background "gui/overlay/game_menu.png"
 
-style game_menu_navigation_frame:
-    xsize 420
-    yfill True
-
+## Position of game menu content
 style game_menu_content_frame:
-    left_margin 60
-    right_margin 30
-    top_margin 15
+    left_margin 725
+    right_margin 50
+    top_margin 125
+    bottom_margin 100
 
+## Width of game menu content
 style game_menu_viewport:
-    xsize 800
+    xsize 600
 
 style game_menu_vscrollbar:
     unscrollable gui.unscrollable
@@ -115,16 +105,6 @@ style game_menu_vscrollbar:
 style game_menu_side:
     spacing 15
 
-style game_menu_label:
-    xpos 75
-    ysize 180
-
-style game_menu_label_text:
-    size gui.title_text_size
-    color gui.accent_color
-    yalign 0.5
-
 style return_button:
     xpos gui.navigation_xpos
-    yalign 1.0
-    yoffset -45
+    yalign 0.0

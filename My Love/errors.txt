@@ -2,95 +2,9 @@
 errors listed below, and try again.
 
 
-The label chapter_0_part_1 is defined twice, at File "game/scripts/chapter_0.rpyc", line 1:
-
-and File "game/scripts/chapters/chapter_0.rpy", line 1:
-label chapter_0_part_1:
-
-
-The label chapter_0_question_1a is defined twice, at File "game/scripts/chapter_0.rpyc", line 126:
-
-and File "game/scripts/chapters/chapter_0.rpy", line 126:
-label chapter_0_question_1a:
-
-
-The label chapter_0_question_1b is defined twice, at File "game/scripts/chapter_0.rpyc", line 156:
-
-and File "game/scripts/chapters/chapter_0.rpy", line 156:
-label chapter_0_question_1b:
-
-
-The label chapter_0_part_2 is defined twice, at File "game/scripts/chapter_0.rpyc", line 173:
-
-and File "game/scripts/chapters/chapter_0.rpy", line 173:
-label chapter_0_part_2:
-
-
-The label chapter_0_end is defined twice, at File "game/scripts/chapter_0.rpyc", line 185:
-
-and File "game/scripts/chapters/chapter_0.rpy", line 185:
-label chapter_0_end:
-
-
-The label chapter_1_part_1 is defined twice, at File "game/scripts/chapter_1.rpyc", line 1:
-
-and File "game/scripts/chapters/chapter_1.rpy", line 1:
-label chapter_1_part_1:
-
-
-The label chapter_10_part_1 is defined twice, at File "game/scripts/chapter_10.rpyc", line 1:
-
-and File "game/scripts/chapters/chapter_10.rpy", line 1:
-label chapter_10_part_1:
-
-
-The label chapter_2_part_1 is defined twice, at File "game/scripts/chapter_2.rpyc", line 1:
-
-and File "game/scripts/chapters/chapter_2.rpy", line 1:
-label chapter_2_part_1:
-
-
-The label chapter_3_part_1 is defined twice, at File "game/scripts/chapter_3.rpyc", line 1:
-
-and File "game/scripts/chapters/chapter_3.rpy", line 1:
-label chapter_3_part_1:
-
-
-The label chapter_4_part_1 is defined twice, at File "game/scripts/chapter_4.rpyc", line 1:
-
-and File "game/scripts/chapters/chapter_4.rpy", line 1:
-label chapter_4_part_1:
-
-
-The label chapter_5_part_1 is defined twice, at File "game/scripts/chapter_5.rpyc", line 1:
-
-and File "game/scripts/chapters/chapter_5.rpy", line 1:
-label chapter_5_part_1:
-
-
-The label chapter_6_part_1 is defined twice, at File "game/scripts/chapter_6.rpyc", line 1:
-
-and File "game/scripts/chapters/chapter_6.rpy", line 1:
-label chapter_6_part_1:
-
-
-The label chapter_7_part_1 is defined twice, at File "game/scripts/chapter_7.rpyc", line 1:
-
-and File "game/scripts/chapters/chapter_7.rpy", line 1:
-label chapter_7_part_1:
-
-
-The label chapter_8_part_1 is defined twice, at File "game/scripts/chapter_8.rpyc", line 1:
-
-and File "game/scripts/chapters/chapter_8.rpy", line 1:
-label chapter_8_part_1:
-
-
-The label chapter_9_part_1 is defined twice, at File "game/scripts/chapter_9.rpyc", line 1:
-
-and File "game/scripts/chapters/chapter_9.rpy", line 1:
-label chapter_9_part_1:
-
+File "game/scripts/gui/game_menu.rpy", line 22: Line is indented, but the preceding style statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    frame:
+    ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Wed Feb 19 13:09:59 2025
+Wed Feb 19 18:45:27 2025
