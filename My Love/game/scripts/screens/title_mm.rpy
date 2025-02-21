@@ -31,6 +31,9 @@ screen main_menu():
                 style "main_menu_version"
 
 
+## The position of the main menu text.
+define gui.main_menu_text_xalign = 1.0
+
 style main_menu_frame is empty
 style main_menu_vbox is vbox
 style main_menu_text is gui_text

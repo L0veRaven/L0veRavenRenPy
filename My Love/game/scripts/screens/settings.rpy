@@ -5,11 +5,17 @@
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
+## Controls the amount of spacing between preferences.
+define gui.pref_spacing = 2
+
+## Controls the amount of spacing between preference buttons.
+define gui.pref_button_spacing = 0
+
 screen preferences():
 
     tag menu
 
-    use game_menu(_("Preferences"), scroll="viewport"):
+    use game_menu(_("Settings"), scroll="viewport"):
 
         vbox:
 

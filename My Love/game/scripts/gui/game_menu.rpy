@@ -91,7 +91,7 @@ style game_menu_outer_frame:
 ## Position of game menu content
 style game_menu_content_frame:
     left_margin 725
-    top_margin 125
+    top_margin 130
     bottom_margin 100
 
 ## Width of game menu content

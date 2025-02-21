@@ -5,6 +5,9 @@
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#notify-screen
 
+## The vertical position of the notify screen.
+define gui.notify_ypos = 68
+
 screen notify(message):
 
     zorder 100

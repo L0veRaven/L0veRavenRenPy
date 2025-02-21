@@ -6,6 +6,33 @@
 ##
 ## https://www.renpy.org/doc/html/history.html
 
+## History #####################################################################
+##
+## The history screen displays dialogue that the player has already dismissed.
+
+## The number of blocks of dialogue history Ren'Py will keep.
+define config.history_length = 250
+
+## The height of a history screen entry, or None to make the height variable at
+## the cost of performance.
+define gui.history_height = None
+
+## Additional space to add between history screen entries.
+define gui.history_spacing = 30
+
+## The position, width, and alignment of the label giving the name of the
+## speaking character.
+define gui.history_name_xpos = 300
+define gui.history_name_ypos = 0
+define gui.history_name_width = 233
+define gui.history_name_xalign = 1.0
+
+## The position, width, and alignment of the dialogue text.
+define gui.history_text_xpos = 325
+define gui.history_text_ypos = 0
+define gui.history_text_width = 500
+define gui.history_text_xalign = 0.0
+
 screen history():
 
     tag menu

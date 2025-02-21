@@ -5,6 +5,9 @@
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#skip-indicator
 
+## The vertical position of the skip indicator.
+define gui.skip_ypos = 15
+
 screen skip_indicator():
 
     zorder 100

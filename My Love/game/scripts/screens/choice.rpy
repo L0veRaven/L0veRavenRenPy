@@ -6,13 +6,30 @@
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#choice
 
+## Choice Buttons ##############################################################
+##
+## Choice buttons are used in the in-game menus.
+
+define gui.choice_button_width = 1185
+define gui.choice_button_height = None
+define gui.choice_button_tile = False
+define gui.choice_button_borders = Borders(150, 8, 150, 8)
+define gui.choice_button_text_font = gui.text_font
+define gui.choice_button_text_size = gui.text_size
+define gui.choice_button_text_xalign = 0.5
+define gui.choice_button_text_idle_color = '#8d8d8d'
+define gui.choice_button_text_hover_color = "#ffffff"
+define gui.choice_button_text_insensitive_color = '#8888887f'
+
+## The spacing between menu choices.
+define gui.choice_spacing = 33
+
 screen choice(items):
     style_prefix "choice"
 
     vbox:
         for i in items:
             textbutton i.caption action i.action
-
 
 style choice_vbox is vbox
 style choice_button is button
