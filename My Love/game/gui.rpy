@@ -43,18 +43,6 @@ define gui.button_borders = Borders(6, 6, 6, 6)
 ## will be linearly scaled.
 define gui.button_tile = False
 
-## The font used by the button.
-define gui.button_text_font = gui.interface_text_font
-
-## The size of the text used by the button.
-define gui.button_text_size = gui.interface_text_size
-
-## The color of button text in various states.
-define gui.button_text_idle_color = gui.idle_color
-define gui.button_text_hover_color = gui.hover_color
-define gui.button_text_selected_color = gui.selected_color
-define gui.button_text_insensitive_color = gui.insensitive_color
-
 ## The horizontal alignment of the button text. (0.0 is left, 0.5 is center, 1.0
 ## is right).
 define gui.button_text_xalign = 0.0
@@ -75,8 +63,6 @@ define gui.page_button_borders = Borders(15, 6, 15, 6)
 
 define gui.quick_button_borders = Borders(15, 6, 15, 0)
 define gui.quick_button_text_size = 21
-define gui.quick_button_text_idle_color = gui.idle_small_color
-define gui.quick_button_text_selected_color = gui.accent_color
 
 
 ## File Slot Buttons ###########################################################
@@ -91,9 +77,6 @@ define gui.slot_button_height = 309
 define gui.slot_button_borders = Borders(15, 15, 15, 15)
 define gui.slot_button_text_size = 21
 define gui.slot_button_text_xalign = 0.5
-define gui.slot_button_text_idle_color = gui.idle_small_color
-define gui.slot_button_text_selected_idle_color = gui.selected_color
-define gui.slot_button_text_selected_hover_color = gui.hover_color
 
 ## The width and height of thumbnails used by the save slots.
 define config.thumbnail_width = 384

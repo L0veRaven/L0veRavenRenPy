@@ -43,3 +43,4 @@ Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
 Screen sizes: virtual=(800, 600) physical=(1600, 1200) drawable=(1600, 1200)
 Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Nefarius Software Solutions e.U. Controller (Xbox One For Windows)' 1

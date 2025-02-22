@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/screens/about.rpy", line 4: invalid syntax
-    _p("Love Me Love Me was developed by {a="https://www.l0veraven.com"}L0veRaven{/a}.")
-                                              ^
+File "game/scripts/gui/navigation.rpy", line 44: 'elif' is not a keyword argument or valid child of the hbox statement.
+    elif not main_menu:
+        ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Thu Feb 20 12:51:07 2025
+Thu Feb 20 17:44:41 2025

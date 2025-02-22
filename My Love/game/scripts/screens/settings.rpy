@@ -48,7 +48,7 @@ screen preferences():
 
                 vbox:
 
-                    label _("Text Speed")
+                    label _("Text Speed") 
 
                     bar value Preference("text speed")
 
@@ -149,7 +149,7 @@ style check_button_text:
     properties gui.text_properties("check_button")
 
 style slider_slider:
-    xsize 525
+    xsize 250
 
 style slider_button:
     properties gui.button_properties("slider_button")

@@ -12,27 +12,27 @@ screen main_menu():
     add gui.main_menu_background
 
     ## This empty frame darkens the main menu.
-    frame:
-        style "main_menu_frame"
+    #frame:
+        #style "main_menu_frame"
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+    use navigation_title
 
-    if gui.show_name:
+    #if gui.show_name:
 
-        vbox:
-            style "main_menu_vbox"
+        #vbox:
+            #style "main_menu_vbox"
 
-            text "[config.name!t]":
-                style "main_menu_title"
+            #text "[config.name!t]":
+                #style "main_menu_title"
 
-            text "[config.version]":
-                style "main_menu_version"
+            #text "[config.version]":
+                #style "main_menu_version"
 
 
 ## The position of the main menu text.
-define gui.main_menu_text_xalign = 1.0
+#define gui.main_menu_text_xalign = 1.0
 
 style main_menu_frame is empty
 style main_menu_vbox is vbox
@@ -46,12 +46,12 @@ style main_menu_frame:
 
     background "gui/overlay/main_menu.png"
 
-style main_menu_vbox:
-    xalign 1.0
-    xoffset -30
-    xmaximum 1200
-    yalign 1.0
-    yoffset -30
+#style main_menu_vbox:
+    #xalign 1.0
+    #xoffset -30
+    #xmaximum 1200
+    #yalign 1.0
+    #yoffset -30
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)

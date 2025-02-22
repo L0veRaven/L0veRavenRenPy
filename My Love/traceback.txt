@@ -1,40 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "game/scripts/screens/settings.rpy", line 116, in <module>
-    top_margin gui.pref_spacing
-AttributeError: 'StoreModule' object has no attribute 'pref_spacing'
+While running game code:
+  File "game/scripts/screens/choice.rpy", line 17, in script
+    define gui.choice_button_text_font = gui.text_font
+  File "game/scripts/screens/choice.rpy", line 17, in <module>
+    define gui.choice_button_text_font = gui.text_font
+AttributeError: 'StoreModule' object has no attribute 'text_font'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\main.py", line 652, in main
-    run(restart)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\main.py", line 75, in run
-    renpy.translation.init_translation()
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\translation\__init__.py", line 702, in init_translation
-    renpy.store._init_language() # type: ignore
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\translation\__init__.py", line 796, in change_language
-    new_change_language(tl, language)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\translation\__init__.py", line 748, in new_change_language
-    i.apply()
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 2806, in apply
-    value = renpy.python.py_eval(expr)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
+  File "game/scripts/screens/choice.rpy", line 17, in script
+    define gui.choice_button_text_font = gui.text_font
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 2241, in execute
+    self.set()
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 2255, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
   File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\python.py", line 1202, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/scripts/screens/settings.rpy", line 116, in <module>
-    top_margin gui.pref_spacing
-AttributeError: 'StoreModule' object has no attribute 'pref_spacing'
+  File "game/scripts/screens/choice.rpy", line 17, in <module>
+    define gui.choice_button_text_font = gui.text_font
+AttributeError: 'StoreModule' object has no attribute 'text_font'
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 My Love 1.0
-Thu Feb 20 16:14:22 2025
+Thu Feb 20 17:12:33 2025

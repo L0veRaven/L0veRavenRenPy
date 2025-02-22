@@ -17,6 +17,66 @@ define gui.navigation_spacing = 10
 
 #define gui.navigation_button_width = 250
 
+screen navigation_title():
+
+    fixed:
+
+        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+
+            ## Help isn't necessary or relevant to mobile devices.
+            textbutton _("Help"):
+                xpos 440
+                ypos 195
+                action ShowMenu("help")
+
+        if renpy.variant("pc"):
+
+            ## The quit button is banned on iOS and unnecessary on Android and
+            ## Web.
+            textbutton _("Quit"):
+                xpos 1410
+                ypos 203
+                action Quit(confirm=not main_menu)
+
+        textbutton _("Start"):
+            xpos 700
+            ypos 665
+            action Start()
+
+        textbutton _("Load"):
+            xpos 1125
+            ypos 663
+            action ShowMenu("load")
+
+        textbutton _("Settings"):
+            xpos 685
+            ypos 807
+            action ShowMenu("preferences")
+
+        textbutton _("Credits"):
+            xpos 1110
+            ypos 810
+            action ShowMenu("about")
+
+style navigation_title_button is gui_button
+style navigation_title_button_text is gui_button_text
+
+style navigation_title_button:
+    size_group "navigation"
+    properties gui.button_properties("navigation_title_button")
+
+style navigation_title_button_text:
+    properties gui.text_properties("navigation_title_button")
+
+
+
+
+
+
+
+
+
+
 screen navigation():
 
     hbox:
