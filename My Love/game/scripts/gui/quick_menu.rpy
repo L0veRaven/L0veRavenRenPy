@@ -6,24 +6,24 @@
 screen quick_menu():
 
     ## Ensure this appears on top of other screens.
-    zorder 100
+    zorder 200
 
-    if quick_menu:
+    fixed:
+        imagebutton auto "gui/button/hover_idle/left_arrow_%s.png" action Rollback() style style.guiBack
 
-        hbox:
-            style_prefix "quick"
+        imagebutton auto "gui/button/hover_idle/history_%s.png" action ShowMenu('history') style style.guiHistory
 
-            xalign 0.5
-            yalign 1.0
+        imagebutton auto "gui/button/hover_idle/fast_forward_%s.png" action Skip() alternate Skip(fast=True, confirm=True) style style.guiSkip
 
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+        imagebutton auto "gui/button/hover_idle/auto_%s.png" action Preference("auto-forward", "toggle") style style.guiAuto
+
+        imagebutton auto "gui/button/hover_idle/save_%s.png" action ShowMenu('save') style style.guiSave
+
+        imagebutton auto "gui/button/hover_idle/quick_save_%s.png" action QuickSave() style style.guiQuickSave
+
+        imagebutton auto "gui/button/hover_idle/quick_load_%s.png" action QuickLoad() style style.guiQuickLoad
+
+        imagebutton auto "gui/button/hover_idle/settings_%s.png" action ShowMenu('settings') style style.guiSettings
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -33,8 +33,37 @@ init python:
 
 default quick_menu = True
 
-style quick_button is default
-style quick_button_text is button_text
+style guiBack:
+    xpos 5
+    ypos 15
+
+style guiHistory:
+    xpos 5
+    ypos 15
+
+style guiSkip:
+    xpos 5
+    ypos 15
+
+style guiAuto:
+    xpos 5
+    ypos 15
+
+style guiSave:
+    xpos 5
+    ypos 15
+
+style guiQuickSave:
+    xpos 5
+    ypos 15
+
+style guiQuickLoad:
+    xpos 5
+    ypos 15
+
+style guiSettings:
+    xpos 5
+    ypos 15
 
 style quick_button:
     properties gui.button_properties("quick_button")

@@ -1,4 +1,6 @@
-﻿# The script of the game goes in this file.
+﻿init offset = -1
+
+# The script of the game goes in this file.
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
@@ -29,7 +31,7 @@ init python:
 screen quick_menu():
 
     ## Ensure this appears on top of other screens.
-    zorder 100
+    zorder 200
 
     if renpy.get_mode() == "nvl":
         ## Reverse Dialogue/Nvl Button

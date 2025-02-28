@@ -1,41 +1,70 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "renpy/common/00stylepreferences.rpy", line 127, in _m1_00stylepreferences__change_language
-    __update()
-  File "renpy/common/00stylepreferences.rpy", line 99, in _m1_00stylepreferences__update
-    renpy.style.rebuild()
-Exception: Style 'gui_button_text_size' does not exist.
+While running game code:
+  File "game/script.rpy", line 212, in script
+    "Game start"
+  File "game/scripts/gui/quick_menu.rpy", line 6, in execute
+    screen quick_menu():
+  File "game/scripts/gui/quick_menu.rpy", line 6, in execute
+    screen quick_menu():
+  File "game/scripts/gui/quick_menu.rpy", line 11, in execute
+    fixed:
+  File "game/scripts/gui/quick_menu.rpy", line 14, in execute
+    imagebutton auto "button/history_%s.png" action ShowMenu('history') style style.guiHistory
+Exception: Imagebutton does not have a idle image. (auto='button/history_%s.png').
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\bootstrap.py", line 359, in bootstrap
-    renpy.main.main()
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\main.py", line 652, in main
-    run(restart)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\main.py", line 75, in run
-    renpy.translation.init_translation()
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\translation\__init__.py", line 702, in init_translation
-    renpy.store._init_language() # type: ignore
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\translation\__init__.py", line 801, in change_language
-    i()
-  File "renpy/common/00stylepreferences.rpy", line 127, in _m1_00stylepreferences__change_language
-    __update()
-  File "renpy/common/00stylepreferences.rpy", line 99, in _m1_00stylepreferences__update
-    renpy.style.rebuild()
-  File "style.pyx", line 803, in renpy.style.rebuild
-  File "style.pyx", line 796, in renpy.style.build_styles
-  File "style.pyx", line 686, in renpy.style.build_style
-  File "style.pyx", line 142, in renpy.style.get_full_style
-  File "style.pyx", line 98, in renpy.style.get_style
-Exception: Style 'gui_button_text_size' does not exist.
+  File "game/script.rpy", line 212, in script
+    "Game start"
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 2579, in execute
+    Say.execute(self)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 621, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\character.py", line 803, in display_say
+    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\core.py", line 2215, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\core.py", line 2745, in interact_core
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\displayable.py", line 434, in visit_all
+    d.visit_all(callback, seen)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\screen.py", line 480, in visit_all
+    callback(self)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\core.py", line 2745, in <lambda>
+    root_widget.visit_all(lambda d : d.per_interact())
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\screen.py", line 491, in per_interact
+    self.update()
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\screen.py", line 697, in update
+    self.screen.function(**self.scope)
+  File "game/scripts/gui/quick_menu.rpy", line 6, in execute
+    screen quick_menu():
+  File "game/scripts/gui/quick_menu.rpy", line 6, in execute
+    screen quick_menu():
+  File "game/scripts/gui/quick_menu.rpy", line 11, in execute
+    fixed:
+  File "game/scripts/gui/quick_menu.rpy", line 14, in execute
+    imagebutton auto "button/history_%s.png" action ShowMenu('history') style style.guiHistory
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ui.py", line 975, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ui.py", line 969, in choice
+    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
+Exception: Imagebutton does not have a idle image. (auto='button/history_%s.png').
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 My Love 1.0
-Sat Feb 22 10:33:30 2025
+Fri Feb 28 07:19:10 2025

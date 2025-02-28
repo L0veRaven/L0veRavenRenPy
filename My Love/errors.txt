@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/gui/navigation.rpy", line 21: 'gui' is not a keyword argument or valid child of the screen statement.
-    gui.button_text_size = 30 
-       ^
+File "game/scripts/gui/navigation_title.rpy", line 52: expected 'simple_expression' not found.
+    color = '#aaaaaa'
+          ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Sat Feb 22 10:29:38 2025
+Fri Feb 28 06:28:59 2025
