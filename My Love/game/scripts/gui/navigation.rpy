@@ -1,4 +1,4 @@
-## Navigation screen ###########################################################
+## Navigation #########################################################################
 ##
 ## This screen is included in the main and game menus, and provides navigation
 ## to other menus, and to start the game.
@@ -18,7 +18,7 @@ define gui.navigation_spacing = 10
 #define gui.navigation_button_width = 250
 
 screen navigation():
-
+    
     hbox:
         style_prefix "navigation"
 
