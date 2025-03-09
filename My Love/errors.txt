@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/gui/game_menu.rpy", line 121: expected ',' not found.
-    screen InGameMenu(_(InGameMenu), scroll=True, yinitial=0.0, spacing=0):
-                       ^
+File "game/scripts/gui/quick_menu.rpy", line 150: 'fontsize' is not a keyword argument or valid child of the hbox statement.
+    fontsize 80
+            ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Sat Mar  8 19:07:36 2025
+Sun Mar  9 11:33:20 2025

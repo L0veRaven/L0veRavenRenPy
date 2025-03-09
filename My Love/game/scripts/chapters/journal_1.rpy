@@ -12,12 +12,14 @@ label journal_1_1:
 
     scene bg_work_desk with Dissolve(2.0)
 
+    $ persistent.quickmenu_a = False
+    $ persistent.quickmenu_b = True
     $ persistent.cutscene_off = False
 
     journal """
-    It's been a month since I've started journaling and I think I'm coming to terms with some of my feelings.{w=0.5}
+    It's been a month since I've started journaling and I think I'm coming to terms with some of my feelings.{nw}
     
-    It's hard trying to understand them to be honest, but one thing's been stuck on my mind for a couple of days now.{w=0.5}
+    It's hard trying to understand them to be honest, but one thing's been stuck on my mind for a couple of days now.{nw}
 
     I have a neighbor. Her name is Claudia, and she is... so hard to describe. I mean, she's perfect to me, but there's not a way to really explain it.{w=0.5}
     """
@@ -56,7 +58,7 @@ label journal_1b:
     $ persistent.easy_mode = True
 
     journal """
-    She's been living at my apartment complex for a while now. I'm on good terms with her. We're more like acquaintances, but it's better than nothing.{w=0.5}
+    She's been living at my apartment complex for a while now. I'm on good terms with her. We're more like acquaintances, but it's better than nothing.{nw}
 
     If only you could feel how she makes my heart race whenever I see her.{w=0.5}
     """
@@ -69,30 +71,26 @@ label journal_1_2:
 
     scene bg_claudia_trash_0 with fade
 
-    journal """
-    I've been taking pictures because it's so hard to take my eyes off her. It's far less creepy to look at photos of her rather than staring at her in public.{w=0.5}
-    """
-
     scene bg_claudia_trash_1 with Dissolve(1.0)
-
-    journal"""
-    I'll tape them in this journal so they aren't loose and get scratched up, but if you were a person, I feel like you'd appreciate her beauty, too.{w=0.5}
-    """
 
     scene bg_claudia_trash_1_zoom with Dissolve(1.0)
 
     journal """
+    I've been taking pictures because it's so hard to take my eyes off her. It's far less creepy to look at photos of her rather than staring at her in public.{nw}
+
+    I'll tape them in this journal so they aren't loose and get scratched up, but if you were a person, I feel like you'd appreciate her beauty, too.{nw}
+
     It's more than her looks, though. Her mannerisms... The way she tucks her hair behind her ear... The way she ties up her hair...{w=0.5}
-
-    {clear}
-
-    I hate to admit that I've been trying to get photos of her during her more... private moments. It's hard to resist the temptation. That's not to say I haven't tried.{w=0.5}
     """
+
+    nvl clear
 
     scene bg_claudia_apartment_curtains_closed with Dissolve(2.0)
 
     journal """
-    It's so hard to get a moment like that. With her curtains open, she never shows anything private. She values her privacy, but where does that leave me?{w=0.5}
+    I hate to admit that I've been trying to get photos of her during her more... private moments. It's hard to resist the temptation. That's not to say I haven't tried.{nw}
+
+    It's so hard to get a moment like that. With her curtains open, she never shows anything private. She values her privacy, but where does that leave me?{nw}
     
     I may be overreacting, but to see someone in their most vulnerable state... It's such a high honor.{w=0.5}
 
@@ -109,4 +107,4 @@ label journal_1_2:
 
     you "Then I can prepare for when it {sc=3}{b}D O E S{/b}{/sc} happen."
 
-    jump chapter_0_part_1
+    jump chapter_0_1

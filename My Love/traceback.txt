@@ -1,51 +1,40 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00gamemenu.rpy", line 174, in script
-    $ ui.interact()
-  File "renpy/common/00gamemenu.rpy", line 174, in <module>
-    $ ui.interact()
-TypeError: missing a required argument: 'title'
+  File "renpy/common/00keymap.rpy", line 504, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 504, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 528, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+OSError: [Errno 28] No space left on device
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00gamemenu.rpy", line 174, in script
-    $ ui.interact()
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 827, in execute
+  File "renpy/common/00keymap.rpy", line 504, in script
+    python hide:
+  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 827, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\python.py", line 1178, in py_exec_bytecode
+  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/00gamemenu.rpy", line 174, in <module>
-    $ ui.interact()
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\core.py", line 2745, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  [Previous line repeated 1 more time]
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\screen.py", line 480, in visit_all
-    callback(self)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\core.py", line 2745, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\screen.py", line 491, in per_interact
-    self.update()
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\parameter.py", line 455, in apply_arguments
-    return parameters.apply(args or (), kwargs or {}, ignore_errors)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\parameter.py", line 307, in apply
-    raise TypeError(msg) # from None
-TypeError: missing a required argument: 'title'
+  File "renpy/common/00keymap.rpy", line 504, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 528, in _execute_python_hide
+    renpy.save("_reload-1", "reload save game")
+  File "D:\renpy-8.3.4-sdk\renpy\loadsave.py", line 460, in save
+    location.save(slotname, sr)
+  File "D:\renpy-8.3.4-sdk\renpy\savelocation.py", line 517, in save
+    l.save(slotname, record)
+  File "D:\renpy-8.3.4-sdk\renpy\savelocation.py", line 211, in save
+    record.write_file(filename)
+  File "D:\renpy-8.3.4-sdk\renpy\loadsave.py", line 358, in write_file
+    zf.writestr("screenshot.png", self.screenshot)
+  File "lib/python3.9/zipfile.py", line 1803, in writestr
+  File "lib/python3.9/zipfile.py", line 1141, in close
+OSError: [Errno 28] No space left on device
 
-Windows-10-10.0.22631 AMD64
+Windows-10-10.0.19045 AMD64
 Ren'Py 8.3.4.24120703
 My Love 1.0
-Sat Mar  8 19:06:52 2025
+Sun Mar  9 10:07:23 2025

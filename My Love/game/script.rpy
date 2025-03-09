@@ -34,11 +34,11 @@ init python:
 init python:
     max_love=100
     current_love_Claudia=0
-    current_love_tsukune=25
-    tsukune_claudia_interest=False
+    current_love_Tsukune=25
+    Tsukune_Claudia_interest=False
    
     def stats_overlay():
-        if tsukune_claudia_interest:
+        if Tsukune_Claudia_interest:
             ui.frame()
             ui.vbox()
             ui.text("Claudia")
@@ -54,14 +54,14 @@ init python:
     ######################################
     ## In-Game Use
 
-    #$ tsukune_claudia_interest=True
+    #$ Tsukune_Claudia_interest=True
         ## Show love bars
-    #$ tsukune_claudia_interest=False
+    #$ Tsukune_Claudia_interest=False
         ## Hide love bars
 
     #$ current_love_Claudia+=10
         ## Increase Claudia's love points
-    #$ current_love_tsukune-=10
+    #$ current_love_Tsukune-=10
         ## Decrease Tsukune's love points
 #######################################################################
 
@@ -71,7 +71,7 @@ init python:
 ##
 
 label start:
-    stop music
+    stop music fadeout 1.0
 
     $ persistent.cutscene_off = False
 
