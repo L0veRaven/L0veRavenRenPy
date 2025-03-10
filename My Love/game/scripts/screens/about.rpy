@@ -2,21 +2,37 @@
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about_audio = _p("""
-{a=https://x.com/SquaLLio777}{b}SquaLLio{/b}{/a}
+Title\n
+{a=https://ko-fi.com/s/ab76dd25a9}{i}Blurry{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}\n
 
-{a=https://ko-fi.com/s/ab76dd25a9}{i}Blurry{/i}{/a} - Title\n
-{a=https://ko-fi.com/s/f0e8490a78}{i}Shiny{/i}{/a} - Chapter 0\n
-{a=https://ko-fi.com/s/38443fd4f1}{i}Triangle Elevator{/i}{/a} - source\n
-{a=https://ko-fi.com/s/045759065c}{i}People Factory{/i}{/a} - source\n
-{a=https://ko-fi.com/s/9244c061a3}{i}Strawberry Blossoms{/i}{/a} - source\n
-{a=https://ko-fi.com/s/c58a72ebbf}{i}Karmic Blunder{/i}{/a} - source\n
-{a=https://ko-fi.com/s/894338d609}{i}Contact Glow{/i}{/a} - source\n
-{a=https://ko-fi.com/s/91c0372829}{i}Polar Float{/i}{/a} - source\n
-{a=https://ko-fi.com/s/1896a262c9}{i}Swim On, Little One{/i}{/a} - source
+Chapter 0\n
+scene5 by KADOKAWA's {a=https://www.rpgmakerweb.com/products/rpg-maker-mz}RPG Maker MZ{/a}\n
+{a=https://ko-fi.com/s/f0e8490a78}{i}Shiny{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}\n
 
-{b}KADOKAWA{/b}
+Chapter 1\n
+{a=https://ko-fi.com/s/38443fd4f1}{i}Triangle Elevator{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}\n
 
-{a=https://www.rpgmakerweb.com/products/rpg-maker-mz}RPG Maker MZ{/a}'s audio assets
+Chapter 2\n
+{a=https://ko-fi.com/s/045759065c}{i}People Factory{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}\n
+
+Chapter 3\n
+{a=https://ko-fi.com/s/9244c061a3}{i}Strawberry Blossoms{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}\n
+
+Chapter 4\n
+{a=https://ko-fi.com/s/c58a72ebbf}{i}Karmic Blunder{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}\n
+
+Chapter 5\n
+{a=https://ko-fi.com/s/894338d609}{i}Contact Glow{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}\n
+
+Chapter 6\n
+{a=https://ko-fi.com/s/91c0372829}{i}Polar Float{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}\n
+
+Chapter 7\n
+{a=https://ko-fi.com/s/1896a262c9}{i}Swim On, Little One{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+""")
+
+define gui.about_plugins = _p("""
+{a=https://wattson.itch.io/}{b}Wattson{/b}{/a} ~ {a=https://wattson.itch.io/kinetic-text-tags}{i}Kinetic Text Tags{/i}{/a}
 """)
 
 define gui.about_software = _p("""
@@ -27,6 +43,10 @@ define gui.about_software = _p("""
 {a=https://code.visualstudio.com/}Visual Studio Code{/a}
 
 {a=https://www.live2d.com/en/}Live2D Cubism{/a}
+
+{a=https://www.audacityteam.org/}Audacity{/a}\n
+
+And a special thanks to
 
 {a=https://www.renpy.org/}Ren'Py{/a}
 """)
@@ -57,6 +77,9 @@ screen about():
             text _("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n") xalign 0.5
             text _("{u}Audio Credits{/u}\n") xalign 0.5
             text "[gui.about_audio!t]\n" xalign 0.5
+            text _("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n") xalign 0.5
+            text _("{u}Plugin Credits{/u}\n") xalign 0.5
+            text "[gui.about_plugins!t]\n" xalign 0.5
             text _("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n") xalign 0.5
             text _("{u}Software Used{/u}\n") xalign 0.5
             text "[gui.about_software!t]\n" xalign 0.5

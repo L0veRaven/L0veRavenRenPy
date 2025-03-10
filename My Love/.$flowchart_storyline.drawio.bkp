@@ -1,0 +1,37 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:135.0) Gecko/20100101 Firefox/135.0" version="26.0.14">
+  <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
+    <mxGraphModel dx="882" dy="579" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
+        <mxCell id="sFEbHqgpfJxXIkcQNWSc-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="sFEbHqgpfJxXIkcQNWSc-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WIyWlLk6GJQsqaUBKTNV-3" value="&lt;div&gt;Player is in office writing a journal entry about Claudia&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;fontSize=9;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="10" y="30" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sFEbHqgpfJxXIkcQNWSc-3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="sFEbHqgpfJxXIkcQNWSc-0" target="sFEbHqgpfJxXIkcQNWSc-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="sFEbHqgpfJxXIkcQNWSc-0" value="Taro approaches player at their desk and mentions a new girl he met before returning to work" style="whiteSpace=wrap;html=1;fontSize=9;rounded=1;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="10" y="130" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sFEbHqgpfJxXIkcQNWSc-2" value="" style="whiteSpace=wrap;html=1;fontSize=9;rounded=1;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="89" y="1420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sFEbHqgpfJxXIkcQNWSc-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="WIyWlLk6GJQsqaUBKTNV-3" target="sFEbHqgpfJxXIkcQNWSc-0" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="130" y="130" as="sourcePoint" />
+            <mxPoint x="148.74999999999994" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sFEbHqgpfJxXIkcQNWSc-4" value="&lt;div&gt;you &quot;I&#39;ve known her for a while...&quot;&lt;/div&gt;&lt;div&gt;$ current_love_Claudia+=25&lt;br&gt;$ persistent.claudia_acquaintance = True&lt;br&gt;[Easy Mode]&lt;/div&gt;&lt;br&gt;&lt;div&gt;you &quot;I met her recently...&quot;&lt;br&gt;$ persistent.claudia_stranger = True&lt;br&gt;[Hard Mode]&lt;/div&gt;" style="square;whiteSpace=wrap;html=1;fontSize=9;rounded=1;glass=0;strokeWidth=1;shadow=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="169" y="10" width="261" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="a7C4wrWiQvOayHZ97LBC-3" value="&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;$ persistent.claudia_acquaintance&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;## r&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;$ persistent.&lt;/font&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;claudia_strange&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;## r&lt;br&gt;&lt;br&gt;sensitive persistent.variablename == True&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;## enables the selection only if &quot;variablename&quot; is true&lt;br&gt;## disables the selection if &quot;variablename&quot; is false&lt;br&gt;&lt;br&gt;sensitive persistent.variablename == True and persistent.variablename2 == True and persistent.variablename3 == True and...&lt;br&gt;## assign multiple values to be validated in order to enable the selection&lt;/font&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="610" y="10" width="210" height="410" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

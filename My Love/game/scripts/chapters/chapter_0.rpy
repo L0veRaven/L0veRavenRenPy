@@ -1,4 +1,4 @@
-label chapter_0_part_1:
+label chapter_0_1:
     play music "scene3.ogg"
 
     scene bg_office with Dissolve(2.0)
@@ -84,6 +84,7 @@ label chapter_0_part_1:
     you "{i}I see... Being a barista seems to be a hobby for her.{/i}"
 
     $ persistent.journal_unlock = True
+    
     $ persistent.claudia_hobby_barista = True
     $ renpy.notify("You wrote info about Claudia in your notebook.")
 
