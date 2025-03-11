@@ -494,28 +494,28 @@ translate None strings:
     new "Are you sure you want to quit?"
 
     # renpy/common/00gui.rpy:453
-    old "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
-    new "Are you sure you want to return to the main menu?\nThis will lose unsaved progress."
+    old "Return to main menu?\nThis will lose unsaved progress."
+    new "Return to main menu?\nThis will lose unsaved progress."
 
     # renpy/common/00gui.rpy:454
-    old "Are you sure you want to continue where you left off?"
-    new "Are you sure you want to continue where you left off?"
+    old "Continue where you left off?"
+    new "Continue where you left off?"
 
     # renpy/common/00gui.rpy:455
-    old "Are you sure you want to end the replay?"
-    new "Are you sure you want to end the replay?"
+    old "End replay?"
+    new "End replay?"
 
     # renpy/common/00gui.rpy:456
-    old "Are you sure you want to begin skipping?"
-    new "Are you sure you want to begin skipping?"
+    old "Begin skipping?"
+    new "Begin skipping?"
 
     # renpy/common/00gui.rpy:457
-    old "Are you sure you want to skip to the next choice?"
-    new "Are you sure you want to skip to the next choice?"
+    old "Skip to next choice?"
+    new "Skip to next choice?"
 
     # renpy/common/00gui.rpy:458
-    old "Are you sure you want to skip unseen dialogue to the next choice?"
-    new "Are you sure you want to skip unseen dialogue to the next choice?"
+    old "Skip unseen dialogue to next choice?"
+    new "Skip unseen dialogue to next choice?"
 
     # renpy/common/00gui.rpy:459
     old "This save was created on a different device. Maliciously constructed save files can harm your computer. Do you trust this save's creator and everyone who could have changed the file?"

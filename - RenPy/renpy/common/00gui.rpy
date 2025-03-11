@@ -445,17 +445,17 @@ init -1150 python in gui:
     ############################################################################
     # Strings used by the confirm screen.
 
-    ARE_YOU_SURE = _("Are you sure?")
-    DELETE_SAVE = _("Are you sure you want to delete this save?")
-    OVERWRITE_SAVE = _("Are you sure you want to overwrite your save?")
-    LOADING = _("Loading will lose unsaved progress.\nAre you sure you want to do this?")
-    QUIT = _("Are you sure you want to quit?")
-    MAIN_MENU = _("Are you sure you want to return to the main menu?\nThis will lose unsaved progress.")
-    CONTINUE = _("Are you sure you want to continue where you left off?")
-    END_REPLAY = _("Are you sure you want to end the replay?")
-    SLOW_SKIP = _("Are you sure you want to begin skipping?")
-    FAST_SKIP_SEEN = _("Are you sure you want to skip to the next choice?")
-    FAST_SKIP_UNSEEN = _("Are you sure you want to skip unseen dialogue to the next choice?")
+    ARE_YOU_SURE = _("ARE YOU SURE?")
+    DELETE_SAVE = _("ARE YOU SURE you want to delete this save?")
+    OVERWRITE_SAVE = _("ARE YOU SURE you want to overwrite your save?")
+    LOADING = _("Loading will lose unsaved progress.\nARE YOU SURE you want to do this?")
+    QUIT = _("ARE YOU SURE you want to quit?")
+    MAIN_MENU = _("ARE YOU SURE you want to return to the main menu?\nThis will lose unsaved progress.")
+    CONTINUE = _("ARE YOU SURE sure you want to continue where you left off?")
+    END_REPLAY = _("ARE YOU SURE you want to end the replay?")
+    SLOW_SKIP = _("ARE YOU SURE you want to begin skipping?")
+    FAST_SKIP_SEEN = _("ARE YOU SURE you want to skip to the next choice?")
+    FAST_SKIP_UNSEEN = _("ARE YOU SURE you want to skip unseen dialogue to the next choice?")
     UNKNOWN_TOKEN = _("This save was created on a different device. Maliciously constructed save files can harm your computer. Do you trust this save's creator and everyone who could have changed the file?")
     TRUST_TOKEN = _("Do you trust the device the save was created on? You should only choose yes if you are the device's sole user.")
 
