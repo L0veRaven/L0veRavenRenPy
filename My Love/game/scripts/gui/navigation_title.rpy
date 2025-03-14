@@ -3,10 +3,25 @@
 screen navigation_title():
 
     fixed:
-
+        $ tooltip = GetTooltip()
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
             ## Help isn't necessary or relevant to mobile devices.
+            fixed:
+                imagebutton:
+                    auto "gui/button/hover_idle/settings_%s.png"
+                    xpos 440
+                    ypos 500
+                    focus_mask True
+                    action ShowMenu("help")
+                    tooltip "Settings"
+
+                if tooltip:
+                    text "[tooltip]":
+                        xpos 400
+                        ypos 600
+                        size 70
+
+
             textbutton _("Help"):
                 xpos 440
                 ypos 195
@@ -46,6 +61,7 @@ screen navigation_title():
             ypos 810
             text_style "navigationTitleTextButton"
             action ShowMenu("about")
+        
 
 style navigationTitleTextButton:
     size 70
