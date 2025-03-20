@@ -73,6 +73,6 @@ init python:
 label start:
     stop music fadeout 1.0
 
-    $ persistent.cutscene_off = False
+    $ persistent.quick_menu_display = False
 
-    jump disclaimer
+    jump journal_1_1

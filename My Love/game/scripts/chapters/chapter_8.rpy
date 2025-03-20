@@ -1,5 +1,5 @@
 label chapter_8_part_1:
-    play music "scene3.ogg"
+    play music "audio/music/scene3.ogg"
 
     scene bg_you_apartment_living_room with fade
 

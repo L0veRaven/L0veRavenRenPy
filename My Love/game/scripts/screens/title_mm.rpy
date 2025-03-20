@@ -17,7 +17,7 @@ screen main_menu():
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation_title
+    use title_screen_nav
 
     #if gui.show_name:
 

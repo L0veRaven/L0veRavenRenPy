@@ -7,6 +7,11 @@
 ## This screen is intended to be used with one or more children, which are
 ## transcluded (placed) inside it.
 
+## Accessible:
+    ## Title Menu: Load/Settings/Credits/Help
+    ## In-game: Right-click
+
+#TODO: "screen game_menu" use imagebuttons instead of textbuttons
 screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     style_prefix "game_menu"

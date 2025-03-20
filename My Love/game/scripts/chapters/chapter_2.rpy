@@ -1,5 +1,5 @@
 label chapter_2_part_1:
-    play music "people-factory.mp3"
+    play music "audio/music/people-factory.mp3"
 
     scene bg_you_apartment_living_room with fade
 

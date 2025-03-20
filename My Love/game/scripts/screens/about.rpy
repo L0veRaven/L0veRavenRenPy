@@ -3,7 +3,7 @@
 
 define gui.about_audio = _p("""
 Title\n
-{a=https://ko-fi.com/s/ab76dd25a9}{i}Blurry{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}\n
+{a=https://ko-fi.com/s/ab76dd25a9}{i}Blurred{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}\n
 
 Chapter 0\n
 scene5 by KADOKAWA's {a=https://www.rpgmakerweb.com/products/rpg-maker-mz}RPG Maker MZ{/a}\n

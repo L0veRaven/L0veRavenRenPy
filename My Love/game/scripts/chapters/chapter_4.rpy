@@ -1,5 +1,5 @@
 label chapter_4_part_1:
-    play music "strawberry-blossoms.mp3"
+    play music "audio/music/strawberry-blossoms.mp3"
 
     scene bg_you_apartment_living_room with fade
 

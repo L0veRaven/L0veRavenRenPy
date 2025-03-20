@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/gui/navigation_title.rpy", line 20: Line is indented, but the preceding text statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
-    xpos 100
-    ^
+File "game/scripts/chapters/chapter_6.rpy", line 2: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a " at the end of the first line.)
+        play music audio/music/polar-float.mp3"
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Mar 14 06:16:01 2025
+Sun Mar 16 19:05:13 2025
