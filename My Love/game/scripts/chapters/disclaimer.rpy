@@ -11,7 +11,8 @@ label splashscreen:
     show text """
     {b}W A R N I N G{/b}
 
-    This game contains depictions and themes of harassment, stalking, assault, violence, and death.
+    This game contains depictions and themes of:\n
+    harassment, stalking, assault, violence, and death.
     
     Please send all bug reports to {u}support@l0veraven.com{/u}.
     """
