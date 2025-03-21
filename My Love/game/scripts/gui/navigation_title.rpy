@@ -1,28 +1,17 @@
+init python:
+    ibStart = False
+    ibSettings = False
+    ibClose = False
+
 ## Navigation ONLY for the Title Screen
 
 screen title_screen_nav():
 
-    fixed:
-        $ tooltip = GetTooltip()
-        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-            ## Help isn't necessary or relevant to mobile devices.
+    $ tooltip = GetTooltip()
 
-            #TODO: Make tooltip hover for "Help" button
-            fixed:
-                imagebutton:
-                    auto "gui/button/hover_idle/settings_%s.png"
-                    xpos 440
-                    ypos 500
-                    focus_mask True
-                    action ShowMenu("help")
-                    tooltip "Settings"
+    if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
-                if tooltip:
-                    text "[tooltip]":
-                        xpos 400
-                        ypos 600
-                        size 70
-
+        fixed:
             #TODO: Remove textbutton "Help" when imagebutton is complete
             textbutton _("Help"):
                 xpos 440
@@ -30,51 +19,90 @@ screen title_screen_nav():
                 text_style "navigationTitleTextButton"
                 action ShowMenu("help")
 
-        if renpy.variant("pc"):
 
-            ## The quit button is banned on iOS and unnecessary on Android and
-            ## Web.
+    #TODO: Make imagebutton tooltip hover for "Start"
+    fixed:
+        xpos 275
+        ypos 750
 
-            #TODO: Make imagebutton tooltip hover for "Quit"
+        vbox:
+            imagebutton:
+                auto "gui/button/hover_idle/ib_start_%s.png"
+                focus_mask True
+                tooltip "Start"
+                hovered ToggleVariable("ibStart", True) #Shows Start() [tooltip] on hover
+                unhovered ToggleVariable("ibStart", False) #Hides Start() [tooltip] on unhover
+                action Start()
+            
+            if ibStart:
+                text tooltip:
+                    style "navigationTitleTextButton"
+                    xalign 0.5
+                    ypos -80
+                    textalign 0.5
+                    color '#000000'
 
-            #TODO: Remove textbutton "Quit" when imagebutton is complete
-            textbutton _("Quit"):
-                xpos 1410
-                ypos 203
-                text_style "navigationTitleTextButton"
-                action Quit(confirm=not main_menu)
+    #TODO: Make imagebutton tooltip hover for "Load"
+    #TODO: Remove textbutton "Load" when imagebutton is complete
+    textbutton _("Load"):
+        xpos 1125
+        ypos 663
+        text_style "navigationTitleTextButton"
+        action ShowMenu("load")
 
-        #TODO: Make imagebutton tooltip hover for "Start"
-        #TODO: Remove textbutton "Start" when imagebutton is complete
-        textbutton _("Start"):
-            xpos 700
-            ypos 665
-            text_style "navigationTitleTextButton"
-            action Start()
+    #TODO: Make imagebutton tooltip hover for "Credits"
+    #TODO: Remove textbutton "Credits" when imagebutton is complete
+    textbutton _("Credits"):
+        xpos 1110
+        ypos 810
+        text_style "navigationTitleTextButton"
+        action ShowMenu("about")
+    
+    fixed:
+        xpos 1440
+        ypos 750
 
-        #TODO: Make imagebutton tooltip hover for "Load"
-        #TODO: Remove textbutton "Load" when imagebutton is complete
-        textbutton _("Load"):
-            xpos 1125
-            ypos 663
-            text_style "navigationTitleTextButton"
-            action ShowMenu("load")
+        vbox:
+            #TODO: Make text hover for "Settings" button
+            imagebutton:
+                auto "gui/button/hover_idle/ib_settings_%s.png"
+                focus_mask True
+                tooltip "Settings" #Tooltip text
+                hovered ToggleVariable("ibSettings", True) #Shows ShowMenu("preferences") [tooltip] on hover
+                unhovered ToggleVariable("ibSettings", False) #Shows ShowMenu("preferences") [tooltip] on unhover
+                action ShowMenu("preferences")
+            
+            if ibSettings:
+                text tooltip:
+                    xalign 0.5
+                    ypos -80
+                    style "navigationTitleTextButton"
+                    color '#000000'
+    
+    if renpy.variant("pc"):
 
-        #TODO: Make imagebutton tooltip hover for "Settings"
-        #TODO: Remove textbutton "Settings" when imagebutton is complete
-        textbutton _("Settings"):
-            xpos 685
-            ypos 807
-            text_style "navigationTitleTextButton"
-            action ShowMenu("preferences")
+        ## The quit button is banned on iOS and unnecessary on Android and
+        ## Web.
+        fixed:
+            xpos 1440
+            ypos 125
 
-        #TODO: Make imagebutton tooltip hover for "Credits"
-        #TODO: Remove textbutton "Credits" when imagebutton is complete
-        textbutton _("Credits"):
-            xpos 1110
-            ypos 810
-            text_style "navigationTitleTextButton"
-            action ShowMenu("about")
+            vbox:
+                #TODO: Make text hover for "Exit" button
+                imagebutton:
+                    auto "gui/button/hover_idle/ib_close_%s.png"
+                    focus_mask True
+                    tooltip "Quit" #Tooltip text
+                    hovered ToggleVariable("ibClose", True) #Shows ShowMenu("preferences") [tooltip] on hover
+                    unhovered ToggleVariable("ibClose", False) #Shows ShowMenu("preferences") [tooltip] on unhover
+                    action Quit(confirm=not main_menu)
+                
+                if ibClose:
+                    text tooltip:
+                        xalign 0.5
+                        ypos -80
+                        style "navigationTitleTextButton"
+                        color '#000000'
         
 
 style navigationTitleTextButton:

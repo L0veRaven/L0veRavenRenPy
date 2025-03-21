@@ -1,38 +1,38 @@
-2025-03-19 00:08:44 UTC
+2025-03-21 05:12:43 UTC
 Windows-10-10.0.22631
 Ren'Py 8.3.4.24120703
 
-Early init took 0.31s
-Loading error handling took 0.14s
-Loading script took 12.67s
-Loading save slot metadata took 0.11s
+Early init took 0.14s
+Loading error handling took 0.13s
+Loading script took 10.20s
+Loading save slot metadata took 0.06s
 Loading persistent took 0.00s
 Set script version to: None (alternate path)
- - Init at launcher/game/download.rpy:22 took 1.56862 s.
-Running init code took 2.85s
-Loading analysis data took 0.07s
+ - Init at launcher/game/download.rpy:22 took 1.20962 s.
+Running init code took 2.35s
+Loading analysis data took 0.05s
 Analyze and compile ATL took 0.00s
 Reloading save slot metadata took 0.03s
 Index archives took 0.00s
 Dump and make backups took 0.00s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.05s
+Initial gc took 0.08s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.13s
+Creating interface object took 0.08s
 Cleaning stores took 0.00s
 Init translation took 0.06s
-Build styles took 0.00s
-Load screen analysis took 0.09s
+Build styles took 0.02s
+Load screen analysis took 0.06s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
 Prepare screens took 0.10s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.06s
+Save bytecode. took 0.00s
 Running _start took 0.00s
-Interface start took 0.13s
+Interface start took 0.15s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2736, 1824)
@@ -44,4 +44,3 @@ Version: b'4.6.0 - Build 31.0.101.2125'
 Display Info: None
 Screen sizes: virtual=(800, 600) physical=(1600, 1200) drawable=(1600, 1200)
 Maximum texture size: 4096x4096
-controller: '030000005e040000ff02000000007200' 'Nefarius Software Solutions e.U. Controller (Xbox One For Windows)' 1
