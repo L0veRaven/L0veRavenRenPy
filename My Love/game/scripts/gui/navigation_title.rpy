@@ -79,10 +79,7 @@ screen title_screen_nav():
                     style "navigationTitleTextButton"
                     color '#000000'
     
-    if renpy.variant("pc"):
-
-        ## The quit button is banned on iOS and unnecessary on Android and
-        ## Web.
+    if renpy.variant("pc"): ## Quit button useless on iOS, Android, and Web.
         fixed:
             xpos 1440
             ypos 125
