@@ -1,9 +1,9 @@
 label chapter_0_1:
-    play music "scene3.ogg"
+    play music "audio/music/scene3.ogg"
 
     scene bg_office with Dissolve(2.0)
 
-    $ persistent.cutscene_off = True
+    $ persistent.quick_menu_display = True
 
     tsukune "Hey..."
 
@@ -148,7 +148,7 @@ label chapter_0_question_1a:
 
     scene black with fade
 
-    jump chapter_0_part_2
+    jump chapter_0_2
 
 label chapter_0_question_1b:
     stop music
@@ -167,7 +167,7 @@ label chapter_0_question_1b:
 
     return
 
-label chapter_0_part_2:
+label chapter_0_2:
 
     scene bg_you_apartment_living_room with fade
 

@@ -10,7 +10,7 @@ screen quick_menu():
 
     fixed:
         if persistent.quickmenu_a:
-            if persistent.cutscene_off:
+            if persistent.quick_menu_display:
                 imagebutton:
                     auto "gui/button/hover_idle/left_arrow_%s.png"
                     xpos 320
@@ -65,7 +65,7 @@ screen quick_menu():
                         ypos 150
                         action ShowMenu('InGameMenu')
 
-            if persistent.cutscene_off:
+            if persistent.quick_menu_display:
                 if renpy.get_mode() == "nvl":
                     ## Reverse Dialogue/Nvl Button
                     imagebutton:
@@ -140,7 +140,7 @@ screen quick_menu():
                             focus_mask True
                             action ShowMenu('InGameMenu')
         if persistent.quickmenu_b:
-            if persistent.cutscene_off:
+            if persistent.quick_menu_display:
                 hbox:
                     style_prefix "quick"
 

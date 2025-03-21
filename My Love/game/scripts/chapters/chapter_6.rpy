@@ -1,5 +1,5 @@
 label chapter_6_part_1:
-    play music "polar-float.mp3"
+    play music "audio/music/polar-float.mp3"
 
     scene bg_you_apartment_living_room with fade
 

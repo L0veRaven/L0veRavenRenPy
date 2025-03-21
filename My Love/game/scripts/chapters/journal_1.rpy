@@ -8,13 +8,13 @@ label journal_1_1:
 
     "{i}Maybe journaling will help ease my mind...{/i}"
     
-    play music "scene5.ogg"
+    play music "audio/music/scene5.ogg"
 
     scene bg_work_desk with Dissolve(2.0)
 
     $ persistent.quickmenu_a = False
     $ persistent.quickmenu_b = True
-    $ persistent.cutscene_off = False
+    $ persistent.quick_menu_display = False
 
     journal """
     It's been a month since I've started journaling and I think I'm coming to terms with some of my feelings.{nw}

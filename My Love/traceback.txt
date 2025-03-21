@@ -1,40 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00keymap.rpy", line 504, in script
-    python hide:
-  File "renpy/common/00keymap.rpy", line 504, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 528, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-OSError: [Errno 28] No space left on device
+  File "game/scripts/audio.rpy", line 24, in script
+    define config.main_menu_music = title_music
+  File "game/scripts/audio.rpy", line 24, in <module>
+    define config.main_menu_music = title_music
+NameError: name 'title_music' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00keymap.rpy", line 504, in script
-    python hide:
-  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 827, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00keymap.rpy", line 504, in <module>
-    python hide:
-  File "renpy/common/00keymap.rpy", line 528, in _execute_python_hide
-    renpy.save("_reload-1", "reload save game")
-  File "D:\renpy-8.3.4-sdk\renpy\loadsave.py", line 460, in save
-    location.save(slotname, sr)
-  File "D:\renpy-8.3.4-sdk\renpy\savelocation.py", line 517, in save
-    l.save(slotname, record)
-  File "D:\renpy-8.3.4-sdk\renpy\savelocation.py", line 211, in save
-    record.write_file(filename)
-  File "D:\renpy-8.3.4-sdk\renpy\loadsave.py", line 358, in write_file
-    zf.writestr("screenshot.png", self.screenshot)
-  File "lib/python3.9/zipfile.py", line 1803, in writestr
-  File "lib/python3.9/zipfile.py", line 1141, in close
-OSError: [Errno 28] No space left on device
+  File "game/scripts/audio.rpy", line 24, in script
+    define config.main_menu_music = title_music
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 2241, in execute
+    self.set()
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 2255, in set
+    value = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/scripts/audio.rpy", line 24, in <module>
+    define config.main_menu_music = title_music
+NameError: name 'title_music' is not defined
 
-Windows-10-10.0.19045 AMD64
+Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 My Love 1.0
-Sun Mar  9 10:07:23 2025
+Tue Mar 18 17:45:23 2025
