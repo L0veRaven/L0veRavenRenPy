@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/gui/navigation_title.rpy", line 94: 'action' is not a keyword argument or valid child of the fixed statement.
-    action ShowMenu("load")
-          ^
+File "game/scripts/gui/navigation_title.rpy", line 85: expected a keyword argument or end of line.
+    action ShowMenu("help"))
+                           ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Mar 21 04:14:08 2025
+Fri Mar 21 06:20:18 2025
