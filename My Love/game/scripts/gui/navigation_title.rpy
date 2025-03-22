@@ -6,6 +6,21 @@ init python:
     ibHelp = False
     ibClose = False
 
+transform fade_inout_2s:
+        pause 2
+        ease 1 alpha 0.0
+        pause 2
+        ease 1 alpha 1.0
+        repeat
+
+transform fade_inout_4s:
+        alpha 0.0
+        pause 2
+        ease 1 alpha 1.0
+        pause 2
+        ease 1 alpha 0.0
+        repeat
+
 ## Navigation ONLY for the Title Screen
 
 screen title_screen_nav():
@@ -14,6 +29,7 @@ screen title_screen_nav():
 
     #TODO: Make imagebutton tooltip hover for "Start"
     fixed:
+
         hbox:
             xalign 0.5
             ypos 750
@@ -115,6 +131,15 @@ screen title_screen_nav():
                         text tooltip:
                             style "navigationTitleTextButton"
                             color '#000000'
+
+        text _("{font=you_font.ttf}My Love") at fade_inout_2s:
+            style "titleText"
+
+        text _("{font=claudia_font.ttf}My Love") at fade_inout_4s:
+            style "titleText"
+
+        #text _("{font=tsukune_font.ttf}My Love"):
+            #style "titleText"
         
 
 style navigationTitleTextButton:
@@ -125,3 +150,9 @@ style navigationTitleTextButton:
     hover_color '#575757'
     selected_color '#000000'
     insensitive_color '#4242427f'
+
+style titleText:
+    xalign 0.5
+    ypos 350
+    size 150
+    color '#000000'

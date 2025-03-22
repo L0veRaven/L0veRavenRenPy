@@ -2,9 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/scripts/gui/navigation_title.rpy", line 85: expected a keyword argument or end of line.
-    action ShowMenu("help"))
-                           ^
+File "game/scripts/gui/navigation_title.rpy", line 16: Indentation mismatch.
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Mar 21 06:20:18 2025
+Fri Mar 21 20:45:37 2025
