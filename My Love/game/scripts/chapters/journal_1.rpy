@@ -23,6 +23,8 @@ label journal_1_1:
 
     I have a neighbor. Her name is Claudia, and she is... so hard to describe. I mean, she's perfect to me, but there's not a way to really explain it.{w=0.5}
     """
+    
+    nvl clear
 
     ## Choice: Hard or Easy mode
     menu:

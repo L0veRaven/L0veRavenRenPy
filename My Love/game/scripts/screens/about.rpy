@@ -95,3 +95,4 @@ style about_label_text:
 
 style about_text:
     textalign 0.5
+    color '#000000'

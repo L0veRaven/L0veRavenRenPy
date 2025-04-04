@@ -27,7 +27,6 @@ screen title_screen_nav():
 
     $ tooltip = GetTooltip()
 
-    #TODO: Make imagebutton tooltip hover for "Start"
     fixed:
 
         hbox:
@@ -51,8 +50,6 @@ screen title_screen_nav():
                         color '#000000'
 
             vbox:
-                #TODO: Make imagebutton tooltip hover for "Load"
-                #TODO: Remove textbutton "Load" when imagebutton is complete
                 imagebutton:
                     auto "gui/button/hover_idle/ib_load_%s.png"
                     focus_mask True
@@ -68,7 +65,7 @@ screen title_screen_nav():
 
             vbox:
                 imagebutton:
-                    auto "gui/button/hover_idle/ib_settings_%s.png"
+                    auto "gui/button/hover_idle/ib_credits_%s.png"
                     focus_mask True
                     tooltip "Credits"
                     hovered ToggleVariable("ibCredits", True) #Shows ShowMenu("about") [tooltip] on hover
@@ -81,7 +78,6 @@ screen title_screen_nav():
                         color '#000000'
 
             vbox:
-                #TODO: Make text hover for "Settings" button
                 imagebutton:
                     auto "gui/button/hover_idle/ib_settings_%s.png"
                     focus_mask True
