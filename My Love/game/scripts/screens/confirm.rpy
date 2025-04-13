@@ -14,25 +14,25 @@ screen confirm(message, yes_action, no_action):
 
     style_prefix "confirm"
 
+    add "gui/confirm.png"
+
     add "gui/overlay/confirm.png"
 
-    frame:
+    vbox:
+        xalign .5
+        yalign .5
+        spacing 45
 
-        vbox:
-            xalign .5
-            yalign .5
-            spacing 45
+        label _(message):
+            style "confirm_prompt"
+            xalign 0.5
 
-            label _(message):
-                style "confirm_prompt"
-                xalign 0.5
+        hbox:
+            xalign 0.5
+            spacing 150
 
-            hbox:
-                xalign 0.5
-                spacing 150
-
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
+            textbutton _("Yes") action yes_action
+            textbutton _("No") action no_action
 
     ## Right-click and escape answer "no".
     key "game_menu" action no_action
@@ -45,14 +45,16 @@ style confirm_button is gui_medium_button
 style confirm_button_text is gui_medium_button_text
 
 style confirm_frame:
-    background Frame([ "gui/confirm_frame.png", "gui/frame.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
+    background Frame([ "gui/confirm_frame.png", "gui/confirm.png"], gui.confirm_frame_borders, tile=gui.frame_tile)
     padding gui.confirm_frame_borders.padding
     xalign .5
     yalign .5
 
 style confirm_prompt_text:
     textalign 0.5
+    size 70
     layout "subtitle"
+    color '#000000'
 
 style confirm_button:
     properties gui.button_properties("confirm_button")

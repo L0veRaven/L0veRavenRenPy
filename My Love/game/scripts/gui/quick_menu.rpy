@@ -148,29 +148,37 @@ screen quick_menu():
                     yalign 1.0
                     spacing 50
 
-                    textbutton _("Back"):
+                    imagebutton:
+                        auto "gui/button/hover_idle/left_arrow_%s.png"
+                        focus_mask True
                         action Rollback()
 
-                    textbutton _("History"):
-                        action ShowMenu('history')
+                    #imagebutton:
+                    #    auto "gui/button/hover_idle/history_%s.png"
+                    #    focus_mask True
+                    #    action ShowMenu('history')
 
-                    textbutton _("Skip"):
+                    imagebutton:
+                        auto "gui/button/hover_idle/fast_forward_%s.png"
+                        focus_mask True
                         action Skip() alternate Skip(fast=True, confirm=True)
 
-                    textbutton _("Auto"):
-                        action Preference("auto-forward", "toggle")
+                    #textbutton _("Auto"):
+                    #    action Preference("auto-forward", "toggle")
 
-                    textbutton _("Save"):
+                    imagebutton:
+                        auto "gui/button/hover_idle/save_%s.png"
+                        focus_mask True
                         action ShowMenu('save')
 
-                    textbutton _("Q.Save"):
-                        action QuickSave()
+                    #textbutton _("Q.Save"):
+                    #    action QuickSave()
 
-                    textbutton _("Q.Load"):
-                        action QuickLoad()
+                    #textbutton _("Q.Load"):
+                    #    action QuickLoad()
                         
-                    textbutton _("Prefs"):
-                        action ShowMenu('preferences')
+                    #textbutton _("Prefs"):
+                    #    action ShowMenu('preferences')
 
 
 

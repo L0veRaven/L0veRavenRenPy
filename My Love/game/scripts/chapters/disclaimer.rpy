@@ -10,10 +10,10 @@ label splashscreen:
 
     show text """
     \n\n\n\n
-    {b}{size=60}W A R N I N G{/size}{/b}\n\n
+    {color=#ffffff}{b}{size=60}W A R N I N G{/size}{/b}\n\n
     {size=50}This game contains depictions and themes of:\n
     harassment, stalking, assault, violence, and death.\n\n
-    Please send all bug reports to {u}support@l0veraven.com{/size}{/u}
+    Please send all bug reports to {u}support@l0veraven.com{/size}{/u}{/color}
     """
     with dissolve
 

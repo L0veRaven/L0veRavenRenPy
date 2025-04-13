@@ -27,15 +27,9 @@ screen navigation():
 
         spacing gui.navigation_spacing
 
-        if main_menu:
+        textbutton _("History") action ShowMenu("history")
 
-            textbutton _("Start") action Start()
-
-        else:
-
-            textbutton _("History") action ShowMenu("history")
-
-            textbutton _("Save") action ShowMenu("save")
+        textbutton _("Save") action ShowMenu("save")
 
         textbutton _("Load") action ShowMenu("load")
 
@@ -46,10 +40,13 @@ screen navigation():
             textbutton _("End Replay") action EndReplay(confirm=True)
 
         elif not main_menu:
+            imagebutton:
+                auto "gui/button/hover_idle/home_%s.png"
+                focus_mask True
+                action MainMenu()
 
-            textbutton _("Main Menu") action MainMenu()
 
-        textbutton _("About") action ShowMenu("about")
+        textbutton _("Credits") action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 

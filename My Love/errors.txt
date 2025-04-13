@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/gui/navigation_title.rpy", line 16: Indentation mismatch.
+File "game/scripts/gui/navigation.rpy", line 30: 'else' is not a keyword argument or valid child of the hbox statement.
+    else:
+        ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Mar 21 20:45:37 2025
+Sat Apr  5 19:12:22 2025
