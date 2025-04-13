@@ -70,7 +70,7 @@ label journal_1b:
 
 label journal_1_2:
 
-    scene bg_claudia_trash_0 with fade
+    scene bg_claudia_trash_0 with Dissolve(1.0)
 
     scene bg_claudia_trash_1 with Dissolve(1.0)
 
@@ -89,15 +89,11 @@ label journal_1_2:
     scene bg_claudia_apartment_curtains_closed with Dissolve(2.0)
 
     journal """
-    I hate to admit that I've been trying to get photos of her during her more... private moments. It's hard to resist the temptation. That's not to say I haven't tried.{nw}
+    I want to know what her daily routine is like. Unfortunately, it's not that easy. She lives directly next to me, so I can't really take photos when I'm so close.{nw}
 
-    It's so hard to get a moment like that. With her curtains open, she never shows anything private. She values her privacy, but where does that leave me?{nw}
+    It'd also be really weird if I just sat outside her apartment, waiting for her to leave or to see who comes by to visit. Sure, I can peek through the blinds or look through my open window, but I'd probably look very suspicious doing that.{nw}
     
-    I may be overreacting, but to see someone in their most vulnerable state... It's such a high honor.{w=0.5}
-
-    {clear}
-    
-    If I'm able to see her in one of those moments before I'm lucky enough to hopefully experience the real deal...{w=0.5}
+    I'm ashamed to admit that I'm too nervous to approach her. It would be much easier to talk to her rather than doing complicated bullshit to learn more about her.{w=0.5}
     """
 
     nvl clear
@@ -106,6 +102,6 @@ label journal_1_2:
     
     stop music
 
-    you "Then I can prepare for when it {sc=3}{b}D O E S{/b}{/sc} happen."
+    you "Hopefully... I can finally get to know her more."
 
     jump chapter_0_1
