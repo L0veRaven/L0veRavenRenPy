@@ -1,28 +1,38 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/scripts/chapters/chapter_0.rpy", line 10, in script
-    show tsukune neutral with MoveInRight(1.0)
-  File "game/scripts/chapters/chapter_0.rpy", line 10, in <module>
-    show tsukune neutral with MoveInRight(1.0)
-NameError: name 'MoveInRight' is not defined
+Compiling ATL code at game/scripts/chapters/chapter_0.rpy:62
+  File "game/scripts/chapters/chapter_0.rpy", line 61, in script
+    show tsukune neutral:
+Exception: Expression '1.0' is not an ATL transform, and so cannot be included in an ATL interpolation.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/chapters/chapter_0.rpy", line 10, in script
-    show tsukune neutral with MoveInRight(1.0)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 1363, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/scripts/chapters/chapter_0.rpy", line 10, in <module>
-    show tsukune neutral with MoveInRight(1.0)
-NameError: name 'MoveInRight' is not defined
+  File "game/scripts/chapters/chapter_0.rpy", line 61, in script
+    show tsukune neutral:
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 1117, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 1080, in show_imspec
+    renpy.config.show(name,
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\exports\displayexports.py", line 503, in show
+    sls.add(layer, img, key, zorder, behind, at_list=at_list, name=name, atl=atl, default_transform=default_transform, transient=transient)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\scenelists.py", line 477, in add
+    thing.visit_all(lambda d : None)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\displayable.py", line 424, in visit_all
+    for d in self.visit():
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\atl.py", line 816, in visit
+    block = self.compile()
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\atl.py", line 723, in compile
+    block = self.atl.compile(self.context)
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\atl.py", line 925, in compile
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\atl.py", line 925, in <listcomp>
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\atl.py", line 1293, in compile
+    raise Exception("Expression %r is not an ATL transform, and so cannot be included in an ATL interpolation." % expr)
+Exception: Expression '1.0' is not an ATL transform, and so cannot be included in an ATL interpolation.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 My Love 1.0
-Sat Apr 12 21:40:29 2025
+Sun Apr 13 20:18:00 2025

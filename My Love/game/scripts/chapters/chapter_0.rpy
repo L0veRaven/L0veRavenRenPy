@@ -58,6 +58,9 @@ label chapter_0_1:
     
     tsukune "Anyways, I gotta get back to work. Talk more later!"
 
+    show tsukune neutral:
+        ease 1.0 xpos 1.0 #Slide off-screen to the right
+
     hide tsukune with dissolve
 
     you "The closest I get with my crush is talking to her since she's my neighbor..."
@@ -66,7 +69,11 @@ label chapter_0_1:
 
     scene black with fade
 
+    ## TODO: play sound typing
+
     you "Oh, it's time to clock out."
+
+    ## TODO: play sound car-door-close
 
     scene bg_car_passenger with fade
 
