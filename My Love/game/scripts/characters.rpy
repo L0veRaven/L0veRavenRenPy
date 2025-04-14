@@ -12,7 +12,7 @@
 
 define claudia = Character('Claudia', color="#884625", what_color="#884625", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf")
 
-define tsukune = Character('Tsukune', color="#0c357d", what_color="#0c357d")
+define tsukune = Character('Tsukune', color="#0c357d", what_color="#0c357d", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf")
 
 define witness = Character('Witness', color="#000000")
 

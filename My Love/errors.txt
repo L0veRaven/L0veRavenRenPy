@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/gui/navigation.rpy", line 30: 'else' is not a keyword argument or valid child of the hbox statement.
-    else:
-        ^
+File "game/scripts/chapters/chapter_0.rpy", line 10: show statement expects a non-empty block.
+    show tsukune neutral:
+                         ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Sat Apr  5 19:12:22 2025
+Sun Apr 13 18:19:45 2025

@@ -5,31 +5,54 @@ label chapter_0_1:
 
     $ persistent.quick_menu_display = True
 
-    tsukune "Hey..."
+    tsukune "Hey Alex!"
 
-    show tsukune neutral
+    show tsukune neutral:
+        xpos 1.0 #Start off-screen to the right
+        ease 0.75 xpos 0.0 ypos 0.0 #Ease -> center to Y axis
+        ease 0.5 ypos 0.05 #Ease -> slight dip down
+        ease 1.0 ypos 0.0 #Ease -> slight bounce back up
 
     tsukune "What're you working on there?"
 
-    you "O-oh, nothing much. I'm just journaling a little bit." with hpunch
+    you "O-oh, nothing much. I'm just... journaling a little bit." with hpunch
 
-    tsukune "\*chuckles\* What else are you gonna do during downtime, right?"
+    show tsukune neutral:
+        ease 0.5 ypos 0.05 #Ease -> slight dip down
+        ease 1.0 ypos 0.0 #Ease -> slight bounce back up
+        
+    tsukune "\*chuckles\* I mean, what else are you gonna do during downtime?"
+
+    show tsukune neutral:
+        ease 1.0 xpos 0.15 #Slide to the right
+
+    tsukune "Now that I think about it, I need to check in with Ash about the spreadsheet xe was supposed to send in..."
 
     you "Right..."
+
+    show tsukune neutral:
+        ease 0.5 xpos 0.0 #Slide to center
 
     tsukune "Oh, when we get off work, I wanna tell you about someone I met."
 
     you "Someone you met?"
 
+    show tsukune neutral:
+        ease 0.5 ypos 0.05 #Ease -> slight dip down
+        ease 1.0 ypos 0.0 #Ease -> slight bounce back up
+
     tsukune "Yeah! See, I met a girl at this coffee shop the other day."
 
-    show tsukune blush
+    show tsukune blush:
+        ease 1.0 xpos 0.05 #Slide to the right
 
     tsukune "To be honest, she's kinda cute. I was lucky enough to get her contact info."
 
     you "Geez, I wish I was lucky enough to get that from my crush..."
 
-    show tsukune neutral
+    show tsukune neutral:
+        ease 0.5 ypos 0.05 #Ease -> slight dip down
+        ease 1.0 ypos 0.0 #Ease -> slight bounce back up
     
     tsukune "Don't worry. I'm sure you'll get there soon enough."
     
