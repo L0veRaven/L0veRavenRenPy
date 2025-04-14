@@ -38,17 +38,21 @@ define gui.about_plugins = _p("""
 define gui.about_software = _p("""
 {a=https://procreate.com/}Procreate{/a}
 
-{a=https://procreate.com/}Krita{/a}
+{a=https://krita.org/en/}Krita{/a}
 
 {a=https://code.visualstudio.com/}Visual Studio Code{/a}
 
 {a=https://www.live2d.com/en/}Live2D Cubism{/a}
 
-{a=https://www.audacityteam.org/}Audacity{/a}\n
-
-And a special thanks to
+{a=https://www.audacityteam.org/}Audacity{/a{}
 
 {a=https://www.renpy.org/}Ren'Py{/a}
+""")
+
+define gui.about_hotlines = _p("""
+For anyone in need, please go to
+{a=https://nomoredirectory.org/}No More Directory{/a} 
+to find support hotlines in your region.
 """)
 
 ## About screen ################################################################
@@ -70,20 +74,18 @@ screen about():
         style_prefix "about"
 
         vbox:
-            #label "[config.name!t]" xalign 0.5
-            #text _("Version [config.version!t]\n") xalign 0.5
+            #label "[config.name!t]"
+            #text _("Version [config.version!t]")
 
-            text _("Developed by {a=https://www.l0veraven.com}L0veRaven{/a}\n") xalign 0.5
-            text _("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n") xalign 0.5
-            text _("{u}Audio Credits{/u}\n") xalign 0.5
-            text "[gui.about_audio!t]\n" xalign 0.5
-            text _("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n") xalign 0.5
-            text _("{u}Plugin Credits{/u}\n") xalign 0.5
-            text "[gui.about_plugins!t]\n" xalign 0.5
-            text _("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n") xalign 0.5
-            text _("{u}Software Used{/u}\n") xalign 0.5
-            text "[gui.about_software!t]\n" xalign 0.5
-            text _("{image=gui/renpy_credit_icon.png}{alt}RenPy logo{/alt}\n") xalign 0.5
+            text _("Developed by {a=https://www.l0veraven.com}L0veRaven{/a}\n\n\n")
+            text _("{u}Audio Credits{/u}\n")
+            text "[gui.about_audio!t]\n\n\n"
+            text _("{u}Plugin Credits{/u}\n")
+            text "[gui.about_plugins!t]\n\n\n"
+            text _("{u}Software Used{/u}\n")
+            text "[gui.about_software!t]\n\n\n"
+            text _("{u}Hotlines{/u}\n")
+            text "[gui.about_hotlines!t]\n"
 
 
 style about_label is gui_label
@@ -94,5 +96,4 @@ style about_label_text:
     size gui.label_text_size
 
 style about_text:
-    textalign 0.5
     color '#000000'

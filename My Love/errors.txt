@@ -2,9 +2,53 @@
 errors listed below, and try again.
 
 
-File "game/scripts/chapters/chapter_0.rpy", line 10: show statement expects a non-empty block.
-    show tsukune neutral:
-                         ^
+File "game/scripts/chapters/journal_1.rpy", line 5: Line with id journal_1_1_0a5cb6a9 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:5
+
+File "game/scripts/chapters/journal_1.rpy", line 7: Line with id journal_1_1_256bd5fa appears twice. The other line is game/scripts/chapters/chapter_0.rpy:7
+
+File "game/scripts/chapters/journal_1.rpy", line 9: Line with id journal_1_1_ae5fcc3c appears twice. The other line is game/scripts/chapters/chapter_0.rpy:9
+
+File "game/scripts/chapters/journal_1.rpy", line 19: Line with id journal_1_1_42aa8ed5 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:19
+
+File "game/scripts/chapters/journal_1.rpy", line 19: Line with id journal_1_1_743b403a appears twice. The other line is game/scripts/chapters/chapter_0.rpy:19
+
+File "game/scripts/chapters/journal_1.rpy", line 19: Line with id journal_1_1_9a3da39e appears twice. The other line is game/scripts/chapters/chapter_0.rpy:19
+
+File "game/scripts/chapters/journal_1.rpy", line 19: Line with id journal_1_1_f0d38624 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:19
+
+File "game/scripts/chapters/journal_1.rpy", line 19: Line with id journal_1_1_7ef772af appears twice. The other line is game/scripts/chapters/chapter_0.rpy:19
+
+File "game/scripts/chapters/journal_1.rpy", line 33: Line with id journal_1_1_76b2fe88 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:33
+
+File "game/scripts/chapters/journal_1.rpy", line 46: Line with id journal_1a_0ec44180 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:46
+
+File "game/scripts/chapters/journal_1.rpy", line 46: Line with id journal_1a_98550f97 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:46
+
+File "game/scripts/chapters/journal_1.rpy", line 52: Line with id journal_1a_76b2fe88 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:52
+
+File "game/scripts/chapters/journal_1.rpy", line 61: Line with id journal_1b_ee26a6d5 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:61
+
+File "game/scripts/chapters/journal_1.rpy", line 61: Line with id journal_1b_98550f97 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:61
+
+File "game/scripts/chapters/journal_1.rpy", line 67: Line with id journal_1b_76b2fe88 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:67
+
+File "game/scripts/chapters/journal_1.rpy", line 79: Line with id journal_1_2_9bf86f75 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:79
+
+File "game/scripts/chapters/journal_1.rpy", line 79: Line with id journal_1_2_4ac0072b appears twice. The other line is game/scripts/chapters/chapter_0.rpy:79
+
+File "game/scripts/chapters/journal_1.rpy", line 79: Line with id journal_1_2_bdbb5d43 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:79
+
+File "game/scripts/chapters/journal_1.rpy", line 87: Line with id journal_1_2_76b2fe88 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:87
+
+File "game/scripts/chapters/journal_1.rpy", line 91: Line with id journal_1_2_d86d6b2e appears twice. The other line is game/scripts/chapters/chapter_0.rpy:91
+
+File "game/scripts/chapters/journal_1.rpy", line 91: Line with id journal_1_2_237b9c80 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:91
+
+File "game/scripts/chapters/journal_1.rpy", line 91: Line with id journal_1_2_0b0424c2 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:91
+
+File "game/scripts/chapters/journal_1.rpy", line 99: Line with id journal_1_2_76b2fe88_1 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:99
+
+File "game/scripts/chapters/journal_1.rpy", line 105: Line with id journal_1_2_0d871ee6 appears twice. The other line is game/scripts/chapters/chapter_0.rpy:105
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Sun Apr 13 18:19:45 2025
+Mon Apr 14 04:55:18 2025
