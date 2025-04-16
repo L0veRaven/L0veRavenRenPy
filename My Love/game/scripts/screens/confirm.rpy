@@ -16,12 +16,10 @@ screen confirm(message, yes_action, no_action):
 
     add "gui/confirm.png"
 
-    add "gui/overlay/confirm.png"
-
     vbox:
         xalign .5
         yalign .5
-        spacing 45
+        spacing 75
 
         label _(message):
             style "confirm_prompt"
@@ -31,8 +29,28 @@ screen confirm(message, yes_action, no_action):
             xalign 0.5
             spacing 150
 
-            textbutton _("Yes") action yes_action
-            textbutton _("No") action no_action
+            fixed:
+                xsize 120
+                ysize 100
+
+                add Solid("#a1a1a1")
+
+                textbutton _("Yes"):
+                    xalign .5
+                    yalign .5
+                    action yes_action
+        
+            
+            fixed:
+                xsize 120
+                ysize 100
+
+                add Solid("#a1a1a1")
+
+                textbutton _("No"):
+                    xalign .5
+                    yalign .5
+                    action no_action
 
     ## Right-click and escape answer "no".
     key "game_menu" action no_action

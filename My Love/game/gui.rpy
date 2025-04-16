@@ -108,7 +108,7 @@ define gui.slot_spacing = 15
 define gui.frame_borders = Borders(6, 6, 6, 6)
 
 ## The frame that is used as part of the confirm screen.
-define gui.confirm_frame_borders = Borders(60, 60, 60, 60)
+define gui.confirm_frame_borders = Borders(6, 6, 6, 6)
 
 ## The frame that is used as part of the skip screen.
 define gui.skip_frame_borders = Borders(24, 8, 75, 8)
@@ -117,7 +117,7 @@ define gui.skip_frame_borders = Borders(24, 8, 75, 8)
 define gui.notify_frame_borders = Borders(24, 8, 60, 8)
 
 ## Should frame backgrounds be tiled?
-define gui.frame_tile = False
+define gui.frame_tile = True
 
 
 ## Bars, Scrollbars, and Sliders ###############################################

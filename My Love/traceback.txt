@@ -13,15 +13,13 @@ While running game code:
     screen title_screen_nav():
   File "game/scripts/gui/navigation_title.rpy", line 30, in execute
     fixed:
-  File "game/scripts/gui/navigation_title.rpy", line 94, in execute
+  File "game/scripts/gui/navigation_title.rpy", line 32, in execute
     hbox:
-  File "game/scripts/gui/navigation_title.rpy", line 99, in execute
-    if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-  File "game/scripts/gui/navigation_title.rpy", line 100, in execute
+  File "game/scripts/gui/navigation_title.rpy", line 66, in execute
     vbox:
-  File "game/scripts/gui/navigation_title.rpy", line 110, in execute
-    if ibHelp:
-  File "game/scripts/gui/navigation_title.rpy", line 111, in execute
+  File "game/scripts/gui/navigation_title.rpy", line 75, in execute
+    if ibCredits:
+  File "game/scripts/gui/navigation_title.rpy", line 76, in execute
     text tooltip:
 Exception: Cannot display None as text.
 
@@ -30,34 +28,34 @@ Exception: Cannot display None as text.
 Full traceback:
   File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
     python hide:
-  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 827, in execute
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 827, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1178, in py_exec_bytecode
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\python.py", line 1178, in py_exec_bytecode
     exec(bytecode, globals, locals)
   File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
     python hide:
   File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
     ui.interact()
-  File "D:\renpy-8.3.4-sdk\renpy\ui.py", line 301, in interact
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ui.py", line 301, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\renpy-8.3.4-sdk\renpy\display\core.py", line 2215, in interact
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\core.py", line 2215, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\renpy-8.3.4-sdk\renpy\display\core.py", line 2745, in interact_core
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\core.py", line 2745, in interact_core
     root_widget.visit_all(lambda d : d.per_interact())
-  File "D:\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\displayable.py", line 434, in visit_all
     d.visit_all(callback, seen)
-  File "D:\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\displayable.py", line 434, in visit_all
     d.visit_all(callback, seen)
-  File "D:\renpy-8.3.4-sdk\renpy\display\displayable.py", line 434, in visit_all
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\displayable.py", line 434, in visit_all
     d.visit_all(callback, seen)
   [Previous line repeated 1 more time]
-  File "D:\renpy-8.3.4-sdk\renpy\display\screen.py", line 480, in visit_all
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\screen.py", line 480, in visit_all
     callback(self)
-  File "D:\renpy-8.3.4-sdk\renpy\display\core.py", line 2745, in <lambda>
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\core.py", line 2745, in <lambda>
     root_widget.visit_all(lambda d : d.per_interact())
-  File "D:\renpy-8.3.4-sdk\renpy\display\screen.py", line 491, in per_interact
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\screen.py", line 491, in per_interact
     self.update()
-  File "D:\renpy-8.3.4-sdk\renpy\display\screen.py", line 697, in update
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\screen.py", line 697, in update
     self.screen.function(**self.scope)
   File "game/scripts/screens/title_mm.rpy", line 7, in execute
     screen main_menu():
@@ -71,21 +69,19 @@ Full traceback:
     screen title_screen_nav():
   File "game/scripts/gui/navigation_title.rpy", line 30, in execute
     fixed:
-  File "game/scripts/gui/navigation_title.rpy", line 94, in execute
+  File "game/scripts/gui/navigation_title.rpy", line 32, in execute
     hbox:
-  File "game/scripts/gui/navigation_title.rpy", line 99, in execute
-    if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-  File "game/scripts/gui/navigation_title.rpy", line 100, in execute
+  File "game/scripts/gui/navigation_title.rpy", line 66, in execute
     vbox:
-  File "game/scripts/gui/navigation_title.rpy", line 110, in execute
-    if ibHelp:
-  File "game/scripts/gui/navigation_title.rpy", line 111, in execute
+  File "game/scripts/gui/navigation_title.rpy", line 75, in execute
+    if ibCredits:
+  File "game/scripts/gui/navigation_title.rpy", line 76, in execute
     text tooltip:
-  File "D:\renpy-8.3.4-sdk\renpy\text\text.py", line 2038, in __init__
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\text\text.py", line 2038, in __init__
     raise Exception("Cannot display {0!r} as text.".format(i))
 Exception: Cannot display None as text.
 
-Windows-10-10.0.19045 AMD64
+Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 My Love 1.0
-Mon Apr 14 06:37:18 2025
+Tue Apr 15 17:14:48 2025

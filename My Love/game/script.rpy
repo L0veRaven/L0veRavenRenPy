@@ -75,4 +75,4 @@ label start:
 
     $ persistent.quick_menu_display = False
 
-    jump journal_1_1
+    jump chapter_0_journal_1_1

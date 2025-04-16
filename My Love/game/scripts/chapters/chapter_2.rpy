@@ -3,7 +3,7 @@ label chapter_2_part_1:
 
     scene bg_you_apartment_living_room with fade
 
-    you "Chapter 2"
+    alex "Chapter 2"
 
     stop music
 

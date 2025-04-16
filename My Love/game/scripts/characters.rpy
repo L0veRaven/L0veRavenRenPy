@@ -16,6 +16,6 @@ define tsukune = Character('Tsukune', color="#0c357d", what_color="#0c357d", who
 
 define witness = Character('Witness', color="#000000")
 
-define you = Character('You', color="#000000", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf")
+define alex = Character('Alex', color="#000000", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf")
 
-define journal = Character(None, kind=nvl, color="#000000", ctc="ctc_arrow", ctc_position="fixed", ctc_pause="ctc_arrow", ctc_timedpause="ctc_arrow")
+define alexJournal = Character(None, kind=nvl, color="#000000", ctc="ctc_arrow", ctc_position="fixed", ctc_pause="ctc_arrow", ctc_timedpause="ctc_arrow")

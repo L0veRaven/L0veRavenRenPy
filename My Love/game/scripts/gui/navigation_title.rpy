@@ -7,19 +7,29 @@ init python:
     ibClose = False
 
 transform fade_inout_2s:
-        pause 2
-        ease 1 alpha 0.0
-        pause 2
-        ease 1 alpha 1.0
-        repeat
+    alpha 1.0
+    pause 2
+    ease 1 alpha 0.0
+    pause 4
+    ease 1 alpha 1.0
+    repeat
 
 transform fade_inout_4s:
-        alpha 0.0
-        pause 2
-        ease 1 alpha 1.0
-        pause 2
-        ease 1 alpha 0.0
-        repeat
+    alpha 0.0
+    pause 2
+    ease 1 alpha 1.0
+    pause 2
+    ease 1 alpha 0.0
+    pause 2
+    repeat
+
+transform fade_inout_6s:
+    alpha 0.0
+    pause 4
+    ease 1 alpha 1.0
+    pause 2
+    ease 1 alpha 0.0
+    repeat
 
 ## Navigation ONLY for the Title Screen
 
@@ -128,14 +138,15 @@ screen title_screen_nav():
                             style "navigationTitleTextButton"
                             color '#000000'
 
-        text _("{font=you_font.ttf}My Love") at fade_inout_2s:
-            style "titleText"
+        fixed:
+            text _("{font=you_font.ttf}My Love") at fade_inout_2s:
+                style "titleText"
 
-        text _("{font=claudia_font.ttf}My Love") at fade_inout_4s:
-            style "titleText"
+            text _("{font=claudia_font.ttf}My Love") at fade_inout_4s:
+                style "titleText"
 
-        #text _("{font=tsukune_font.ttf}My Love"):
-            #style "titleText"
+            text _("{font=tsukune_font.ttf}My Love") at fade_inout_6s:
+                style "titleText"
         
 
 style navigationTitleTextButton:
