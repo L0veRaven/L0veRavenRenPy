@@ -22,42 +22,53 @@ screen navigation():
     hbox:
         style_prefix "navigation"
 
-        xpos gui.navigation_xpos
-        ypos gui.navigation_ypos
+        xalign 0.5
+        ypos 125
+        spacing 100
 
-        spacing gui.navigation_spacing
+        if not main_menu:
+            imagebutton:
+                auto "gui/button/hover_idle/save_%s.png"
+                focus_mask True
+                action ShowMenu("save")
 
-        textbutton _("History") action ShowMenu("history")
+        imagebutton:
+            auto "gui/button/hover_idle/small_load_%s.png"
+            focus_mask True
+            action ShowMenu("load")
 
-        textbutton _("Save") action ShowMenu("save")
-
-        textbutton _("Load") action ShowMenu("load")
-
-        textbutton _("Settings") action ShowMenu("preferences")
+        imagebutton:
+            auto "gui/button/hover_idle/small_settings_%s.png"
+            focus_mask True
+            action ShowMenu("preferences")
 
         if _in_replay:
-
             textbutton _("End Replay") action EndReplay(confirm=True)
 
         elif not main_menu:
             imagebutton:
-                auto "gui/button/hover_idle/home_%s.png"
+                auto "gui/button/hover_idle/small_home_%s.png"
                 focus_mask True
                 action MainMenu()
 
-
-        textbutton _("Credits") action ShowMenu("about")
+        imagebutton:
+            auto "gui/button/hover_idle/small_credits_%s.png"
+            focus_mask True
+            action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
-
-            ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            imagebutton:
+                auto "gui/button/hover_idle/small_help_%s.png"
+                focus_mask True
+                action ShowMenu("help")
 
         if renpy.variant("pc"):
-
             ## The quit button is banned on iOS and unnecessary on Android and
             ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            imagebutton:
+                auto "gui/button/hover_idle/small_close_%s.png"
+                focus_mask True
+                action Quit(confirm=not main_menu)
 
 style navigation_button is gui_button
 style navigation_button_text is gui_button_text

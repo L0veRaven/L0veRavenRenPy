@@ -1,38 +1,41 @@
-2025-04-15 18:36:14 UTC
+2025-04-25 06:37:08 UTC
 Windows-10-10.0.22631
 Ren'Py 8.3.4.24120703
 
-Early init took 0.33s
-Loading error handling took 0.10s
-Loading script took 7.29s
-Loading save slot metadata took 0.13s
+Early init took 0.38s
+Loading error handling took 0.09s
+Loading script took 14.97s
+Loading save slot metadata took 0.09s
 Loading persistent took 0.00s
 Set script version to: None (alternate path)
- - Init at launcher/game/download.rpy:22 took 0.62731 s.
-Running init code took 1.87s
-Loading analysis data took 0.10s
+ - Init at launcher/game/options.rpy:31 took 0.44191 s.
+ - Init at launcher/game/distribute.rpy:29 took 0.26496 s.
+ - Init at launcher/game/download.rpy:22 took 3.24761 s.
+ - Init at launcher/game/web.rpy:26 took 0.25213 s.
+Running init code took 5.67s
+Loading analysis data took 0.15s
 Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.06s
+Reloading save slot metadata took 0.08s
 Index archives took 0.00s
 Dump and make backups took 0.00s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.14s
+Initial gc took 0.16s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.02s
+Creating interface object took 0.04s
 Cleaning stores took 0.00s
-Init translation took 0.10s
+Init translation took 0.11s
 Build styles took 0.01s
-Load screen analysis took 0.15s
+Load screen analysis took 0.17s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.44s
+Prepare screens took 0.59s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
-Interface start took 0.20s
+Interface start took 0.21s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2736, 1824)
@@ -40,49 +43,7 @@ swap interval: 1 frames
 Windowed mode.
 Vendor: "b'Intel'"
 Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
-Display Info: None
-Screen sizes: virtual=(800, 600) physical=(1600, 1200) drawable=(1600, 1200)
-Maximum texture size: 4096x4096
-Resetting cache.
-Early init took 241.39s
-Loading error handling took 0.05s
-Loading script took 1.20s
-Loading save slot metadata took 0.02s
-Loading persistent took 0.00s
-Set script version to: None (alternate path)
-Running init code took 0.37s
-Loading analysis data took 0.03s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.02s
-Index archives took 0.00s
-Dump and make backups took 0.00s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.11s
-DPI scale factor: 2.000000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.00s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.11s
-Analyze screens took 0.00s
-Save screen analysis took 0.00s
-Prepare screens took 0.23s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Interface start took 0.11s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 2736, 1824)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'Intel'"
-Renderer: b'Intel(R) Iris(R) Plus Graphics'
-Version: b'4.6.0 - Build 31.0.101.2125'
+Version: b'4.6.0 - Build 31.0.101.2130'
 Display Info: None
 Screen sizes: virtual=(800, 600) physical=(1600, 1200) drawable=(1600, 1200)
 Maximum texture size: 4096x4096

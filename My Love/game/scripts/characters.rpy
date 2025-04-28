@@ -10,12 +10,24 @@
 
     ## 'kind' usually ' = nvl' to have character function in nvl format
 
+## Speaking Characters
+
 define claudia = Character('Claudia', color="#884625", what_color="#884625", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf")
+
+define claudiaUnknown = Character('???', color="#884625", what_color="#884625", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf")
 
 define tsukune = Character('Tsukune', color="#0c357d", what_color="#0c357d", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf")
 
-define witness = Character('Witness', color="#000000")
+define tsukuneUnknown = Character('???', color="#0c357d", what_color="#0c357d", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf")
 
 define alex = Character('Alex', color="#000000", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf")
 
-define alexJournal = Character(None, kind=nvl, color="#000000", ctc="ctc_arrow", ctc_position="fixed", ctc_pause="ctc_arrow", ctc_timedpause="ctc_arrow")
+define witness = Character('Witness', color="#7a2d7d")
+
+## Journal Characters
+
+define alexJournal = Character(None, kind=nvl, color="#000000", what_color="#000000", what_font="fonts/you_font.ttf")
+
+define claudiaJournal = Character(None, kind=nvl, color="#884625", what_color="#884625", what_font="fonts/claudia_font.ttf")
+
+define tsukuneJournal = Character(None, kind=nvl, color="#0c357d", what_color="#0c357d", what_font="fonts/tsukune_font.ttf")

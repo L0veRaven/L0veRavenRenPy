@@ -1,87 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/screens/title_mm.rpy", line 7, in execute
-    screen main_menu():
-  File "game/scripts/screens/title_mm.rpy", line 7, in execute
-    screen main_menu():
-  File "game/scripts/screens/title_mm.rpy", line 20, in execute
-    use title_screen_nav
-  File "game/scripts/gui/navigation_title.rpy", line 26, in execute
-    screen title_screen_nav():
-  File "game/scripts/gui/navigation_title.rpy", line 26, in execute
-    screen title_screen_nav():
-  File "game/scripts/gui/navigation_title.rpy", line 30, in execute
-    fixed:
-  File "game/scripts/gui/navigation_title.rpy", line 32, in execute
-    hbox:
-  File "game/scripts/gui/navigation_title.rpy", line 66, in execute
-    vbox:
-  File "game/scripts/gui/navigation_title.rpy", line 75, in execute
-    if ibCredits:
-  File "game/scripts/gui/navigation_title.rpy", line 76, in execute
-    text tooltip:
-Exception: Cannot display None as text.
+  File "game/scripts/chapters/chapter_0.rpy", line 339, in script
+    if persistent.tsukuneDrive_areYouGay = True:
+SyntaxError: invalid syntax (game/scripts/chapters/chapter_0.rpy, line 339)
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 827, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-    ui.interact()
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ui.py", line 301, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\core.py", line 2215, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\core.py", line 2745, in interact_core
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\displayable.py", line 434, in visit_all
-    d.visit_all(callback, seen)
-  [Previous line repeated 1 more time]
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\screen.py", line 480, in visit_all
-    callback(self)
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\core.py", line 2745, in <lambda>
-    root_widget.visit_all(lambda d : d.per_interact())
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\screen.py", line 491, in per_interact
-    self.update()
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\display\screen.py", line 697, in update
-    self.screen.function(**self.scope)
-  File "game/scripts/screens/title_mm.rpy", line 7, in execute
-    screen main_menu():
-  File "game/scripts/screens/title_mm.rpy", line 7, in execute
-    screen main_menu():
-  File "game/scripts/screens/title_mm.rpy", line 20, in execute
-    use title_screen_nav
-  File "game/scripts/gui/navigation_title.rpy", line 26, in execute
-    screen title_screen_nav():
-  File "game/scripts/gui/navigation_title.rpy", line 26, in execute
-    screen title_screen_nav():
-  File "game/scripts/gui/navigation_title.rpy", line 30, in execute
-    fixed:
-  File "game/scripts/gui/navigation_title.rpy", line 32, in execute
-    hbox:
-  File "game/scripts/gui/navigation_title.rpy", line 66, in execute
-    vbox:
-  File "game/scripts/gui/navigation_title.rpy", line 75, in execute
-    if ibCredits:
-  File "game/scripts/gui/navigation_title.rpy", line 76, in execute
-    text tooltip:
-  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\text\text.py", line 2038, in __init__
-    raise Exception("Cannot display {0!r} as text.".format(i))
-Exception: Cannot display None as text.
+  File "game/scripts/chapters/chapter_0.rpy", line 339, in script
+    if persistent.tsukuneDrive_areYouGay = True:
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\ast.py", line 1849, in execute
+    if renpy.python.py_eval(condition):
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\python.py", line 1207, in py_eval
+    code = py_compile(code, 'eval')
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\python.py", line 1144, in py_compile
+    raise e
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\python.py", line 1081, in py_compile
+    raise orig_e
+  File "C:\Users\cryst\OneDrive\Desktop\L0veRavenRenPy\- RenPy\renpy\python.py", line 1073, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (game/scripts/chapters/chapter_0.rpy, line 339)
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 My Love 1.0
-Tue Apr 15 17:14:48 2025
+Thu Apr 24 17:34:06 2025

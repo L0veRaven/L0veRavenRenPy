@@ -151,9 +151,7 @@ style help_button_text:
 
 style help_label:
     xsize 375
-    right_padding 30
+    right_padding 10
 
 style help_label_text:
     size gui.text_size
-    xalign 1.0
-    textalign 1.0

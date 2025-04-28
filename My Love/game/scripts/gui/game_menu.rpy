@@ -66,10 +66,10 @@ screen game_menu(title, scroll=None, yinitial=0.0, spacing=0):
 
     use navigation
 
-    textbutton _("Return"):
-        style "return_button"
-
-        action Return()
+    #textbutton _("Return"):
+    #    style "return_button"
+    #
+    #    action Return()
 
     label title
 
@@ -95,13 +95,13 @@ style game_menu_outer_frame:
 
 ## Position of game menu content
 style game_menu_content_frame:
-    left_margin 725
-    top_margin 130
+    left_margin 300
+    top_margin 250
     bottom_margin 100
 
 ## Width of game menu content
 style game_menu_viewport:
-    xsize 600
+    xsize 1325
 
 style game_menu_vscrollbar:
     unscrollable gui.unscrollable
@@ -173,10 +173,10 @@ screen InGameMenu(scroll=True):
 
     use navigation
 
-    textbutton _("Return"):
-        style "return_button"
-
-        action Return()
+    #textbutton _("Return"):
+    #    style "return_button"
+    #
+    #    action Return()
 
 
 style InGameMenu_outer_frame is empty

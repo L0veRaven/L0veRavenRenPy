@@ -32,7 +32,7 @@ define build.name = "MyLove"
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 15
+default preferences.text_cps = 20
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0

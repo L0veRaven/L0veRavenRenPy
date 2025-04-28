@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/screens/confirm.rpy", line 35: 'width' is not a keyword argument or valid child of the fixed statement.
-    width 15
-         ^
+File "game/scripts/chapters/chapter_0.rpy", line 87: end of line expected.
+    scene bg_claudia_trash_1_zoom with Dissolve(1.0) with Pause(0.5)
+                                                     ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Tue Apr 15 20:55:55 2025
+Sun Apr 20 22:42:45 2025

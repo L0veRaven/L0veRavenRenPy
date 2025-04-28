@@ -1,103 +1,81 @@
 ## [START] Journal Entry: Alex - Intro
-label chapter_0_journal_1_1:
+label chapter_0_start:
+    scene black with Pause(2.0)
 
-    scene black with Dissolve(2.0)
+    claudiaUnknown "Thanks for helping me move everything in Toby, I appreciate it so much!"
 
-    "{i}I never knew that feeling love could be... so...{/i}"
+    play sound "sfx/sfx-door-lock2.mp3"
 
-    "{sc=5}{b}{i}I n t o x i c a t i n g . . .{/i}{/b}{/sc}"
+    pause 2.0
 
-    "{i}Maybe journaling will help ease my mind...{/i}"
+    $ persistent.quick_menu_display = True
+    show claudia neutral with Dissolve (1.0)
+
+    pause 1.0
+
+    alex """
+    {i}I never knew that feeling love could be... so...{/i}
+
+    {sc=3}{b}{i}I n t o x i c a t i n g . . .{/i}{/b}{/sc}
+    """
+
+    hide claudia neutral with Dissolve (1.0)
+
+    pause 1.0
+
+    alex "{i}Maybe journaling will help ease my mind...{/i}"
     
     play music "audio/music/scene5.ogg"
 
     scene bg_work_desk with Dissolve(2.0)
 
-    $ persistent.quickmenu_a = False
-    $ persistent.quickmenu_b = True
-    $ persistent.quick_menu_display = True
-
     alexJournal """
-    June 12th, 20XX\n{nw}
+    June 12th, 20XX{nw}
     
-    It's so hard to get any work done right now. It honestly bugs me that I can't focus 
-    on anything other than my neighbor, Claudia. She can't get out of my head, but I 
-    don't exactly want her to.{nw}
+    \nIt sucks being at work. It's not the work that's even challenging. My brain 
+    just won't shut up about Claudia, my neighbor. It's not that I don't want to 
+    acknowledge that she exists, but I have work to do!{nw}
 
-    I've been working on learning to identify my feelings. It's honestly very difficult 
-    for me to know what I feel because of how bad my depression is. It clouds my mind 
-    and makes it harder to navigate my life.{w=0.5}
+    \nMaybe I should think about this from a different angle...{nw}
 
-    {clear}
-    
-    Somehow, even though I've been struggling with this for years, Claudia managed to 
-    give me feelings so clear that I'd be a fool to not know what it is:{w=0.5}
-    
-    Love{w=0.5}
-    """
-    
-    nvl clear
-
-    ## [Choice] Game Difficulty: Hard or Easy mode
-    menu:
-        "Claudia moved in a week ago... (Hard)":
-            jump chapter_0_journal_1a
-
-        "I've known Claudia for a while already... (Easy)":
-            jump chapter_0_journal_1b
-
-## [Choice 1a] Game Mode: Hard
-label chapter_0_journal_1a:
-
-    alexJournal """
-    She hasn't lived here for long. I think it's only been about a week since she 
-    moved in, but even then, she is so mesmerizing!{w=0.5}
-
-    Every time I get a glimpse of her, my heart pounds in a way I've never felt 
-    before, especially so soon after meeting someone.{w=0.5}
+    \nI've been working on learning to identify my feelings, and that's really hard 
+    when you have depression. The way that my depression clouds my mind and emotions, 
+    it makes it so much harder to know what I'm feeling, or even how to go about my life.{w=0.5}
     """
 
     nvl clear
-    
-    jump chapter_0_journal_1_2
-    
-## [Choice 1b] Game Mode: Easy
-label chapter_0_journal_1b:
-    ## Claudia Love: Add 25 points
-    $ current_love_Claudia+=25
 
     alexJournal """
-    She's been living at my apartment complex for a while now. We're on good terms 
-    with each other, which makes talking to her a lot easier. Sure, we're more like 
-    acquaintances, but it's still enough to make me fall for her.{nw}
+    It's not just about my depression, though. Claudia genuinely takes up so much of my mind.{nw}
 
-    Every time I get a glimpse of her, my heart pounds in a way I've never felt 
-    before, especially so soon after meeting someone.{w=0.5}
+    \nOddly enough, even though I've been struggling with this for years, Claudia managed to 
+    give me feelings so clear that I'd be a fool to not know what it is:{nw}
+    
+    \n{sc=2}Love{/sc}
+    
+    \nClaudia hasn't lived here long. I think it's only been about a week since she 
+    moved in? I know many people would say \"It's too soon for you to fall in love!\" 
+    but I don't think they know how mesmerizing she is!{nw}
+    
+    \nEvery time I get a glimpse of her, my heart pounds in a way I've {sc=2}never{/sc} felt 
+    before...{w=0.5}
     """
 
     nvl clear
-    
-    jump chapter_0_journal_1_2
 
-## Journal Entry: Alex - Photos of Claudia
-label chapter_0_journal_1_2:
-
-    scene bg_claudia_trash_0 with Dissolve(1.0)
-
-    scene bg_claudia_trash_1 with Dissolve(1.0)
-
-    scene bg_claudia_trash_1_zoom with Dissolve(1.0)
+    scene bg_claudia_polaroids_desk with Dissolve(1.0)
+    with Pause(0.5)
 
     alexJournal """
     I've been taking pictures of her whenever I get the chance. It's nice to keep photos 
     of the things I care about. Besides, it's far less weird to look at photos of her 
     rather than staring at her in public.{nw}
 
-    I took a couple of photos while she was taking out trash today. She sure did seem 
+    \nI took a couple of photos while she was taking out trash today. She sure did seem 
     tired. It's probably because she was working late last night, poor thing.{nw}
 
-    It's more than her looks, though. Her mannerisms... The way she tucks her hair behind 
-    her ear... The way she ties up her hair... Even the way she talks is {i}magnetizing{/i}.{w=0.5}
+    \nIt's more than her looks, though. Her mannerisms... The way she tucks her hair behind 
+    her ear... The way she ties up her hair... Even the way she talks is {sc=2}magnetizing{/sc}.{w=0.5}
     """
 
     nvl clear
@@ -108,11 +86,11 @@ label chapter_0_journal_1_2:
     I want to know what her daily routine is like. Unfortunately, it's not that easy. 
     She lives directly next to me, so I can't really take photos when I'm so close.{nw}
 
-    It'd also be really weird if I just sat outside her apartment, waiting for her to leave 
+    \nIt'd also be really weird if I just sat outside her apartment, waiting for her to leave 
     or to see who comes by to visit. Sure, I can peek through the blinds or look through my 
     open window, but I'd probably look very suspicious doing that.{nw}
     
-    I'm ashamed to admit that I'm too nervous to approach her. It would be much easier to 
+    \nI'm ashamed to admit that I'm too nervous to approach her. It would be much easier to 
     talk to her rather than doing complicated bullshit to learn more about her.{w=0.5}
     """
 
@@ -124,16 +102,15 @@ label chapter_0_journal_1_2:
 
     alex "I swear... I need to be with her {sc=3}{b}s o . . . b a d . . .{/b}{/sc}"
 
-    jump chapter_0_1
+    jump label chapter_0_meetTsukune
     
-label chapter_0_1:
+## Office: Meeting Tsukune
+label chapter_0_meetTsukune:
     play music "audio/music/scene3.ogg"
 
     scene bg_office with Dissolve(2.0)
 
-    $ persistent.quick_menu_display = True
-
-    tsukune "Hey Alex!"
+    tsukuneUnknown "Hey Alex!"
 
     show tsukune neutral:
         xpos 1.0 #Start off-screen to the right
@@ -207,6 +184,10 @@ label chapter_0_1:
 
     ## TODO: play sound car-door-close
 
+    jump chapter_0_tsukuneDrive
+
+## START: Tsukune Drive
+label chapter_0_tsukuneDrive:
     scene bg_car_passenger with fade
 
     tsukune "Thanks for driving me, again."
@@ -219,11 +200,69 @@ label chapter_0_1:
 
     alex "Have they called yet about what's going on with it?"
 
+    tsukune "The shop called during my lunch break. I should be able to pick it up tomorrow, hopefully."
+
     scene bg_car_driver with dissolve
 
+    ## Tsukune opens up about therapy
+    tsukune "You know, I think I've noticed something about myself. I think I've been doing a lot better lately. I'm not even sure if people can even tell, but I can definitely feel it."
+
+    alex "What do you mean?"
+
+    tsukune """
+    Well... Geez it's kind of embarassing to admit it, but I've finally started seeing a therapist.
+
+    I know it's not for everybody, but I've been more level-headed. Normally it's super easy for me to get stuck into self-loathing loops in my head.
+
+    Now, I'm showing a lot more compassion to myself.
+    """
+
+    ## [Question 1] Tsukune Therapy
+    menu:
+        "That sounds like bullshit.":
+            jump chapter_0_tsukuneTherapy_a
+
+        "I'm glad it's working out for you!":
+            jump chapter_0_tsukuneTherapy_b
+
+        "Do you think I need therapy?":
+            jump chapter_0_tsukuneTherapy_c
+
+## [Answer 1a] Therapy is bullshit
+label chapter_0_tsukuneTherapy_a:
+    alex ""
+
+    tsukune ""
+
+    alex ""
+
+    jump chapter_0_tsukuneDrive_claudiaTalk
+
+## [Answer 1b] Happy for Tsukune
+label chapter_0_tsukuneTherapy_b:
+    alex ""
+    
+    tsukune ""
+    
+    alex ""
+
+    jump chapter_0_tsukuneDrive_claudiaTalk
+
+## [Answer 1c] Alex needs therapy
+label chapter_0_tsukuneTherapy_c:
+    alex ""
+    
+    tsukune ""
+    
+    alex ""
+
+    jump chapter_0_tsukuneDrive_claudiaTalk
+
+## START: Tsukune Drive - Claudia Talk
+label chapter_0_tsukuneDrive_claudiaTalk:
     tsukune "So, remember the girl I was telling you about earlier?"
 
-    alex "Yeah, the coffee shop girl."
+    alex "The coffee shop girl?"
 
     tsukune "Her name is Claudia. She's really nice."
 
@@ -252,8 +291,9 @@ label chapter_0_1:
     $ persistent.journal_unlock = True
     
     $ persistent.claudia_hobby_barista = True
-    $ renpy.notify("You wrote info about Claudia in your notebook.")
+    $ renpy.notify("You have information about Claudia.")
 
+    $ persistent.journal_unlock = False
     scene bg_claudia_selfie_behind with dissolve
 
     tsukune "She's kinda athletic from what I can tell."
@@ -274,33 +314,37 @@ label chapter_0_1:
 
     alex "Oh... Wow, she looks amazing."
 
-    $ persistent.journal_unlock = False
+    ## [Question 2] Interest In Claudia
+    menu:
+        alex "{i}Wait a second...{/i}"
 
-menu:
+        "Ask how interested Tsukune is in her.":
+            jump chapter_0_claudiaInterest_a
 
-    alex "{i}I can't let him talk to her...{/i}"
+        "I thought you were gay":
+            jump chapter_0_claudiaInterest_b
 
-    "Ask how interested Tsukune is in her.":
-        jump chapter_0_question_1a
+        "Crash the car.":
+            jump chapter_0_claudiaInterest_c
 
-    "Crash the car.":
-        jump chapter_0_question_1b
-
-label chapter_0_question_1a:
+## [Answer 2a] Gauging Interest
+label chapter_0_claudiaInterest_a:
 
     alex "So... how interested are you in her?"
 
-    tsukune "I mean, I'm interested, but I'm not exactly committed to anything huge like 
-    marriage already. I just met her, after all."
+    tsukune """
+    I mean, I'm interested, but I'm not exactly committed to anything huge like 
+    marriage already. I just met her, after all.
 
-    tsukune "I kinda go by the philosophy that if you haven't known someone for at least 
-    two weeks, you won't really know if there's actual interest there, you know?"
+    I kinda go by the philosophy that if you haven't known someone for at least 
+    two weeks, you won't really know if there's actual interest there, you know?
+    """
 
     alex "{i}That's good to know.{/i}"
 
     $ persistent.tsukune_claudia_interest = True
-    $ persistent.calendar_unlock = True
-    $ renpy.notify("You wrote info about tsukune in your notebook.")
+
+    $ renpy.notify("You have information about Tsukune.")
 
     alex "Oh, here's your place."
 
@@ -316,9 +360,21 @@ label chapter_0_question_1a:
 
     scene black with fade
 
-    jump chapter_0_2
+    jump chapter_0_tsukuneDrive_end
 
-label chapter_0_question_1b:
+## [Answer 2b] r u gey
+label chapter_0_claudiaInterest_b:
+    tsukune "I wonder why everyone thinks I'm gay? But no, I'm actually pan. Labels feel kinda weird anyways."
+
+    menu:
+        "Ask how interested Tsukune is in her.":
+            jump chapter_0_claudiaInterest_a
+
+        "Crash the car.":
+            jump chapter_0_claudiaInterest_c
+
+## [Answer 2c] Crash the car
+label chapter_0_claudiaInterest_c:
     stop music
 
     scene bg_car_driver with dissolve
@@ -335,7 +391,8 @@ label chapter_0_question_1b:
 
     return
 
-label chapter_0_2:
+## START: Drop off Tsukune
+label chapter_0_tsukuneDrive_end:
 
     scene bg_you_apartment_living_room with fade
 

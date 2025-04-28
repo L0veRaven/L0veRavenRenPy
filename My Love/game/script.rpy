@@ -5,15 +5,17 @@ init offset = -1
 ## Click To Continue
 ## Button that fades in and out to indicate the player needs to click to progress.
 
-image ctc_arrow:
-    "gui/button/right_arrow.png"
-    yalign 0.98 xalign 0.99
-    linear 0.3 alpha 1.0
-    pause 2.0
-    linear 0.3 alpha 0.0
-    pause 0.2
-    repeat
+#image ctc_arrow:
+#    "gui/button/right_arrow.png"
+#    yalign 0.98 xalign 0.99
+#    linear 0.3 alpha 1.0
+#    pause 2.0
+#    linear 0.3 alpha 0.0
+#    pause 0.2
+#    repeat
 
+
+define config.window_auto_hide = [ "scene", "menu", "pause", "hide" ]
 
 ## Quick Menu screen ###########################################################
 ##
@@ -66,6 +68,8 @@ init python:
 #######################################################################
 
 
+
+
 #######################################################################
 ## GAME START #########################################################
 ##
@@ -73,6 +77,8 @@ init python:
 label start:
     stop music fadeout 1.0
 
+    window auto
+    
     $ persistent.quick_menu_display = False
 
-    jump chapter_0_journal_1_1
+    jump chapter_0_start
