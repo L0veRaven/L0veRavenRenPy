@@ -2,21 +2,30 @@
 
 define fade = Fade(0.5, 2.0, 0.5)
 
-
 ## Persistent Variables
     #$ persistent.journal_unlock
-        ## Enables "journal" button in quick_menu
+        ## True: Enable "journal" button in quick_menu
+        ## False: Hide "journal" button in quick_menu
 
     #$ persistent.quick_menu_display
         ## True: Displays all quick_menu buttons
         ## False: Hides all quick_menu buttons
 
+## Journal Notes
+    ## Tsukune
+        #$ persistent.tsukuneNotes_cigaretteAddiction = True
+    ## Claudia
+        #$ persistent.claudiaNotes_athletic = True
+        #$ persistent.claudiaNotes_barista = True
 
+## Route Variables
+    #$ persistent.alexChoice_therapy
+        ## Alex chooses to go to therapy
 
 ## Relationship Bar
-    #$ Tsukune_Claudia_interest=True
+    #$ relationshipMeter=True
         ## Show love bars
-    #$ Tsukune_Claudia_interest=False
+    #$ relationshipMeter=False
         ## Hide love bars
 
     #$ current_love_Claudia+=10

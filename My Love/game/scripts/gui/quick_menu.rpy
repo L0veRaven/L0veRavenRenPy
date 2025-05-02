@@ -1,7 +1,7 @@
 ## Quick Menu screen ###########################################################
 ##
-## The quick menu is displayed in-game to provide easy access to the out-of-game
-## menus.
+## Main buttons when in-game
+## Rewind, Skip, Save, Settings
 
 screen quick_menu():
 

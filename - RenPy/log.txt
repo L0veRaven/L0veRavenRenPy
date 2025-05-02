@@ -1,37 +1,35 @@
-2025-04-25 06:37:08 UTC
+2025-04-29 20:51:33 UTC
 Windows-10-10.0.22631
 Ren'Py 8.3.4.24120703
 
-Early init took 0.38s
-Loading error handling took 0.09s
-Loading script took 14.97s
-Loading save slot metadata took 0.09s
+Early init took 0.36s
+Loading error handling took 0.16s
+Loading script took 18.00s
+Loading save slot metadata took 0.17s
 Loading persistent took 0.00s
 Set script version to: None (alternate path)
- - Init at launcher/game/options.rpy:31 took 0.44191 s.
- - Init at launcher/game/distribute.rpy:29 took 0.26496 s.
- - Init at launcher/game/download.rpy:22 took 3.24761 s.
- - Init at launcher/game/web.rpy:26 took 0.25213 s.
-Running init code took 5.67s
-Loading analysis data took 0.15s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 0.08s
+ - Init at launcher/game/options.rpy:31 took 0.26640 s.
+ - Init at launcher/game/download.rpy:22 took 2.19819 s.
+Running init code took 4.14s
+Loading analysis data took 0.13s
+Analyze and compile ATL took 0.02s
+Reloading save slot metadata took 0.06s
 Index archives took 0.00s
 Dump and make backups took 0.00s
 Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc took 0.16s
+Making clean stores took 0.01s
+Initial gc took 0.12s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.04s
+Creating interface object took 0.13s
 Cleaning stores took 0.00s
-Init translation took 0.11s
-Build styles took 0.01s
-Load screen analysis took 0.17s
+Init translation took 0.09s
+Build styles took 0.00s
+Load screen analysis took 0.20s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.59s
+Prepare screens took 0.33s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
@@ -47,3 +45,8 @@ Version: b'4.6.0 - Build 31.0.101.2130'
 Display Info: None
 Screen sizes: virtual=(800, 600) physical=(1600, 1200) drawable=(1600, 1200)
 Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Nefarius Software Solutions e.U. Controller (Xbox One For Windows)' 1
+controller: '030000005e040000ff02000000007200' 'Nefarius Software Solutions e.U. Controller (Xbox One For Windows)' 1
+controller: '030000005e040000ff02000000007200' 'Nefarius Software Solutions e.U. Controller (Xbox One For Windows)' 1
+controller: '030000005e040000ff02000000007200' 'Nefarius Software Solutions e.U. Controller (Xbox One For Windows)' 1
+controller: '030000005e040000ff02000000007200' 'Nefarius Software Solutions e.U. Controller (Xbox One For Windows)' 1

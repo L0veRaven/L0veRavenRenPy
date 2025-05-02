@@ -2,6 +2,379 @@
 
 init offset = -1
 
+
+###############################################################
+## Typewriting Effect
+###############################################################
+
+# Declare characters used by this game. The color argument colorizes the
+# name of the character.
+
+##pick between one of the two and add an # to the other to keep it
+
+## Journal SFX
+define alexJournalSounds = ['sfx/Key.ogg']
+
+## Dialogue SFX
+define tsukuneWritingSounds = ['sfx/swipe.ogg']
+define claudiaWritingSounds = ['sfx/paper-flip.ogg']
+define alexWritingSounds = ['sfx/Coin.ogg']
+
+##regular taps, medium intervals
+    #define sounds = ['audio/A1.ogg', 'audio/A2.ogg', 'audio/A3.ogg', 'audio/A4.ogg', 'audio/A5.ogg']
+
+##light taps, smaller intervals
+    #define sounds = ['audio/B1.ogg', 'audio/B2.ogg', 'audio/B3.ogg', 'audio/B4.ogg', 'audio/B5.ogg']
+
+
+##both combined
+    #define sounds = ['sfx/A1.ogg', 'audio/A2.ogg', 'audio/A3.ogg', 'audio/A4.ogg', 'audio/A5.ogg', 'audio/B1.ogg', 'audio/B2.ogg', 'audio/B3.ogg', 'audio/B4.ogg', 'audio/B5.ogg']
+
+init python:
+    def journalAlex(event, interact=True, **kwargs):
+        if not interact:
+            return
+
+        if event == "show": #if text's being written by character, spam typing sounds until the text ends
+            renpy.sound.play(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            renpy.sound.queue(renpy.random.choice(alexJournalSounds))
+            #dumb way to do it but it works, dunno if it causes memory leaks but it's almost 6AM :v
+
+        elif event == "slow_done" or event == "end":
+            renpy.sound.stop()
+
+    def writingTsukune(event, interact=True, **kwargs):
+        if not interact:
+            return
+
+        if event == "show": #if text's being written by character, spam typing sounds until the text ends
+            renpy.sound.play(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            renpy.sound.queue(renpy.random.choice(tsukuneWritingSounds))
+            #dumb way to do it but it works, dunno if it causes memory leaks but it's almost 6AM :v
+
+        elif event == "slow_done" or event == "end":
+            renpy.sound.stop()
+
+    def writingAlex(event, interact=True, **kwargs):
+        if not interact:
+            return
+
+        if event == "show": #if text's being written by character, spam typing sounds until the text ends
+            renpy.sound.play(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            renpy.sound.queue(renpy.random.choice(alexWritingSounds))
+            #dumb way to do it but it works, dunno if it causes memory leaks but it's almost 6AM :v
+
+        elif event == "slow_done" or event == "end":
+            renpy.sound.stop()
+
+    def writingClaudia(event, interact=True, **kwargs):
+        if not interact:
+            return
+
+        if event == "show": #if text's being written by character, spam typing sounds until the text ends
+            renpy.sound.play(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            renpy.sound.queue(renpy.random.choice(claudiaWritingSounds))
+            #dumb way to do it but it works, dunno if it causes memory leaks but it's almost 6AM :v
+
+        elif event == "slow_done" or event == "end":
+            renpy.sound.stop()
+
 ## Click To Continue
 ## Button that fades in and out to indicate the player needs to click to progress.
 
@@ -15,9 +388,11 @@ init offset = -1
 #    repeat
 
 
-define config.window_auto_hide = [ "scene", "menu", "pause", "hide" ]
+define config.window_auto_hide = [ "scene", "menu", "pause", "hide", "show" ]
 
-## Quick Menu screen ###########################################################
+#######################################################################
+## Quick Menu
+#######################################################################
 ##
 ## The quick menu is displayed in-game to provide easy access to the out-of-game
 ## menus.
@@ -29,18 +404,18 @@ init python:
     config.overlay_screens.append("quick_menu")
 
 #######################################################################
-## Love Meter #########################################################
-##
+## Love Meter
+#######################################################################
 ## Relationship levels in visual form
 
 init python:
     max_love=100
     current_love_Claudia=0
     current_love_Tsukune=25
-    Tsukune_Claudia_interest=False
+    relationshipMeter=False
    
     def stats_overlay():
-        if Tsukune_Claudia_interest:
+        if relationshipMeter:
             ui.frame()
             ui.vbox()
             ui.text("Claudia")
@@ -56,23 +431,19 @@ init python:
     ######################################
     ## In-Game Use
 
-    #$ Tsukune_Claudia_interest=True
+    #$ relationshipMeter=True
         ## Show love bars
-    #$ Tsukune_Claudia_interest=False
+    #$ relationshipMeter=False
         ## Hide love bars
 
     #$ current_love_Claudia+=10
         ## Increase Claudia's love points
     #$ current_love_Tsukune-=10
         ## Decrease Tsukune's love points
-#######################################################################
-
-
-
 
 #######################################################################
-## GAME START #########################################################
-##
+## GAME START
+#######################################################################
 
 label start:
     stop music fadeout 1.0
@@ -81,4 +452,4 @@ label start:
     
     $ persistent.quick_menu_display = False
 
-    jump chapter_0_start
+    jump prologue

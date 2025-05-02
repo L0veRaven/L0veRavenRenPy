@@ -12,22 +12,18 @@
 
 ## Speaking Characters
 
-define claudia = Character('Claudia', color="#884625", what_color="#884625", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf")
+define claudia = Character('Claudia', color="#884625", what_color="#884625", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf")#, callback=writingClaudia)
 
-define claudiaUnknown = Character('???', color="#884625", what_color="#884625", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf")
+define claudiaUnknown = Character('???', color="#884625", what_color="#884625", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf")#, callback=writingClaudia)
 
-define tsukune = Character('Tsukune', color="#0c357d", what_color="#0c357d", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf")
+define tsukune = Character('Tsukune', color="#0c357d", what_color="#0c357d", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf")#, callback=writingTsukune)
 
-define tsukuneUnknown = Character('???', color="#0c357d", what_color="#0c357d", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf")
+define tsukuneUnknown = Character('???', color="#0c357d", what_color="#0c357d", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf")#, callback=writingTsukune)
 
-define alex = Character('Alex', color="#000000", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf")
+define alex = Character('Alex', color="#000000", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf")#, callback=writingAlex)
 
 define witness = Character('Witness', color="#7a2d7d")
 
 ## Journal Characters
 
-define alexJournal = Character(None, kind=nvl, color="#000000", what_color="#000000", what_font="fonts/you_font.ttf")
-
-define claudiaJournal = Character(None, kind=nvl, color="#884625", what_color="#884625", what_font="fonts/claudia_font.ttf")
-
-define tsukuneJournal = Character(None, kind=nvl, color="#0c357d", what_color="#0c357d", what_font="fonts/tsukune_font.ttf")
+define alexJournal = Character(None, kind=nvl, color="#000000", what_color="#000000", what_font="fonts/you_font.ttf")#, callback=journalAlex)
