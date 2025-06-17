@@ -631,4 +631,4 @@ label wip_end:
 
     alex "Well then... I guess that's all I'm gonna learn for now. Actually, I need to check my notes!"
 
-    jump wip_part_1
+    return
