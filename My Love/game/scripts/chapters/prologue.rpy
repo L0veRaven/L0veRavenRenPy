@@ -1,4 +1,4 @@
-label prologue:
+label prologue_start:
     #########################################
     ## Meeting Claudia
     #########################################
@@ -33,9 +33,7 @@ label prologue:
 
     alex "Really? Damn, that unit's been empty for a solid year."
 
-    claudiaUnknown "Sounds like I'll be the one to change things up here!"
-
-    claudiaUnknown "You've lived here for a while?"
+    claudiaUnknown "Sounds like I'll be the one to change things up here! You've lived here for a while?"
 
     alex "Yeah, I've been here for about three years."
 
@@ -49,9 +47,7 @@ label prologue:
 
     alex "I'm Alex! It's nice to have someone new around here."
 
-    claudia "I bet!"
-
-    claudia "Anyways, I'd better start unpacking. I'll see you around."
+    claudia "I bet! Anyways, I'd better start unpacking. I'll see you around."
 
     hide claudia_neutral
     alex "See you later!"
@@ -64,8 +60,8 @@ label prologue:
     pause 1.0
 
     alex "... See you later?"
-    alex "Well, she {i}{b}is{/i}{/b} my neighbor."
-    alex "She seems really nice too... And beautiful."
+    alex "It was nice of her to think of me like that"
+    alex "Well, she {i}{b}is{/i}{/b} my neighbor... but she seems really nice and beautiful."
     alex "I wonder..."
 
     #play sound "sfx/wristwatch_alarm.mp3"
@@ -140,7 +136,7 @@ label prologue_meetTsukune:
 
     tsukune "They're waiting on the replacement AC compressor to get delivered. Gotta love having an older car and waiting longer for the parts for the come in."
 
-    alex "I don't have a problem with driving you home until the car's repaired."
+    alex "You know, I don't have a problem with driving you home until the car's repaired."
 
     tsukune "Really? That's awesome, I appreciate it! It's honestly kind of embarassing to ask other people to help me out."
 
@@ -175,200 +171,27 @@ label prologue_tsukuneDrive:
     alex "O-oh, it's just- You know how sometimes people throw up in taxis because someone get super drunk?"
     alex "Well, I don't drive anyone around, so this car is cleaner than clean!"
 
-    #show tsukune_laugh
+    #show tsukune laugh
     tsukune "Oh, that makes sense! You're totally right, it'd suck to sit around vomit stains."
 
     alex "See, you get me! This is why you're cool."
-    
 
+    menu:
+        "What should I talk about?"
 
+        "Check in with Tsukune":
+            jump drive_conversation_tsukuneTherapy
 
+        "Talk about your new neighbor":
+            jump drive_conversation_claudiaMoveIn
 
+label drive_conversation_tsukuneTherapy:
+    $ lovePoints_Tsukune+=20 #Increase Tsukune love points by 20
 
+    alex "So Tsukune, Imma be real for a second. How are you doing lately? Like, how are you actually doing?"
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-label wip:
-    scene black with fade
-
-    alexJournal """
-    June 12th{nw}
-    
-    \nIt sucks being at work. It's not the work that's even challenging. My brain just won't shut up about Claudia, my neighbor. It's not that I don't want to acknowledge that she exists, but I have work to do!{nw}
-
-    \nMaybe I should think about this from a different angle...{nw}
-
-    \nI've been working on learning to identify my feelings, and that's really hard when you have depression. The way that my depression clouds my mind and emotions, it makes it so much harder to know what I'm feeling, or even how to go about my life.{w=0.5}
-    """
-    play sound "sfx/paper-flip.ogg"
-    nvl clear
-
-    alexJournal """
-    It's not just about my depression, though. Claudia genuinely takes up so much of my mind.{nw}
-
-    \nOddly enough, even though I've been struggling with this for years, Claudia managed to give me feelings so clear that I'd be a fool to not know what it is:{nw}
-    
-    \n{sc=2}Love{/sc}
-    
-    \nClaudia hasn't lived here long. I think it's only been about a week since she moved in? I know many people would say \"It's too soon for you to fall in love!\" but I don't think they know how mesmerizing she is!{nw}
-    
-    \nEvery time I get a glimpse of her, my heart pounds in a way I've {sc=2}never{/sc} felt before...{w=0.5}
-    """
-
-    play sound "sfx/paper-flip.ogg"
-    nvl clear
-
-    scene bg_claudia_polaroids_desk with Dissolve(1.0)
-    with Pause(0.5)
-
-    alexJournal """
-    I've been taking pictures of her whenever I get the chance. It's nice to keep photos of the things I care about. Besides, it's far less weird to look at photos of her rather than staring at her in public.{nw}
-
-    \nI took a couple of photos while she was taking out trash today. She sure did seem tired. It's probably because she was working late last night, poor thing.{nw}
-
-    \nIt's more than her looks, though. Her mannerisms... The way she tucks her hair behind her ear... The way she ties up her hair... Even the way she talks is {sc=2}magnetizing{/sc}.{w=0.5}
-    """
-
-    play sound "sfx/paper-flip.ogg"
-    nvl clear
-
-    scene bg_claudia_apartment_curtains_closed with Dissolve(2.0)
-
-    alexJournal """
-    I want to know what her daily routine is like. Unfortunately, it's not that easy. She lives directly next to me, so I can't really take photos when I'm so close.{nw}
-
-    \nIt'd also be really weird if I just sat outside her apartment, waiting for her to leave or to see who comes by to visit. Sure, I can peek through the blinds or look through my open window, but I'd probably look very suspicious doing that.{nw}
-    
-    \nI'm ashamed to admit that I'm too nervous to approach her. It would be much easier to talk to her rather than doing complicated bullshit to learn more about her.{w=0.5}
-    """
-
-    play sound "sfx/paper-flip.ogg"
-    nvl clear
-
-    scene black with Dissolve(2.0)
-    
-    stop music
-
-    alex "I swear... I need to be with her {sc=3}{b}s o . . . b a d . . .{/b}{/sc}"
-
-    jump wip_meetTsukune
-    
-## Office: Meeting Tsukune
-label wip_meetTsukune:
-    play music "audio/music/scene3.ogg"
-
-    scene bg_office with Dissolve(2.0)
-
-    voice "audio/voice-lines/tsukune-1.mp3"
-    
-    tsukuneUnknown "Hey Alex!"
-
-    show tsukune neutral:
-        xpos 1.0 #Start off-screen to the right
-        ease 0.75 xpos 0.0 ypos 0.0 #Ease -> center to Y axis
-        ease 0.5 ypos 0.05 #Ease -> slight dip down
-        ease 1.0 ypos 0.0 #Ease -> slight bounce back up
-
-    tsukune "What're you working on there?"
-
-    alex "O-oh, nothing much. I'm just... journaling a little bit." with hpunch
-
-    show tsukune neutral:
-        ease 0.5 ypos 0.05 #Ease -> slight dip down
-        ease 1.0 ypos 0.0 #Ease -> slight bounce back up
-        
-    tsukune "\*chuckles\* I mean, what else are you gonna do during downtime?"
-
-    show tsukune neutral:
-        ease 1.0 xpos 0.15 #Slide to the right
-
-    tsukune "Now that I think about it, I need to check in with Ash about the spreadsheet xe was supposed to send in..."
-
-    alex "Right..."
-
-    show tsukune neutral:
-        ease 0.5 xpos 0.0 #Slide to center
-
-    tsukune "Oh, when we get off work, I wanna tell you about someone I met."
-
-    alex "Someone you met?"
-
-    show tsukune neutral:
-        ease 0.5 ypos 0.05 #Ease -> slight dip down
-        ease 1.0 ypos 0.0 #Ease -> slight bounce back up
-
-    tsukune "Yeah! See, I met a girl at this coffee shop the other day."
-
-    show tsukune blush:
-        ease 1.0 xpos 0.05 #Slide to the right
-
-    tsukune "To be honest, she's kinda cute. I was lucky enough to get her socials."
-
-    alex "Geez, I wish I was lucky enough to get that from my crush..."
-
-    show tsukune neutral:
-        ease 0.5 ypos 0.05 #Ease -> slight dip down
-        ease 1.0 ypos 0.0 #Ease -> slight bounce back up
-    
-    tsukune "Don't worry. I'm sure you'll get there soon enough."
-
-    show tsukune neutral:
-        ease 1.0 xpos 0.1 #Slide to the right
-    
-    tsukune "Anyways, I gotta get back to work. Talk more later!"
-
-    show tsukune neutral:
-        ease 1.0 xpos 1.0 #Slide off-screen to the right
-
-    hide tsukune with dissolve
-
-    alex "The closest I get with my crush is talking to her since she's my neighbor..."
-
-    alex "Oh well, back to work."
-
-    scene black with fade
-
-    ## TODO: play sound typing
-
-    alex "Oh, it's time to clock out."
-
-    ## TODO: play sound car-door-close
-
-    jump wip_tsukuneDrive
-
-## START: Tsukune Drive
-label wip_tsukuneDrive:
-    scene bg_car_passenger with fade
-
-    tsukune "Thanks for driving me, again."
-
-    alex "It's no problem. Besides, I drive past your place on the way home, so it's not like it takes any time away from me."
-
-    tsukune "I guess you're right. It just sucks to have my car in the shop for over a week. They said it'd only be a few days."
-
-    alex "Have they called yet about what's going on with it?"
-
-    tsukune "The shop called during my lunch break. I should be able to pick it up tomorrow, hopefully."
-
-    scene bg_car_driver with dissolve
-
-    ## Tsukune opens up about therapy
-    tsukune "You know, I think I've noticed something about myself. I think I've been doing a lot better lately. I'm not even sure if people can even tell, but I can definitely feel it."
+    tsukune "Oh... damn, it's been a while since someone checked in on me... That's nice of you."
+    tsukune "But I've really been doing well. Actually, I think I've been doing a {i}{b}lot{/b}{/i} better lately. I'm not even sure if people can even tell, but I can definitely feel it."
 
     alex "What do you mean?"
 
@@ -383,16 +206,17 @@ label wip_tsukuneDrive:
     ## [Question 1] Tsukune Therapy
     menu:
         "That sounds like bullshit.":
-            jump wip_tsukuneTherapy_a
+            jump drive_conversation_tsukuneTherapy_a
 
         "I'm glad it's working out for you!":
-            jump wip_tsukuneTherapy_b
+            jump drive_conversation_tsukuneTherapy_b
 
         "Do you think I need therapy?":
-            jump wip_tsukuneTherapy_c
+            jump drive_conversation_tsukuneTherapy_c
 
+#    jump chapter_1_start
 ## [Answer 1a] Therapy is bullshit
-label wip_tsukuneTherapy_a:
+label drive_conversation_tsukuneTherapy_a:
     alex "I don't see the point in therapy. I doesn't even {i}{b}really{/b}{/i} help you."
 
     tsukune "What do you mean?"
@@ -423,10 +247,10 @@ label wip_tsukuneTherapy_a:
 
     tsukune "It really is, for me at least."
 
-    jump wip_tsukuneDrive_claudiaTalk
+    jump prologue_conversation_ClaudiaApartments
 
 ## [Answer 1b] Happy for Tsukune
-label wip_tsukuneTherapy_b:
+label drive_conversation_tsukuneTherapy_b:
     alex "That sounds great! It can be pretty difficult for people to start therapy."
     
     tsukune "It really can! I only finally started therapy once I noticed I was going to relapse on smoking cigarettes again."
@@ -448,7 +272,7 @@ label wip_tsukuneTherapy_b:
     jump wip_tsukuneDrive_claudiaTalk
 
 ## [Answer 1c] Alex needs therapy
-label wip_tsukuneTherapy_c:
+label drive_conversation_tsukuneTherapy_c:
     alex "I know this is kind of weird to ask, but do you think {i}{b}I{/b}{/i} need therapy?"
     
     tsukune "Well, I don't think it's my place to say. Even though {i}{b}I{/b}{/i} think everyone would benefit from seeing a therapist, that doesn't mean it'll work for everyone."
@@ -613,9 +437,97 @@ label wip_claudiaInterest_c:
     scene black with fade
 
     return
+    
 
-## START: Drop off Tsukune
-label wip_tsukuneDrive_end:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+label wip:
+    scene black with fade
+
+    alexJournal """
+    June 12th{nw}
+    
+    \nIt sucks being at work. It's not the work that's even challenging. My brain just won't shut up about Claudia, my neighbor. It's not that I don't want to acknowledge that she exists, but I have work to do!{nw}
+
+    \nMaybe I should think about this from a different angle...{nw}
+
+    \nI've been working on learning to identify my feelings, and that's really hard when you have depression. The way that my depression clouds my mind and emotions, it makes it so much harder to know what I'm feeling, or even how to go about my life.{w=0.5}
+    """
+    play sound "sfx/paper-flip.ogg"
+    nvl clear
+
+    alexJournal """
+    It's not just about my depression, though. Claudia genuinely takes up so much of my mind.{nw}
+
+    \nOddly enough, even though I've been struggling with this for years, Claudia managed to give me feelings so clear that I'd be a fool to not know what it is:{nw}
+    
+    \n{sc=2}Love{/sc}
+    
+    \nClaudia hasn't lived here long. I think it's only been about a week since she moved in? I know many people would say \"It's too soon for you to fall in love!\" but I don't think they know how mesmerizing she is!{nw}
+    
+    \nEvery time I get a glimpse of her, my heart pounds in a way I've {sc=2}never{/sc} felt before...{w=0.5}
+    """
+
+    play sound "sfx/paper-flip.ogg"
+    nvl clear
+
+    scene bg_claudia_polaroids_desk with Dissolve(1.0)
+    with Pause(0.5)
+
+    alexJournal """
+    I've been taking pictures of her whenever I get the chance. It's nice to keep photos of the things I care about. Besides, it's far less weird to look at photos of her rather than staring at her in public.{nw}
+
+    \nI took a couple of photos while she was taking out trash today. She sure did seem tired. It's probably because she was working late last night, poor thing.{nw}
+
+    \nIt's more than her looks, though. Her mannerisms... The way she tucks her hair behind her ear... The way she ties up her hair... Even the way she talks is {sc=2}magnetizing{/sc}.{w=0.5}
+    """
+
+    play sound "sfx/paper-flip.ogg"
+    nvl clear
+
+    scene bg_claudia_apartment_curtains_closed with Dissolve(2.0)
+
+    alexJournal """
+    I want to know what her daily routine is like. Unfortunately, it's not that easy. She lives directly next to me, so I can't really take photos when I'm so close.{nw}
+
+    \nIt'd also be really weird if I just sat outside her apartment, waiting for her to leave or to see who comes by to visit. Sure, I can peek through the blinds or look through my open window, but I'd probably look very suspicious doing that.{nw}
+    
+    \nI'm ashamed to admit that I'm too nervous to approach her. It would be much easier to talk to her rather than doing complicated bullshit to learn more about her.{w=0.5}
+    """
+
+    play sound "sfx/paper-flip.ogg"
+    nvl clear
+
+    scene black with Dissolve(2.0)
+    
+    stop music
+
+    alex "I swear... I need to be with her {sc=3}{b}s o . . . b a d . . .{/b}{/sc}"
+
+    jump wip_meetTsukune
+
+## TODO: Talk with Claudia after getting home from work
+label prologue_conversation_ClaudiaApartments:
     scene bg_you_apartment_living_room with fade
 
     alex "Well then... I guess that's all I'm gonna learn for now. Actually, I need to check my notes!"
@@ -624,11 +536,14 @@ label wip_tsukuneDrive_end:
 
     stop music
 
-    jump wip_end
-
-label wip_end:
-    scene bg_you_apartment_living_room
-
-    alex "Well then... I guess that's all I'm gonna learn for now. Actually, I need to check my notes!"
-
-    return
+    jump chapter_1_start
+    
+#################################################################
+## Office: Meeting Tsukune
+#################################################################
+#    show tsukune neutral:
+#        xpos 1.0 #Start off-screen to the right
+#        ease 0.75 xpos 0.0 ypos 0.0 #Ease -> center to Y axis
+#        ease 0.5 ypos 0.05 #Ease -> slight dip down
+#        ease 1.0 ypos 0.0 #Ease -> slight bounce back up    
+#################################################################

@@ -28,7 +28,7 @@ define fade = Fade(0.5, 2.0, 0.5)
     #$ relationshipMeter=False
         ## Hide love bars
 
-    #$ current_love_Claudia+=10
+    #$ lovePoints_Claudia+=10
         ## Increase Claudia's love points
-    #$ current_love_Tsukune-=10
+    #$ lovePoints_Tsukune-=10
         ## Decrease Tsukune's love points

@@ -1,40 +1,39 @@
-2025-06-17 00:33:10 UTC
+2025-07-19 13:20:17 UTC
 Windows-10-10.0.22631
 Ren'Py 8.3.4.24120703
 
-Early init took 0.81s
-Loading error handling took 0.28s
-Loading script took 21.97s
-Loading save slot metadata took 0.13s
+Early init took 0.29s
+Loading error handling took 0.16s
+Loading script took 14.37s
+Loading save slot metadata took 0.12s
 Loading persistent took 0.00s
 Set script version to: None (alternate path)
- - Init at launcher/game/options.rpy:31 took 0.49052 s.
- - Init at launcher/game/distribute.rpy:29 took 0.25992 s.
- - Init at launcher/game/download.rpy:22 took 2.50458 s.
-Running init code took 4.92s
-Loading analysis data took 0.09s
-Analyze and compile ATL took 0.01s
-Reloading save slot metadata took 5.08s
+ - Init at launcher/game/options.rpy:31 took 0.29588 s.
+ - Init at launcher/game/download.rpy:22 took 1.75888 s.
+Running init code took 3.34s
+Loading analysis data took 0.04s
+Analyze and compile ATL took 0.00s
+Reloading save slot metadata took 0.02s
 Index archives took 0.00s
 Dump and make backups took 0.00s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc took 0.13s
+Initial gc took 0.07s
 DPI scale factor: 2.000000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: b"Couldn't load nvlib." (can be ignored)
-Creating interface object took 0.13s
+Creating interface object took 0.07s
 Cleaning stores took 0.00s
-Init translation took 0.11s
-Build styles took 0.01s
-Load screen analysis took 0.20s
-Analyze screens took 0.01s
+Init translation took 0.06s
+Build styles took 0.00s
+Load screen analysis took 0.07s
+Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.38s
+Prepare screens took 0.12s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
+Save bytecode. took 0.04s
 Running _start took 0.00s
-Interface start took 0.20s
+Interface start took 0.09s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 2736, 1824)
@@ -46,3 +45,5 @@ Version: b'4.6.0 - Build 31.0.101.2130'
 Display Info: None
 Screen sizes: virtual=(800, 600) physical=(1600, 1200) drawable=(1600, 1200)
 Maximum texture size: 4096x4096
+controller: '030000005e040000ff02000000007200' 'Nefarius Software Solutions e.U. Controller (Xbox One For Windows)' 1
+controller: '030000005e040000ff02000000007200' 'Nefarius Software Solutions e.U. Controller (Xbox One For Windows)' 1

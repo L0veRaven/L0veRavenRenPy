@@ -410,8 +410,8 @@ init python:
 
 init python:
     max_love=100
-    current_love_Claudia=0
-    current_love_Tsukune=25
+    lovePoints_Claudia=0
+    lovePoints_Tsukune=25
     relationshipMeter=False
    
     def stats_overlay():
@@ -419,10 +419,10 @@ init python:
             ui.frame()
             ui.vbox()
             ui.text("Claudia")
-            ui.bar(max_love,current_love_Claudia, xmaximum=150)
+            ui.bar(max_love,lovePoints_Claudia, xmaximum=150)
 
             ui.text("Tsukune")
-            ui.bar(max_love,current_love_tsukune, xmaximum=150)
+            ui.bar(max_love,lovePoints_tsukune, xmaximum=150)
 
             ui.close()
 
@@ -436,9 +436,9 @@ init python:
     #$ relationshipMeter=False
         ## Hide love bars
 
-    #$ current_love_Claudia+=10
+    #$ lovePoints_Claudia+=10
         ## Increase Claudia's love points
-    #$ current_love_Tsukune-=10
+    #$ lovePoints_Tsukune-=10
         ## Decrease Tsukune's love points
 
 #######################################################################
@@ -452,4 +452,4 @@ label start:
     
     $ persistent.quick_menu_display = False
 
-    jump prologue
+    jump prologue_start
