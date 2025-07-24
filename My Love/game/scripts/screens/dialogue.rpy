@@ -4,7 +4,7 @@
 ## time.
 
 ## The height of the textbox containing dialogue.
-define gui.textbox_height = 278
+define gui.textbox_height = 330
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.
@@ -41,7 +41,7 @@ define gui.dialogue_xpos = 275
 define gui.dialogue_ypos = 160
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 1350
+define gui.dialogue_width = 1360
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.

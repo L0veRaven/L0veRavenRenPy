@@ -412,28 +412,29 @@ init python:
     max_love=100
     lovePoints_Claudia=0
     lovePoints_Tsukune=25
-    relationshipMeter=False
+    loveMeter=False
    
     def stats_overlay():
-        if relationshipMeter:
+        if loveMeter:
             ui.frame()
             ui.vbox()
             ui.text("Claudia")
-            ui.bar(max_love,lovePoints_Claudia, xmaximum=150)
+            ui.bar(max_love,lovePoints_Claudia, xmaximum=1500)
 
             ui.text("Tsukune")
-            ui.bar(max_love,lovePoints_tsukune, xmaximum=150)
+            ui.bar(max_love,lovePoints_tsukune, xmaximum=1500)
 
             ui.close()
 
     config.overlay_functions.append(stats_overlay)
 
     ######################################
-    ## In-Game Use
+    ## In-Game Use Example
+    ######################################
 
-    #$ relationshipMeter=True
+    #$ loveMeter=True
         ## Show love bars
-    #$ relationshipMeter=False
+    #$ loveMeter=False
         ## Hide love bars
 
     #$ lovePoints_Claudia+=10
@@ -452,4 +453,4 @@ label start:
     
     $ persistent.quick_menu_display = False
 
-    jump prologue_start
+    jump chapter_0_start

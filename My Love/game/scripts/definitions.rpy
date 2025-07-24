@@ -23,9 +23,9 @@ define fade = Fade(0.5, 2.0, 0.5)
         ## Alex chooses to go to therapy
 
 ## Relationship Bar
-    #$ relationshipMeter=True
+    #$ loveMeter=True
         ## Show love bars
-    #$ relationshipMeter=False
+    #$ loveMeter=False
         ## Hide love bars
 
     #$ lovePoints_Claudia+=10
