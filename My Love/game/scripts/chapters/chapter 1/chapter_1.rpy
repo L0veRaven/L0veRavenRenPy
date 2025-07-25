@@ -1,4 +1,4 @@
-label chapter_1_start:
+label c1_start:
     play music "audio/music/triangle-elevator.mp3"
 
     scene bg_you_apartment_living_room with fade
@@ -23,7 +23,7 @@ label chapter_1_start:
             jump route_pandaPresentation
 
 label route_coffeePresentation:
-    jump chapter_2_start
+    jump c2_start
 
 label route_pandaPresentation:
-    jump chapter_2_start
+    jump c2_start

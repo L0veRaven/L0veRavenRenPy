@@ -1,4 +1,4 @@
-label chapter_0_tsukuneDrive:
+label c0_tsukuneDrive:
     play music "music/scene4.ogg"
     pause 1.0
     play sound "sfx/carDoor_close.mp3"
@@ -27,7 +27,7 @@ label chapter_0_tsukuneDrive:
         "What should I talk about?"
 
         "Check in with Tsukune":
-            jump chapter_0_tsukuneTherapy
+            jump c0_tsukuneTherapy
 
         "Talk about your new neighbor":
-            jump chapter_0_conversationClaudia
+            jump c0_conversationClaudia

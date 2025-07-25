@@ -1,4 +1,4 @@
-label chapter_0_journal2:
+label c0_journal2:
     play music "audio/music/scene5.ogg"
     scene bg_work_desk with Dissolve(2.0)
 
@@ -34,4 +34,4 @@ label chapter_0_journal2:
 
     alex "{i}Shit, someone's coming.{/i}"
 
-    jump chapter_0_meetTsukune
+    jump c0_meetTsukune

@@ -1,4 +1,4 @@
-label chapter_0_journal1:
+label c0_journal1:
     scene black
     pause 2.0
     $ persistent.quick_menu_display = True
@@ -28,4 +28,4 @@ label chapter_0_journal1:
     alex "{i}What's going on outside?{/i}"
     #play sound "sfx/footsteps1.ogg"
 
-    jump chapter_0_meetClaudia
+    jump c0_meetClaudia

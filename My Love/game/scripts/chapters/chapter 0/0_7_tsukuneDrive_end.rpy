@@ -1,4 +1,4 @@
-label chapter_0_tsukuneDrive_end:
+label c0_tsukuneDrive_end:
     alex "Oh, here's your place."
 
     scene bg_tsukune_apartment_parking_lot with Dissolve(1.0)
@@ -19,12 +19,12 @@ label chapter_0_tsukuneDrive_end:
         "Should I be a little dramatic?"
         
         "Be a little dramatic":
-            jump chapter_0_dramaticReaction
+            jump c0_dramaticReaction
 
         "Be normal and leave":
-            jump chapter_0_normalReaction
+            jump c0_normalReaction
 
-label chapter_0_dramaticReaction:
+label c0_dramaticReaction:
     stop music
     alex "Wait... I think I feel something..."
 
@@ -40,7 +40,7 @@ label chapter_0_dramaticReaction:
 
     alex "Later dude!"
 
-    jump chapter_0_alexApartment_livingRoom
+    jump c0_alexApartment_livingRoom
 
-label chapter_0_normalReaction:
-    jump chapter_0_alexApartment_livingRoom
+label c0_normalReaction:
+    jump c0_alexApartment_livingRoom

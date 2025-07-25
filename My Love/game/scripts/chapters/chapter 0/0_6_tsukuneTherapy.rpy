@@ -1,4 +1,4 @@
-label chapter_0_tsukuneTherapy:
+label c0_tsukuneTherapy:
     $ lovePoints_Tsukune+=20 #Increase Tsukune love points by 20
 
     alex "So Tsukune, I'm gonna be real for a second. How are you doing lately? Like, how are you {b}{i}actually{/b}{/i} doing?"
@@ -19,10 +19,10 @@ label chapter_0_tsukuneTherapy:
     ## [Question 1] Tsukune Therapy
     menu:
         "That sounds like bullshit.":
-            jump chapter_0_tsukuneTherapy_a
+            jump c0_tsukuneTherapy_a
 
         "I'm glad it's working out for you!":
-            jump chapter_0_tsukuneTherapy_b
+            jump c0_tsukuneTherapy_b
 
         "Do you think I need therapy?":
-            jump chapter_0_tsukuneTherapy_c
+            jump c0_tsukuneTherapy_c

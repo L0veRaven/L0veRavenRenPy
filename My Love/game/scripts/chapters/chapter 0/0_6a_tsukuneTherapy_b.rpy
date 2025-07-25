@@ -1,5 +1,5 @@
 ## [Answer 1b] Happy for Tsukune
-label chapter_0_tsukuneTherapy_b:
+label c0_tsukuneTherapy_b:
     $ lovePoints_Tsukune+=15
     alex "That sounds great! It can be pretty difficult for people to start therapy."
     
@@ -19,4 +19,4 @@ label chapter_0_tsukuneTherapy_b:
 
     tsukune "Exactly, it's why I really like working here."
 
-    jump chapter_0_tsukuneDrive_end
+    jump c0_tsukuneDrive_end

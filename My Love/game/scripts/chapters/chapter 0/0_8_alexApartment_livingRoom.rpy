@@ -1,4 +1,4 @@
-label chapter_0_alexApartment_livingRoom:
+label c0_alexApartment_livingRoom:
     scene bg_you_apartment_living_room with Dissolve(2.0)
 
     alex "Well then... I guess that's all I'm gonna learn for now. Actually, I need to check my notes!"
@@ -11,4 +11,4 @@ label chapter_0_alexApartment_livingRoom:
     ## In Apartment
     #########################
 
-    jump chapter_1_start
+    jump c1_start

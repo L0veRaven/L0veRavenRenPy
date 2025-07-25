@@ -1,4 +1,4 @@
-label chapter_0_meetTsukune:
+label c0_meetTsukune:
     play sound "sfx/paper-flip.ogg"
 
     play music "audio/music/scene3.ogg"
@@ -38,4 +38,4 @@ label chapter_0_meetTsukune:
     #play sound "sfx/watch-beep.mp3"
     alex "Oh, it's time to go!"
 
-    jump chapter_0_tsukuneDrive
+    jump c0_tsukuneDrive

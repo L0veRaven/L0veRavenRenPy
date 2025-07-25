@@ -2,7 +2,7 @@
 ## Meeting Claudia
 #########################################
 
-label chapter_0_meetClaudia:
+label c0_meetClaudia:
     play music "sfx/outdoors_day.mp3"
     scene bg_apartment_outside with Dissolve(3.0)
 
@@ -100,5 +100,5 @@ label chapter_0_meetClaudia:
     #########################################
     ## Journal
     #########################################
-    jump chapter_0_journal2
+    jump c0_journal2
     
