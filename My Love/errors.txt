@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/characters.rpy", line 25: invalid syntax
-    Character('Witness', color="#7a2d7d",, what_color="#ffffff" window_background="gui/textbox_witness.png")
-                                          ^
+File "game/scripts/chapters/chapter 0/chapter_0_tsukuneDrive_end.rpy", line 28: expected 'label_name' not found.
+    jump 
+        ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Thu Jul 24 13:47:11 2025
+Thu Jul 24 20:00:45 2025

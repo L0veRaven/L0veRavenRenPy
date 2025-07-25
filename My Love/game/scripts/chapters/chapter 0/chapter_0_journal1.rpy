@@ -1,24 +1,31 @@
-label prologue_journal1:
-    play music "audio/music/scene5.ogg"
-    scene bg_work_desk with Dissolve(2.0)
+label chapter_0_journal1:
+    scene black
+    pause 2.0
+    $ persistent.quick_menu_display = True
+    play sound "audio/sfx/paper-flip.ogg"
+    "June 12, 2023 7:32 AM"
 
-    alexJournal "June 12\n"
+    play sound "audio/sfx/paper-flip.ogg"
+    "It's me, Alex. This is day three of me journaling daily to see how good it benefits me... or something? It feels weird talking to a book. It's not like you're talking back to me."
 
-    alexJournal "Journaling still feels very strange to me. It's like I'm talking to the void... but there's nothing else I can do right now. I'm at work, so I can't really call anyone, not that there's anyone for me to talk to.\n"
+    play sound "audio/sfx/paper-flip.ogg"
+    "I guess I've noticed a bit of a difference since I've started journaling. It's not a super huge change, but it's nice to start learning how to identify the emotions I'm feeling."
 
-    alexJournal "There's a new person that moved into the vacant apartment next to me. Her name is Claudia and there's something that sticks out about her. I haven't been able to stop thinking about her, but that's not normal for me. At all.\n"
+    play sound "audio/sfx/paper-flip.ogg"
+    "I know it seems weird to not know how to describe my feelings, but I wasn't raised to really get in touch with my emotions."
+    
+    play sound "audio/sfx/paper-flip.ogg"
+    "In fact, feeling emotions was basically treated as a sin."
 
-    alexJournal "I don't really talk to people much except for Tsukune and Ash, but they're coworkers. Does that even count?"
-
-    play sound "sfx/paper-flip.ogg"
-    nvl clear
-
-    alexJournal "Maybe it's because Claudia is new, but I really want to keep talking to her. She's really pretty and seems nice...\n"
-
-    alexJournal "Wait... is this what having a crush feels like?"
+    pause 1.0
+    #play sound "muffled speech"
+    #play sound "noise"
+    play sound "sfx/carDoor_close.mp3"
+    pause 2.0
 
     stop music
-    #play sound "sfx/footsteps1.ogg"
-    nvl clear
 
-    alex "{i}Shit, someone's coming.{/i}"
+    alex "{i}What's going on outside?{/i}"
+    #play sound "sfx/footsteps1.ogg"
+
+    jump chapter_0_meetClaudia

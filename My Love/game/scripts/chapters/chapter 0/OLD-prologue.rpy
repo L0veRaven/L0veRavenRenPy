@@ -85,20 +85,6 @@ label wip_claudiaInterest_a:
 
     $ renpy.notify("You have information about Tsukune.")
 
-    alex "Oh, here's your place."
-
-    scene bg_tsukune_apartment_parking_lot with dissolve
-
-    show tsukune neutral
-
-    tsukune "Thanks again for dropping me off. I appreciate you."
-
-    alex "It's no problem. See you later."
-
-    hide tsukune with dissolve
-
-    scene black with fade
-
     jump wip_tsukuneDrive_end
 
 ## [Answer 2b] r u gey
@@ -206,15 +192,7 @@ label wip_claudiaInterest_c:
 
 ## TODO: Talk with Claudia after getting home from work
 label prologue_conversation_ClaudiaApartments:
-    scene bg_you_apartment_living_room with fade
-
-    alex "Well then... I guess that's all I'm gonna learn for now. Actually, I need to check my notes!"
     
-    scene bg_sidewalk
-
-    stop music
-
-    jump chapter_1_start
     
 #################################################################
 ## Office: Meeting Tsukune

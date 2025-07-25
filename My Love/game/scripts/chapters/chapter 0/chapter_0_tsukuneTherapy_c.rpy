@@ -1,5 +1,5 @@
 ## [Answer 1c] Alex needs therapy
-label drive_conversation_tsukuneTherapy_c:
+label chapter_0_tsukuneTherapy_c:
     alex "I know this is kind of weird to ask, but do you think {i}{b}I{/b}{/i} need therapy?"
     
     tsukune "Well, I don't think it's my place to say. Even though {i}{b}I{/b}{/i} think everyone would benefit from seeing a therapist, that doesn't mean it'll work for everyone."
@@ -31,4 +31,4 @@ label drive_conversation_tsukuneTherapy_c:
 
     tsukune "I think you should do therapy when you feel ready for it. It only works if you {i}{b}really{/b}{/i} want the help."
 
-    jump wip_tsukuneDrive_claudiaTalk
+    jump chapter_0_tsukuneDrive_end

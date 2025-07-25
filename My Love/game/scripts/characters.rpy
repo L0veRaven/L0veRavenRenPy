@@ -12,17 +12,17 @@
 
 ## Speaking Characters
 
-define claudia = Character('Claudia', color="#ffffff", what_color="#ffffff", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf", window_background='#ac5938a1')#, callback=writingClaudia)
+define claudia = Character('Claudia', color="#ffffff", what_color="#ffffff", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf")#, callback=writingClaudia)
 
-define claudiaUnknown = Character('???', color="#ffffff", what_color="#ffffff", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf", window_background='#ac5938a1')#, callback=writingClaudia)
+define claudiaUnknown = Character('???', color="#ffffff", what_color="#ffffff", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf")#, callback=writingClaudia)
 
-define tsukune = Character('Tsukune', color="#ffffff", what_color="#ffffff", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf", window_background='#f0f0f0a1')#, callback=writingTsukune)
+define tsukune = Character('Tsukune', color="#ffffff", what_color="#ffffff", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf")#, callback=writingTsukune)
 
-define tsukuneUnknown = Character('???', color="#ffffff", what_color="#ffffff", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf", window_background='#f0f0f0a1')#, callback=writingTsukune)
+define tsukuneUnknown = Character('???', color="#ffffff", what_color="#ffffff", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf")#, callback=writingTsukune)
 
-define alex = Character('Alex', color="#ffffff", what_color="#ffffff", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf", window_background='#8b8b8ba1')#, callback=writingAlex)
+define alex = Character('Alex', color="#ffffff", what_color="#ffffff", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf")#, callback=writingAlex)
 
-define witness = Character('Witness', color="#ffffff", what_color="#ffffff", window_background="gui/textbox_witness.png")
+define witness = Character('Witness', color="#ffffff", what_color="#ffffff")
 
 ## Journal Characters
 

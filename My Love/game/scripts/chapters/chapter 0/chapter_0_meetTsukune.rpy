@@ -8,7 +8,7 @@ label chapter_0_meetTsukune:
     show tsukune neutral
     tsukuneUnknown "Hey, Alex! How're you doing?"
 
-    alex "Hey Tsukune, I'm good! Nothing crazy's going on."
+    alex "Hey Tsukune, I'm good! Nothing crazy's going on." with hpunch
 
     tsukune "My car is still in the shop right now. It sucks! They said it'll be done by Wednesday though."
 
@@ -32,10 +32,10 @@ label chapter_0_meetTsukune:
 
     alex "I guess I should get back to work too."
 
-    scene black with fade
+    scene black with Dissolve(2.0)
     stop music
 
     #play sound "sfx/watch-beep.mp3"
     alex "Oh, it's time to go!"
 
-    jump prologue_tsukuneDrive
+    jump chapter_0_tsukuneDrive

@@ -2,23 +2,36 @@ label chapter_0_journal2:
     play music "audio/music/scene5.ogg"
     scene bg_work_desk with Dissolve(2.0)
 
-    alexJournal "June 12\n"
+    play sound "audio/sfx/paper-flip.ogg"
+    "June 12, 2023 8:07 AM"
 
-    alexJournal "Journaling still feels very strange to me. It's like I'm talking to the void... but there's nothing else I can do right now. I'm at work, so I can't really call anyone, not that there's anyone for me to talk to.\n"
+    play sound "audio/sfx/paper-flip.ogg"
+    "I've got something, or rather someONE, on my mind. Since I'm clocked in, I can't really talk to anyone about it."
 
-    alexJournal "There's a new person that moved into the vacant apartment next to me. Her name is Claudia and there's something that sticks out about her. I haven't been able to stop thinking about her, but that's not normal for me. At all.\n"
+    play sound "audio/sfx/paper-flip.ogg"
+    "It's not like I've know anyone that's free to talk about it right now..."
 
-    alexJournal "I don't really talk to people much except for Tsukune and Ash, but they're coworkers. Does that even count?"
+    play sound "audio/sfx/paper-flip.ogg"
+    "There's a new person that moved into the vacant apartment next to me. Her name is Claudia. There's something that sticks out about her, but I have no idea what it is!"
+    
+    play sound "audio/sfx/paper-flip.ogg"
+    "It's not normal for me to have someone so stuck on my mind, especially when I've barely met them."
+
+    play sound "audio/sfx/paper-flip.ogg"
+    "Maybe I can talk to Tsukune or Ash about it later... but they're just coworkers... and my neighbors. Plus, I bet they'd think it's weird how my mind is so preoccupied by Claudia already. I literally just met her today."
+
+    play sound "audio/sfx/paper-flip.ogg"
+    "I hardly know anything about her, so there's no reason for me to be thinking about her so much."
 
     play sound "sfx/paper-flip.ogg"
-    nvl clear
+    "It's probably because Claudia is new, but I really want to keep talking to her. She's seems nice..."
 
-    alexJournal "Maybe it's because Claudia is new, but I really want to keep talking to her. She's really pretty and seems nice...\n"
-
-    alexJournal "Wait... is this what having a crush feels like?"
+    play sound "audio/sfx/paper-flip.ogg"
+    alex "Wait... It can't be... Do I have... a cru-"
 
     stop music
     #play sound "sfx/footsteps1.ogg"
-    nvl clear
 
     alex "{i}Shit, someone's coming.{/i}"
+
+    jump chapter_0_meetTsukune

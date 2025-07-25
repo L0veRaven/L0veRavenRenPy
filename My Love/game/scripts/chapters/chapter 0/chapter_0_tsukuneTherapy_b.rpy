@@ -1,5 +1,6 @@
 ## [Answer 1b] Happy for Tsukune
-label drive_conversation_tsukuneTherapy_b:
+label chapter_0_tsukuneTherapy_b:
+    $ lovePoints_Tsukune+=15
     alex "That sounds great! It can be pretty difficult for people to start therapy."
     
     tsukune "It really can! I only finally started therapy once I noticed I was going to relapse on smoking cigarettes again."
@@ -18,4 +19,4 @@ label drive_conversation_tsukuneTherapy_b:
 
     tsukune "Exactly, it's why I really like working here."
 
-    jump wip_tsukuneDrive_claudiaTalk
+    jump chapter_0_tsukuneDrive_end

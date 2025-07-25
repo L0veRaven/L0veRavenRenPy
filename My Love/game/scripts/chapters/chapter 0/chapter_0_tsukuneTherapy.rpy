@@ -1,9 +1,9 @@
-label prologue_drive_conversation_tsukuneTherapy:
+label chapter_0_tsukuneTherapy:
     $ lovePoints_Tsukune+=20 #Increase Tsukune love points by 20
 
-    alex "So Tsukune, Imma be real for a second. How are you doing lately? Like, how are you actually doing?"
+    alex "So Tsukune, I'm gonna be real for a second. How are you doing lately? Like, how are you {b}{i}actually{/b}{/i} doing?"
 
-    tsukune "Oh... damn, it's been a while since someone checked in on me... That's nice of you."
+    tsukune "Oh... damn, it's been a while since someone checked in with me... That's nice of you."
     tsukune "But I've really been doing well. Actually, I think I've been doing a {i}{b}lot{/b}{/i} better lately. I'm not even sure if people can even tell, but I can definitely feel it."
 
     alex "What do you mean?"
@@ -19,10 +19,10 @@ label prologue_drive_conversation_tsukuneTherapy:
     ## [Question 1] Tsukune Therapy
     menu:
         "That sounds like bullshit.":
-            jump drive_conversation_tsukuneTherapy_a
+            jump chapter_0_tsukuneTherapy_a
 
         "I'm glad it's working out for you!":
-            jump drive_conversation_tsukuneTherapy_b
+            jump chapter_0_tsukuneTherapy_b
 
         "Do you think I need therapy?":
-            jump drive_conversation_tsukuneTherapy_c
+            jump chapter_0_tsukuneTherapy_c

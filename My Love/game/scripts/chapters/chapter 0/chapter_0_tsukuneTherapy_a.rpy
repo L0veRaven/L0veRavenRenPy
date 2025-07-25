@@ -1,5 +1,6 @@
 ## [Answer 1a] Therapy is bullshit
-label drive_conversation_tsukuneTherapy_a:
+label chapter_0_tsukuneTherapy_a:
+    $ lovePoints_Tsukune-=20
     alex "I don't see the point in therapy. I doesn't even {i}{b}really{/b}{/i} help you."
 
     tsukune "What do you mean?"
@@ -30,4 +31,4 @@ label drive_conversation_tsukuneTherapy_a:
 
     tsukune "It really is, for me at least."
 
-    jump chapter_0_conversation_ClaudiaApartments
+    jump chapter_0_tsukuneDrive_end

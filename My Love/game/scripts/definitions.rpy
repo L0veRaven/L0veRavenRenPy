@@ -1,6 +1,6 @@
 ## Transitions
 
-define fade = Fade(0.5, 2.0, 0.5)
+#define fade = Fade(0.5, 2.0, 0.5)
 
 ## Persistent Variables
     #$ persistent.journal_unlock

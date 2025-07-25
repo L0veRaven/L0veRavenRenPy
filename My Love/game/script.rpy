@@ -388,7 +388,7 @@ init python:
 #    repeat
 
 
-define config.window_auto_hide = [ "scene", "menu", "pause", "hide", "show" ]
+define config.window_auto_hide = [ "scene", "menu", "hide", "show" ]
 
 #######################################################################
 ## Quick Menu
