@@ -1,40 +1,67 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-After initialization, but before game start.
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "game/screens.rpy", line 138, in <module>
-    padding gui.textbox_borders.padding
-AttributeError: 'StoreModule' object has no attribute 'textbox_borders'
+While running game code:
+  File "renpy/common/00start.rpy", line 211, in script call
+    call _gl_test
+  File "renpy/common/00gltest.rpy", line 390, in script
+    $ __gl_test()
+  File "renpy/common/00start.rpy", line 211, in script call
+    call _gl_test
+  File "renpy/common/00gltest.rpy", line 390, in script
+    $ __gl_test()
+  File "renpy/common/00gltest.rpy", line 390, in <module>
+    $ __gl_test()
+  File "renpy/common/00gltest.rpy", line 319, in _m1_00gltest__gl_test
+    _gl_performance_test()
+  File "renpy/common/00gltest.rpy", line 342, in _gl_performance_test
+    ui.interact(suppress_underlay=True, suppress_overlay=True)
+OSError: Couldn't find file 'window_icon.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\renpy-8.3.4-sdk\renpy\bootstrap.py", line 359, in bootstrap
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\bootstrap.py", line 359, in bootstrap
     renpy.main.main()
-  File "D:\renpy-8.3.4-sdk\renpy\main.py", line 652, in main
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\main.py", line 652, in main
     run(restart)
-  File "D:\renpy-8.3.4-sdk\renpy\main.py", line 75, in run
-    renpy.translation.init_translation()
-  File "D:\renpy-8.3.4-sdk\renpy\translation\__init__.py", line 702, in init_translation
-    renpy.store._init_language() # type: ignore
-  File "renpy/common/00start.rpy", line 83, in _init_language
-    renpy.change_language(language)
-  File "D:\renpy-8.3.4-sdk\renpy\translation\__init__.py", line 796, in change_language
-    new_change_language(tl, language)
-  File "D:\renpy-8.3.4-sdk\renpy\translation\__init__.py", line 748, in new_change_language
-    i.apply()
-  File "D:\renpy-8.3.4-sdk\renpy\ast.py", line 2806, in apply
-    value = renpy.python.py_eval(expr)
-  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\renpy-8.3.4-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/screens.rpy", line 138, in <module>
-    padding gui.textbox_borders.padding
-AttributeError: 'StoreModule' object has no attribute 'textbox_borders'
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\main.py", line 148, in run
+    renpy.execution.run_context(True)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\execution.py", line 958, in run_context
+    context.run()
+  File "renpy/common/00start.rpy", line 211, in script call
+    call _gl_test
+  File "renpy/common/00gltest.rpy", line 390, in script
+    $ __gl_test()
+  File "lib/python3.9/future/utils/__init__.py", line 444, in raise_
+  File "renpy/common/00start.rpy", line 211, in script call
+    call _gl_test
+  File "renpy/common/00gltest.rpy", line 390, in script
+    $ __gl_test()
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00gltest.rpy", line 390, in <module>
+    $ __gl_test()
+  File "renpy/common/00gltest.rpy", line 319, in _m1_00gltest__gl_test
+    _gl_performance_test()
+  File "renpy/common/00gltest.rpy", line 342, in _gl_performance_test
+    ui.interact(suppress_underlay=True, suppress_overlay=True)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\ui.py", line 301, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\display\core.py", line 2172, in interact
+    self.start()
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\display\core.py", line 1018, in start
+    self.post_init()
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\display\core.py", line 1107, in post_init
+    self.set_icon()
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\display\core.py", line 1151, in set_icon
+    with renpy.loader.load(icon, directory="images") as f:
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\loader.py", line 686, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'window_icon.png'.
 
-Windows-10-10.0.19045 AMD64
+Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 My Love 1.0
-Tue Jul 29 12:48:04 2025
+Tue Jul 29 16:43:16 2025
