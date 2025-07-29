@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/scripts/chapters/chapter 0/chapter_0_tsukuneDrive_end.rpy", line 28: expected 'label_name' not found.
-    jump 
-        ^
+The label chapter_0_start is defined twice, at File "game/scripts/chapters/chapter 0/0_0_start.rpy", line 1:
+label chapter_0_start:
+and File "game/scripts/chapters/chapter 0/chapter_0_start.rpyc", line 1:
+
+
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Thu Jul 24 20:00:45 2025
+Tue Jul 29 11:12:23 2025

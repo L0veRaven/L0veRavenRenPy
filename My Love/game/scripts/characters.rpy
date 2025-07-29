@@ -12,15 +12,15 @@
 
 ## Speaking Characters
 
-define claudia = Character('Claudia', color="#ffffff", what_color="#ffffff", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf")#, callback=writingClaudia)
+define claudia = Character('Claudia', color="#ffffff", what_color="#ffffff", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf", window_background="gui/textbox.png")#, callback=writingClaudia)
 
-define claudiaUnknown = Character('???', color="#ffffff", what_color="#ffffff", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf")#, callback=writingClaudia)
+define claudiaUnknown = Character('???', color="#ffffff", what_color="#ffffff", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf", window_background="gui/textbox.png")#, callback=writingClaudia)
 
-define tsukune = Character('Tsukune', color="#ffffff", what_color="#ffffff", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf")#, callback=writingTsukune)
+define tsukune = Character('Tsukune', color="#ffffff", what_color="#ffffff", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf", window_background="gui/textbox.png")#, callback=writingTsukune)
 
-define tsukuneUnknown = Character('???', color="#ffffff", what_color="#ffffff", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf")#, callback=writingTsukune)
+define tsukuneUnknown = Character('???', color="#ffffff", what_color="#ffffff", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf", window_background="gui/textbox.png")#, callback=writingTsukune)
 
-define alex = Character('Alex', color="#ffffff", what_color="#ffffff", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf")#, callback=writingAlex)
+define alex = Character('Alex', color="#ffffff", what_color="#ffffff", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf", window_background="gui/textbox.png")#, callback=writingAlex)
 
 define witness = Character('Witness', color="#ffffff", what_color="#ffffff")
 
