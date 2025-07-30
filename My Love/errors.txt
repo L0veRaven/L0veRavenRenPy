@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/scripts/chapters/chapter 0/0_1_journal1.rpy", line 5: expected statement.
+    paise
+         ^
+
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Wed Jul 30 10:48:28 2025

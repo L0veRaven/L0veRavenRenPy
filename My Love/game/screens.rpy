@@ -113,7 +113,7 @@ screen say(who, what):
     ## If there's a side image, display it above the text. Do not display on the
     ## phone variant - there's no room.
     if not renpy.variant("small"):
-        add SideImage() xalign 0.0 yalign 1.0
+        add SideImage("characters/witnesses/witness a.png") xalign 0.0 yalign 1.0
 
 
 ## Make the namebox available for styling through the Character object.
@@ -298,15 +298,26 @@ screen navigation():
 
             textbutton _("Start") action Start()
 
-        else:
+            textbutton _("Load") action ShowMenu("load")
 
-            textbutton _("History") action ShowMenu("history")
+            textbutton _("Preferences") action ShowMenu("preferences")
+
+            textbutton _("About") action ShowMenu("about")
+
+            textbutton _("Credits") action ShowMenu("credits")
+
+
+        else:
 
             textbutton _("Save") action ShowMenu("save")
 
-        textbutton _("Load") action ShowMenu("load")
+            textbutton _("Load") action ShowMenu("load")
 
-        textbutton _("Preferences") action ShowMenu("preferences")
+            textbutton _("History") action ShowMenu("history")
+
+            textbutton _("Preferences") action ShowMenu("preferences")
+
+            textbutton _("Credits") action ShowMenu("credits")
 
         if _in_replay:
 
@@ -315,8 +326,6 @@ screen navigation():
         elif not main_menu:
 
             textbutton _("Main Menu") action MainMenu()
-
-        textbutton _("About") action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
@@ -533,6 +542,82 @@ style return_button:
     xpos gui.navigation_xpos
     yalign 1.0
     yoffset -45
+
+
+## About screen ################################################################
+##
+## This screen gives credit and copyright information about the game and Ren'Py.
+##
+## There's nothing special about this screen, and hence it also serves as an
+## example of how to make a custom screen.
+
+define gui.credits_audio = _p("""
+Title: {a=https://ko-fi.com/s/ab76dd25a9}{i}Blurred{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+
+Chapter 0: scene5 by KADOKAWA's {a=https://www.rpgmakerweb.com/products/rpg-maker-mz}RPG Maker MZ{/a}, {a=https://ko-fi.com/s/f0e8490a78}{i}Shiny{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+
+Chapter 1: {a=https://ko-fi.com/s/38443fd4f1}{i}Triangle Elevator{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+
+Chapter 2: {a=https://ko-fi.com/s/045759065c}{i}People Factory{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+
+Chapter 3: {a=https://ko-fi.com/s/9244c061a3}{i}Strawberry Blossoms{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+
+Chapter 4: {a=https://ko-fi.com/s/c58a72ebbf}{i}Karmic Blunder{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+
+Chapter 5: {a=https://ko-fi.com/s/894338d609}{i}Contact Glow{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+
+Chapter 6: {a=https://ko-fi.com/s/91c0372829}{i}Polar Float{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+
+Chapter 7: {a=https://ko-fi.com/s/1896a262c9}{i}Swim On, Little One{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+""")
+
+define gui.credits_plugins = _p("""
+{a=https://wattson.itch.io/}Wattson{/a}'s {a=https://wattson.itch.io/kinetic-text-tags}{i}Kinetic Text Tags{/i}{/a}
+""")
+
+define gui.credits_software = _p("""
+{a=https://procreate.com/}Procreate{/a}, {a=https://krita.org/en/}Krita{/a}, {a=https://code.visualstudio.com/}Visual Studio Code{/a}, {a=https://www.live2d.com/en/}Live2D Cubism{/a}, {a=https://www.audacityteam.org/}Audacity{/a{}, {a=https://www.renpy.org/}Ren'Py{/a}
+""")
+
+define gui.credits_hotlines = _p("""
+For anyone in need, please go to
+{a=https://nomoredirectory.org/}No More Directory{/a} 
+to find support hotlines in your region.
+""")
+
+screen credits():
+
+    tag menu
+
+    ## This use statement includes the game_menu screen inside this one. The
+    ## vbox child is then included inside the viewport inside the game_menu
+    ## screen.
+    use game_menu(_("Credits"), scroll="viewport"):
+
+        style_prefix "credits"
+
+        vbox:
+            label "[config.name!t] v[config.version!t]"
+            text _("Developed by {a=https://www.l0veraven.com}L0veRaven{/a}\n\n")
+            text _("{u}Audio Credits{/u}\n")
+            text "[gui.credits_audio!t]\n\n\n"
+            text _("{u}Plugin Credits{/u}\n")
+            text "[gui.credits_plugins!t]\n\n\n"
+            text _("{u}Software Used{/u}\n")
+            text "[gui.credits_software!t]\n\n\n"
+            text _("{u}Hotlines{/u}\n")
+            text "[gui.credits_hotlines!t]\n"
+
+            text _("[renpy.license!t]")
+
+
+
+style credits_label is gui_label
+style credits_label_text is gui_label_text
+style credits_text is gui_text
+
+style credits_label_text:
+    size gui.label_text_size
 
 
 ## About screen ################################################################

@@ -1,5 +1,6 @@
 label c0_tsukuneTherapy:
-    $ lovePoints_Tsukune+=20 #Increase Tsukune love points by 20
+    $ lovePoints_Tsukune+=20
+    ##Increase Tsukune love points by 20
 
     alex "So Tsukune, I'm gonna be real for a second. How are you doing lately? Like, how are you {b}{i}actually{/b}{/i} doing?"
 

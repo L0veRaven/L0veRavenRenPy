@@ -16,7 +16,6 @@ define config.sample_sound = "sfx_paperflip.mp3"
 ## Uncomment the following line to set an audio file that will be played while
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
-define config.main_menu_music = "blurred.mp3"
 define config.main_menu_music_fadein = 1.0 #Song fades in
 
 ####################################################################################
@@ -75,7 +74,31 @@ define witness = Character('Witness', color="#000000", what_color="#000000")
         ## Increase Claudia's love points
     #$ lovePoints_Tsukune-=10
         ## Decrease Tsukune's love points
+init python:
+    max_love=100
+    lovePoints_Claudia=0
+    lovePoints_Tsukune=25
+    loveMeter=False
+   
+    def stats_overlay():
+        if loveMeter:
+            ui.frame()
+            ui.vbox()
+            ui.text("Claudia")
+            ui.bar(max_love,lovePoints_Claudia, xmaximum=1500)
 
+            ui.text("Tsukune")
+            ui.bar(max_love,lovePoints_tsukune, xmaximum=1500)
+
+            ui.close()
+
+    config.overlay_functions.append(stats_overlay)
+
+
+define config.window_auto_hide = [ "scene", "menu", "hide", "show" ]
+
+init python:
+    config.overlay_screens.append("quick_menu")
 
 # The game starts here.
 

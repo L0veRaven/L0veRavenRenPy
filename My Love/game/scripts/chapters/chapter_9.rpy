@@ -1,10 +1,10 @@
-label chapter_9_part_1:
+label c9_start:
     play music "audio/music/scene4.ogg"
 
-    scene bg_you_apartment_living_room with fade
+    scene bg_alex_apartment_living_room with fade
 
     alex "Chapter 9"
 
     stop music
 
-    jump chapter_10_part_1
+    jump c10_start

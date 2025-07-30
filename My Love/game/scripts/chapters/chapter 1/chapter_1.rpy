@@ -1,7 +1,7 @@
 label c1_start:
     play music "audio/music/triangle-elevator.mp3"
 
-    scene bg_you_apartment_living_room with fade
+    scene bg_alex_apartment_living_room with fade
 
     tsukune "We're gonna do a presentation night!"
 

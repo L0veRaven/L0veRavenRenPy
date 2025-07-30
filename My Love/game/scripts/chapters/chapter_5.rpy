@@ -1,10 +1,10 @@
-label chapter_5_part_1:
+label c5_start:
     play music "audio/music/karmic-blunder.mp3"
 
-    scene bg_you_apartment_living_room with fade
+    scene bg_alex_apartment_living_room with fade
 
-    alex "Chapter 5"
+    alex "Chapter 4"
     
     stop music
 
-    jump chapter_6_part_1
+    jump c6_start

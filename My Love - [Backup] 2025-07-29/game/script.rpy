@@ -13,12 +13,12 @@ init offset = -1
 ##pick between one of the two and add an # to the other to keep it
 
 ## Journal SFX
-define alexJournalSounds = ['sfx/Key.ogg']
+#define alexJournalSounds = ['sfx/Key.ogg']
 
 ## Dialogue SFX
-define tsukuneWritingSounds = ['sfx/swipe.ogg']
-define claudiaWritingSounds = ['sfx/paper-flip.ogg']
-define alexWritingSounds = ['sfx/Coin.ogg']
+#define tsukuneWritingSounds = ['sfx/swipe.ogg']
+#define claudiaWritingSounds = ['sfx/paper-flip.ogg']
+#define alexWritingSounds = ['sfx/Coin.ogg']
 
 ##regular taps, medium intervals
     #define sounds = ['audio/A1.ogg', 'audio/A2.ogg', 'audio/A3.ogg', 'audio/A4.ogg', 'audio/A5.ogg']

@@ -63,7 +63,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "music/blurred.mp3"
 
 
 ## Transitions #################################################################
@@ -112,8 +112,8 @@ define config.window = "auto"
 
 ## Transitions used to show and hide the dialogue window
 
-define config.window_show_transition = Dissolve(.2)
-define config.window_hide_transition = Dissolve(.2)
+define config.window_show_transition = Dissolve(.5)
+define config.window_hide_transition = Dissolve(.5)
 
 
 ## Preference defaults #########################################################
@@ -121,13 +121,13 @@ define config.window_hide_transition = Dissolve(.2)
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 0
+default preferences.text_cps = 55
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
 ## to 30 being the valid range.
 
-default preferences.afm_time = 15
+default preferences.afm_time = 30
 
 
 ## Save directory ##############################################################
@@ -151,7 +151,7 @@ define config.save_directory = "MyLove-L0veRaven"
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "window_icon.png"
+define config.window_icon = "gui/window_icon.png"
 
 
 ## Build configuration #########################################################

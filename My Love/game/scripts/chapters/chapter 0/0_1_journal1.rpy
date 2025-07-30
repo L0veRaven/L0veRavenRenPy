@@ -1,6 +1,8 @@
 label c0_journal1:
-    scene black
+    scene black with Dissolve(2.0)
     pause 2.0
+    scene bg_alex_apartment_living_room with Dissolve(2.0)
+    pause (2.0)
     $ persistent.quick_menu_display = True
     play sound "audio/sfx/paper-flip.ogg"
     "June 12, 2023 7:32 AM"
