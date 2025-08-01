@@ -52,7 +52,7 @@ label c0_meetClaudia:
 
     alex "Oh, no! They have pest control come out here every week, so we don't have any pests like that around here."
 
-    claudiaUnknown "That's a relief! The place I had before the one I just moved from used to have a {i}{b}super{/b}{/i} bad infestation. You can thank the hoarder neighbors for that."
+    claudiaUnknown "That's a relief! The place I had before the one I just moved from used to have a {sc=2}{i}super bad{/i}{/sc} infestation. You can thank the hoarder neighbors for that."
 
     claudia "I'm Claudia by the way."
 

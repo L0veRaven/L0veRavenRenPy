@@ -5,19 +5,21 @@ label c0_journal1:
     pause (2.0)
     $ persistent.quick_menu_display = True
     play sound "audio/sfx/paper-flip.ogg"
-    "June 12, 2023 7:32 AM"
+    alexJournal "June 12, 2023 7:32 AM"
 
     play sound "audio/sfx/paper-flip.ogg"
-    "It's me, Alex. This is day three of me journaling daily to see how good it benefits me... or something? It feels weird talking to a book. It's not like you're talking back to me."
+    alexJournal "It's me, Alex. This is day three of me journaling daily to see how good it benefits me... or something? It feels weird talking to a book. It's not like you're talking back to me."
 
     play sound "audio/sfx/paper-flip.ogg"
-    "I guess I've noticed a bit of a difference since I've started journaling. It's not a super huge change, but it's nice to start learning how to identify the emotions I'm feeling."
+    alexJournal "I guess I've noticed a bit of a difference since I've started journaling. It's not a super huge change, but it's nice to start learning how to identify the emotions I'm feeling."
 
     play sound "audio/sfx/paper-flip.ogg"
-    "I know it seems weird to not know how to describe my feelings, but I wasn't raised to really get in touch with my emotions."
+    alexJournal "I know it seems weird to not know how to describe my feelings, but I wasn't raised to really get in touch with my emotions."
     
     play sound "audio/sfx/paper-flip.ogg"
-    "In fact, feeling emotions was basically treated as a sin."
+    alexJournal "In fact, feeling emotions was basically treated as a sin."
+
+    nvl clear
 
     pause 1.0
     #play sound "muffled speech"

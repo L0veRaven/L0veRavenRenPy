@@ -1,30 +1,44 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00start.rpy", line 193, in script
-    python:
-  File "renpy/common/00start.rpy", line 194, in <module>
-    renpy.execute_default_statement(True)
-  File "game/scripts/chapters/chapter 0/0_2_meetClaudia.rpy", line 12, in execute_default
-Exception: store.claudia_2 is being given a default a second time.
+  File "game/scripts/chapters/chapter 0/0_2_meetClaudia.rpy", line 55, in script
+    claudiaUnknown "That's a relief! The place I had before the one I just moved from used to have a {sc=2}{i}super bad{/b}{/i}{/sc} infestation. You can thank the hoarder neighbors for that."
+  File "game/kinetic_text_tags.rpy", line 596, in scare_tag
+    elif not my_style.add_tags(text):
+  File "game/kinetic_text_tags.rpy", line 79, in add_tags
+    self.tags.pop(tag)
+KeyError: 'b'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00start.rpy", line 193, in script
-    python:
-  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\ast.py", line 827, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\python.py", line 1178, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00start.rpy", line 194, in <module>
-    renpy.execute_default_statement(True)
-  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\exports\statementexports.py", line 372, in execute_default_statement
-    i.execute_default(start)
-  File "game/scripts/chapters/chapter 0/0_2_meetClaudia.rpy", line 12, in execute_default
-Exception: store.claudia_2 is being given a default a second time.
+  File "game/scripts/chapters/chapter 0/0_2_meetClaudia.rpy", line 55, in script
+    claudiaUnknown "That's a relief! The place I had before the one I just moved from used to have a {sc=2}{i}super bad{/b}{/i}{/sc} infestation. You can thank the hoarder neighbors for that."
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\ast.py", line 2579, in execute
+    Say.execute(self)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\ast.py", line 621, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\exports\sayexports.py", line 132, in say
+    who(what, *args, **kwargs)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\character.py", line 1455, in __call__
+    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\character.py", line 1106, in do_display
+    display_say(who,
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\character.py", line 785, in display_say
+    what_text.update()
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\text\text.py", line 2297, in update
+    tokens = self.apply_custom_tags(tokens)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\text\text.py", line 2889, in apply_custom_tags
+    new_contents = func(tag, value, contents)
+  File "game/kinetic_text_tags.rpy", line 596, in scare_tag
+    elif not my_style.add_tags(text):
+  File "game/kinetic_text_tags.rpy", line 79, in add_tags
+    self.tags.pop(tag)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\revertable.py", line 90, in do_mutation
+    return method(self, *args, **kwargs)
+KeyError: 'b'
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 My Love 1.0
-Thu Jul 31 23:32:33 2025
+Fri Aug  1 01:02:32 2025

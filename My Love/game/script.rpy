@@ -28,15 +28,17 @@ define config.main_menu_music_fadein = 1.0 #Song fades in
 # Organized by order of appearance.
 ########################################
 
-define alex = Character('Alex', color="#000000", what_color="#000000", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf", window_background="gui/textbox.png")#, callback=writingAlex)
+define alex = Character('Alex', color="#000000", what_color="#000000", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf")#, callback=writingAlex)
 
-define claudiaUnknown = Character('???', color="#000000", what_color="#000000", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf", window_background="gui/textbox.png")#, callback=writingClaudia)
+define alexJournal = Character(None, kind=nvl, color="#000000", what_color="#000000", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf")#, callback=writingAlex)
 
-define claudia = Character('Claudia', color="#000000", what_color="#000000", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf", window_background="gui/textbox.png")#, callback=writingClaudia)
+define claudiaUnknown = Character('???', color="#000000", what_color="#000000", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf")#, callback=writingClaudia)
 
-define tsukuneUnknown = Character('???', color="#000000", what_color="#000000", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf", window_background="gui/textbox.png")#, callback=writingTsukune)
+define claudia = Character('Claudia', color="#000000", what_color="#000000", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf")#, callback=writingClaudia)
 
-define tsukune = Character('Tsukune', color="#000000", what_color="#000000", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf", window_background="gui/textbox.png")#, callback=writingTsukune)
+define tsukuneUnknown = Character('???', color="#000000", what_color="#000000", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf")#, callback=writingTsukune)
+
+define tsukune = Character('Tsukune', color="#000000", what_color="#000000", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf")#, callback=writingTsukune)
 
 define witness = Character('Witness', color="#000000", what_color="#000000")
 
