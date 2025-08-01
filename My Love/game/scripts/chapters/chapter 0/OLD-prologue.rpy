@@ -137,7 +137,7 @@ label wip_claudiaInterest_c:
 #
 #    \nI've been working on learning to identify my feelings, and that's really hard when you have depression. The way that my depression clouds my mind and emotions, it makes it so much harder to know what I'm feeling, or even how to go about my life.{w=0.5}
 #    """
-#    play sound "sfx/paper-flip.ogg"
+#    play sound "sfx/scribble.mp3"
 #    nvl clear
 #
 #    alexJournal """
@@ -152,7 +152,7 @@ label wip_claudiaInterest_c:
 #    \nEvery time I get a glimpse of her, my heart pounds in a way I've {sc=2}never{/sc} felt before...{w=0.5}
 #    """
 #
-#    play sound "sfx/paper-flip.ogg"
+#    play sound "sfx/scribble.mp3"
 #    nvl clear
 #
 #    scene bg_claudia_polaroids_desk with Dissolve(1.0)
@@ -166,7 +166,7 @@ label wip_claudiaInterest_c:
 #    \nIt's more than her looks, though. Her mannerisms... The way she tucks her hair behind her ear... The way she ties up her hair... Even the way she talks is {sc=2}magnetizing{/sc}.{w=0.5}
 #    """
 #
-#    play sound "sfx/paper-flip.ogg"
+#    play sound "sfx/scribble.mp3"
 #    nvl clear
 #
 #    scene bg_claudia_apartment_curtains_closed with Dissolve(2.0)
@@ -179,7 +179,7 @@ label wip_claudiaInterest_c:
 #    \nI'm ashamed to admit that I'm too nervous to approach her. It would be much easier to talk to her rather than doing complicated bullshit to learn more about her.{w=0.5}
 #    """
 #
-#    play sound "sfx/paper-flip.ogg"
+#    play sound "sfx/scribble.mp3"
 #    nvl clear
 #
 #    scene black with Dissolve(2.0)

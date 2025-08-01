@@ -1,19 +1,19 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/scripts/chapters/chapter 0/0_2_meetClaudia.rpy", line 55, in script
-    claudiaUnknown "That's a relief! The place I had before the one I just moved from used to have a {sc=2}{i}super bad{/b}{/i}{/sc} infestation. You can thank the hoarder neighbors for that."
-  File "game/kinetic_text_tags.rpy", line 596, in scare_tag
-    elif not my_style.add_tags(text):
-  File "game/kinetic_text_tags.rpy", line 79, in add_tags
-    self.tags.pop(tag)
-KeyError: 'b'
+Compiling ATL code at game/script.rpy:40
+  File "game/scripts/chapters/chapter 0/0_1_journal1.rpy", line 11, in script
+    alexJournal "This is the third month of me journaling daily to see how good it benefits me.{w} I've slowly gotten over my weird feelings about writing in this as if I were talking to a person.{w} It makes sense why some people recommended that on those posts online. It's about feeling heard.{w}"
+  File "renpy/common/00nvl_mode.rpy", line 395, in do_display
+    renpy.display_say(
+  File "game/script.rpy", line 40, in <module>
+    pause
+NameError: name 'pa' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/scripts/chapters/chapter 0/0_2_meetClaudia.rpy", line 55, in script
-    claudiaUnknown "That's a relief! The place I had before the one I just moved from used to have a {sc=2}{i}super bad{/b}{/i}{/sc} infestation. You can thank the hoarder neighbors for that."
+  File "game/scripts/chapters/chapter 0/0_1_journal1.rpy", line 11, in script
+    alexJournal "This is the third month of me journaling daily to see how good it benefits me.{w} I've slowly gotten over my weird feelings about writing in this as if I were talking to a person.{w} It makes sense why some people recommended that on those posts online. It's about feeling heard.{w}"
   File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\ast.py", line 2579, in execute
     Say.execute(self)
   File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\ast.py", line 621, in execute
@@ -22,23 +22,37 @@ Full traceback:
     who(what, *args, **kwargs)
   File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\character.py", line 1455, in __call__
     self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\character.py", line 1106, in do_display
-    display_say(who,
-  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\character.py", line 785, in display_say
-    what_text.update()
-  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\text\text.py", line 2297, in update
-    tokens = self.apply_custom_tags(tokens)
-  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\text\text.py", line 2889, in apply_custom_tags
-    new_contents = func(tag, value, contents)
-  File "game/kinetic_text_tags.rpy", line 596, in scare_tag
-    elif not my_style.add_tags(text):
-  File "game/kinetic_text_tags.rpy", line 79, in add_tags
-    self.tags.pop(tag)
-  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\revertable.py", line 90, in do_mutation
-    return method(self, *args, **kwargs)
-KeyError: 'b'
+  File "renpy/common/00nvl_mode.rpy", line 395, in do_display
+    renpy.display_say(
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\character.py", line 682, in display_say
+    what_ctc = what_ctc._duplicate(None)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\display\image.py", line 459, in _duplicate
+    rv.find_target()
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\display\transform.py", line 1194, in _duplicate
+    rv.take_execution_state(self)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\atl.py", line 551, in take_execution_state
+    block = self.compile()
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\atl.py", line 723, in compile
+    block = self.atl.compile(self.context)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\atl.py", line 925, in compile
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\atl.py", line 925, in <listcomp>
+    statements = [ i.compile(ctx) for i in self.statements ]
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\atl.py", line 1232, in compile
+    child = ctx.eval(expr)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\atl.py", line 387, in eval
+    return renpy.python.py_eval(expr, locals=self.context)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\python.py", line 1209, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\python.py", line 1202, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 40, in <module>
+    pause
+NameError: name 'pa' is not defined
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 My Love 1.0
-Fri Aug  1 01:02:32 2025
+Fri Aug  1 15:33:09 2025

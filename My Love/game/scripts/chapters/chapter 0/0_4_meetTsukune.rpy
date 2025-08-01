@@ -1,5 +1,5 @@
 label c0_meetTsukune:
-    play sound "sfx/paper-flip.ogg"
+    play sound "sfx/scribble.mp3"
 
     play music "audio/music/scene3.ogg"
 
