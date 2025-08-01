@@ -1,10 +1,11 @@
 ﻿# The script of the game goes in this file.
 
-####################################################################################
+##############################
 # Audio
 # 
-# Declare and confiugre audio tracks used by this game.
-####################################################################################
+# Declare and confiugre audio
+# tracks used by this game.
+##############################
 
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
@@ -18,13 +19,14 @@ define config.sample_sound = "sfx_paperflip.mp3"
 ## game, until it is stopped or another file is played.
 define config.main_menu_music_fadein = 1.0 #Song fades in
 
-####################################################################################
+########################################
 # Character Config
 # 
 # Declare characters used by this game.
-# The color argument colorizes the name of the character.
+# The color argument colorizes the name
+# of the character.
 # Organized by order of appearance.
-####################################################################################
+########################################
 
 define alex = Character('Alex', color="#000000", what_color="#000000", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf", window_background="gui/textbox.png")#, callback=writingAlex)
 
@@ -38,11 +40,11 @@ define tsukune = Character('Tsukune', color="#000000", what_color="#000000", who
 
 define witness = Character('Witness', color="#000000", what_color="#000000")
 
-####################################################################################
+########################################
 # Variables
 # 
 # Relevant variables used by this game.
-####################################################################################
+########################################
 
 ## Persistent Data
     #$ persistent.journal_unlock
@@ -95,7 +97,7 @@ init python:
     config.overlay_functions.append(stats_overlay)
 
 
-define config.window_auto_hide = [ "scene", "menu", "hide", "show" ]
+define config.window_auto_hide = [ "scene", "menu", "hide", "show", "pause" ]
 
 init python:
     config.overlay_screens.append("quick_menu")

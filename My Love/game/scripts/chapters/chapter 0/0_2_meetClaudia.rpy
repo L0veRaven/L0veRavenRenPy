@@ -16,7 +16,6 @@ label c0_meetClaudia:
     show claudia_neutral:
         xpos 0.65
         ease 1.0 xpos 0.6
-
     claudiaUnknown "Alright, time to unpack all those boxes."
 
     play sound "sfx/door_lock.mp3"
@@ -25,12 +24,10 @@ label c0_meetClaudia:
     show alex_neutral:
         xpos -600
         ease 2.0 xpos 0.02
-
     alex "..."
-    
+
     show alex_neutral:
         ease 0.2 xpos -0.09
-
     alex "O-oh, hey there!"
 
     show claudia_neutral:
@@ -73,7 +70,7 @@ label c0_meetClaudia:
     scene bg_car_driver with Dissolve(1.0)
     pause 1.0
 
-    "{i}\"... See you later?\"{/i} That's really nice. I didn't think that I'd get along with someone new like that."
+    "... {i}\"See you later?\"{/i} That's really nice. I didn't think that I'd get along with someone new like that."
     "I felt pretty awkward when talking to her though. Claudia... right?"
     "It's good to know that she's interested in getting to know me more. I think it'd do me some good to make friends with someone new."
     

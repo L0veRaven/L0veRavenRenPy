@@ -2,9 +2,25 @@
 errors listed below, and try again.
 
 
-File "game/scripts/chapters/chapter 0/0_1_journal1.rpy", line 5: expected statement.
-    paise
-         ^
+File "game/scripts/chapters/chapter 0/0_1_journal1.rpy", line 8: expected expression
+    define journalAlex_1 = 
+                           ^
+
+File "game/scripts/chapters/chapter 0/0_1_journal1.rpy", line 9: expected expression
+    define journalAlex_2 = 
+                           ^
+
+File "game/scripts/chapters/chapter 0/0_1_journal1.rpy", line 10: expected expression
+    define journalAlex_3 = 
+                           ^
+
+File "game/scripts/chapters/chapter 0/0_1_journal1.rpy", line 11: expected expression
+    define journalAlex_4 = 
+                           ^
+
+File "game/scripts/chapters/chapter 0/0_1_journal1.rpy", line 12: expected expression
+    define journalAlex_5 =
+                          ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Wed Jul 30 10:48:28 2025
+Thu Jul 31 23:55:31 2025

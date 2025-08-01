@@ -1,28 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/options.rpy", line 88, in script
-    define config.after_load_transition = Nodissne
-  File "game/options.rpy", line 88, in <module>
-    define config.after_load_transition = Nodissne
-NameError: name 'Nodissne' is not defined
+  File "renpy/common/00start.rpy", line 193, in script
+    python:
+  File "renpy/common/00start.rpy", line 194, in <module>
+    renpy.execute_default_statement(True)
+  File "game/scripts/chapters/chapter 0/0_2_meetClaudia.rpy", line 12, in execute_default
+Exception: store.claudia_2 is being given a default a second time.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/options.rpy", line 88, in script
-    define config.after_load_transition = Nodissne
-  File "D:\L0veRavenRenPy\- RenPy\renpy\ast.py", line 2241, in execute
-    self.set()
-  File "D:\L0veRavenRenPy\- RenPy\renpy\ast.py", line 2255, in set
-    value = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "D:\L0veRavenRenPy\- RenPy\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/options.rpy", line 88, in <module>
-    define config.after_load_transition = Nodissne
-NameError: name 'Nodissne' is not defined
+  File "renpy/common/00start.rpy", line 193, in script
+    python:
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\ast.py", line 827, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\python.py", line 1178, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00start.rpy", line 194, in <module>
+    renpy.execute_default_statement(True)
+  File "E:\- GitHub Projects\L0veRavenRenPy\- RenPy\renpy\exports\statementexports.py", line 372, in execute_default_statement
+    i.execute_default(start)
+  File "game/scripts/chapters/chapter 0/0_2_meetClaudia.rpy", line 12, in execute_default
+Exception: store.claudia_2 is being given a default a second time.
 
-Windows-10-10.0.19045 AMD64
+Windows-10-10.0.22631 AMD64
 Ren'Py 8.3.4.24120703
 My Love 1.0
-Wed Jul 30 11:53:24 2025
+Thu Jul 31 23:32:33 2025
