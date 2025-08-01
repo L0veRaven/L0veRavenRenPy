@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/chapters/chapter 0/0_1_journal1.rpy", line 22: expected statement.
-    nvl clea
-       ^
+File "game/scripts/chapters/chapter 0/0_2_meetClaudia.rpy", line 50: expected 'image_name_component' not found.
+    hide 
+         ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Aug  1 01:07:21 2025
+Fri Aug  1 07:23:40 2025

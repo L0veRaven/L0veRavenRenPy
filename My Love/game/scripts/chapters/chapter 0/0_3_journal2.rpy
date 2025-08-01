@@ -2,6 +2,8 @@ label c0_journal2:
     play music "audio/music/scene5.ogg"
     scene bg_work_desk with Dissolve(2.0)
 
+    nvl clear
+
     play sound "audio/sfx/paper-flip.ogg"
     alexJournal "June 12, 2023 8:07 AM"
 
@@ -25,9 +27,6 @@ label c0_journal2:
 
     play sound "sfx/paper-flip.ogg"
     alexJournal "It's probably because Claudia is new, but I really want to keep talking to her. She's seems nice..."
-
-    play sound "audio/sfx/paper-flip.ogg"
-    alex "Wait... It can't be... Do I have... a cru-"
 
     stop music
     #play sound "sfx/footsteps1.ogg"

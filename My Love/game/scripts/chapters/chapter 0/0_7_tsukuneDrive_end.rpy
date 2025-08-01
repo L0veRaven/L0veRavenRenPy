@@ -4,7 +4,7 @@ label c0_tsukuneDrive_end:
     scene bg_tsukune_apartment_parking_lot with Dissolve(1.0)
 
     play sound "sfx/carDoor_open.mp3"
-    show tsukune neutral with Dissolve(0.4)
+    show tsukune_neutral with Dissolve(0.4)
     tsukune "Thanks again for dropping me off. I owe you one!"
 
     alex "It's no problem. See you later!"
@@ -25,7 +25,7 @@ label c0_tsukuneDrive_end:
             jump c0_normalReaction
 
 label c0_dramaticReaction:
-    stop music
+    stop music fadeout 1.0
     alex "Wait... I think I feel something..."
 
     tsukune "Huh? What is it?"

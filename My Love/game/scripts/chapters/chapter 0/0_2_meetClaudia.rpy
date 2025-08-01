@@ -42,8 +42,14 @@ label c0_meetClaudia:
 
     alex "Hah, I get what you mean. It's a struggle out here."
 
+    hide claudia_neutral
+    show claudia_discomfort:
+        xpos 0.58
     claudiaUnknown "Hah... Yeah, it is..." # Claudia has hygiene OCD
     
+    hide claudia_discomfort
+    show claudia_neutral:
+        xpos 0.58
     claudiaUnknown "So... you've lived here for a while?"
 
     alex "Yeah, I've been here for about three years."

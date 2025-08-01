@@ -5,7 +5,7 @@ label c0_meetTsukune:
 
     scene bg_office
 
-    show tsukune neutral
+    show tsukune_neutral
     tsukuneUnknown "Hey, Alex! How're you doing?"
 
     alex "Hey Tsukune, I'm good! Nothing crazy's going on." with hpunch
@@ -28,7 +28,7 @@ label c0_meetTsukune:
 
     tsukune "You're a great friend, Alex. I mean it."
     tsukune "Damn, I gotta get back to work. I'll talk to you later!"
-    hide tsukune neutral
+    hide tsukune_neutral
 
     alex "I guess I should get back to work too."
 

@@ -10,7 +10,7 @@
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
 
-define config.sample_sound = "sfx_paperflip.mp3"
+define config.sample_sound = "sfx/paper-flip.ogg"
 # define config.sample_voice = "sample-voice.ogg"
 
 
@@ -107,5 +107,6 @@ init python:
 # The game starts here.
 
 label start:
+    stop music fadeout 3.0
 
     jump chapter_0_start
