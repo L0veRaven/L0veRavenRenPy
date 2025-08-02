@@ -1,5 +1,5 @@
 label c6_start:
-    play music "audio/music/polar-float.mp3"
+    play music "audio/bgm/polar-float.mp3"
 
     scene bg_alex_apartment_living_room with fade
 

@@ -1,5 +1,5 @@
 label c7_start:
-    play music "audio/music/swim-on-little-one.mp3"
+    play music "audio/bgm/swim-on-little-one.mp3"
 
     scene bg_alex_apartment_living_room with fade
 

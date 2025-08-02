@@ -1,5 +1,5 @@
 label c1_start:
-    play music "audio/music/triangle-elevator.mp3"
+    play music "audio/bgm/triangle-elevator.mp3"
 
     scene bg_alex_apartment_living_room with fade
 

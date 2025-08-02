@@ -1,5 +1,5 @@
 label c3_start:
-    play music "audio/music/scene3.ogg"
+    play music "audio/bgm/scene3.ogg"
 
     scene bg_alex_apartment_living_room with fade
 

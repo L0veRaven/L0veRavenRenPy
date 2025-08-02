@@ -1,5 +1,5 @@
 label c2_start:
-    play music "audio/music/people-factory.mp3"
+    play music "audio/bgm/people-factory.mp3"
 
     scene bg_alex_apartment_living_room with fade
 

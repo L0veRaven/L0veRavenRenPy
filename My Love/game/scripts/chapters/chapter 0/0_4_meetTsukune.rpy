@@ -1,7 +1,7 @@
 label c0_meetTsukune:
     play sound "sfx/scribble.mp3"
 
-    play music "audio/music/scene3.ogg"
+    play music "audio/bgm/scene3.ogg"
 
     scene bg_office
 

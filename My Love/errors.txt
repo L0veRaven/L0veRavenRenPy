@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 45: positional argument follows keyword argument
-    Character(None, kind=nvl, color="#000000", what_color="#000000", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf", ctc="ctc_arrow", ctc_position="fixed", ctc_pause="ctc_arrow", ctc_timedpause)
-                                                                                                                                                                                                                 ^
+File "game/scripts/chapters/chapter 0/0_2_meetClaudia.rpy", line 21: expected end of line
+    play sound doorLock, scribble
+                       ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Fri Aug  1 15:38:34 2025
+Fri Aug  1 19:40:32 2025

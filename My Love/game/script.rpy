@@ -7,10 +7,20 @@
 # tracks used by this game.
 ##############################
 
+# BGM
+define outdoorAmbience = "sfx/outdoors_day.mp3"
+
+# SFX
+define scribble = "sfx/scribble.mp3"
+# define footsteps1 = "sfx/.mp3"
+define carDoorClose = "sfx/carDoor_close.mp3"
+define watchAlarm = "sfx/digital-watch-alarm-81203.mp3"
+define doorLock = "sfx/door_lock.mp3"
+
 ## To allow the user to play a test sound on the sound or voice channel,
 ## uncomment a line below and use it to set a sample sound to play.
 
-define config.sample_sound = "sfx/scribble.mp3"
+define config.sample_sound = scribble
 # define config.sample_voice = "sample-voice.ogg"
 
 
@@ -28,9 +38,7 @@ define config.main_menu_music_fadein = 1.0 #Song fades in
 # Organized by order of appearance.
 ########################################
 
-define ctc_arrow = ""
-
-image ctc_arrow:
+image ctc_arrow_journal:
     "gui/button/right_arrow.png"
     xanchor 1.0 yanchor 1.0
     xpos 0.84 ypos 0.95
@@ -40,17 +48,27 @@ image ctc_arrow:
     pause 0.5
     repeat
 
-define alex = Character('Alex', color="#000000", what_color="#000000", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf")#, callback=writingAlex)
+image ctc_arrow_dialogue:
+    "gui/button/right_arrow.png"
+    xanchor 1.0 yanchor 1.0
+    xpos 0.84 ypos 0.95
+    linear 0.5 alpha 1.0
+    pause 0.5
+    linear 0.5 alpha 0.0
+    pause 0.5
+    repeat
 
-define alexJournal = Character(None, kind=nvl, color="#000000", what_color="#000000", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf", ctc="ctc_arrow", ctc_position="fixed", ctc_pause="ctc_arrow", ctc_timedpause="ctc_arrow")#, callback=writingAlex)
+define alex = Character('Alex', color="#000000", what_color="#000000", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf", ctc="ctc_arrow_dialogue", ctc_position="fixed", ctc_pause="ctc_arrow_dialogue", ctc_timedpause="ctc_arrow_dialogue")#, callback=writingAlex)
 
-define claudiaUnknown = Character('???', color="#000000", what_color="#000000", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf")#, callback=writingClaudia)
+define alexJournal = Character(None, kind=nvl, color="#000000", what_color="#000000", who_font="fonts/you_font.ttf", what_font="fonts/you_font.ttf", ctc="ctc_arrow_journal", ctc_position="fixed", ctc_pause="ctc_arrow_journal", ctc_timedpause="ctc_arrow_journal")#, callback=writingAlex)
 
-define claudia = Character('Claudia', color="#000000", what_color="#000000", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf")#, callback=writingClaudia)
+define claudiaUnknown = Character('???', color="#000000", what_color="#000000", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf", ctc="ctc_arrow_dialogue", ctc_position="fixed", ctc_pause="ctc_arrow_dialogue", ctc_timedpause="ctc_arrow_dialogue")#, callback=writingClaudia)
 
-define tsukuneUnknown = Character('???', color="#000000", what_color="#000000", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf")#, callback=writingTsukune)
+define claudia = Character('Claudia', color="#000000", what_color="#000000", who_font="fonts/claudia_font.ttf", what_font="fonts/claudia_font.ttf", ctc="ctc_arrow_dialogue", ctc_position="fixed", ctc_pause="ctc_arrow_dialogue", ctc_timedpause="ctc_arrow_dialogue")#, callback=writingClaudia)
 
-define tsukune = Character('Tsukune', color="#000000", what_color="#000000", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf")#, callback=writingTsukune)
+define tsukuneUnknown = Character('???', color="#000000", what_color="#000000", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf", ctc="ctc_arrow_dialogue", ctc_position="fixed", ctc_pause="ctc_arrow_dialogue", ctc_timedpause="ctc_arrow_dialogue")#, callback=writingTsukune)
+
+define tsukune = Character('Tsukune', color="#000000", what_color="#000000", who_font="fonts/tsukune_font.ttf", what_font="fonts/tsukune_font.ttf", ctc="ctc_arrow_dialogue", ctc_position="fixed", ctc_pause="ctc_arrow_dialogue", ctc_timedpause="ctc_arrow_dialogue")#, callback=writingTsukune)
 
 define witness = Character('Witness', color="#000000", what_color="#000000")
 

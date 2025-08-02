@@ -1,5 +1,5 @@
 label c0_tsukuneDrive:
-    play music "music/scene4.ogg"
+    play music "bgm/scene4.ogg"
     pause 1.0
     play sound "sfx/carDoor_close.mp3"
     pause 1.0

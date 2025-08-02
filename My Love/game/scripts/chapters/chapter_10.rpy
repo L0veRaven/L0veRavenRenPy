@@ -1,5 +1,5 @@
 label c10_start:
-    play music "audio/music/scene5.ogg"
+    play music "audio/bgm/scene5.ogg"
 
     scene bg_alex_apartment_living_room with fade
 

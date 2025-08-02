@@ -3,7 +3,7 @@
 #########################################
 
 label c0_meetClaudia:
-    play music "sfx/outdoors_day.mp3"
+    play music outdoorAmbience
     scene bg_apartment_outside with Dissolve(3.0)
 
     voice "voice-lines/claudia-1.mp3"
@@ -18,7 +18,7 @@ label c0_meetClaudia:
         ease 1.0 xpos 0.6
     claudiaUnknown "Alright, time to unpack all those boxes."
 
-    play sound "sfx/door_lock.mp3"
+    play sound doorLock
     pause 1.0
     
     show alex_neutral:
@@ -77,10 +77,12 @@ label c0_meetClaudia:
     pause 1.0
 
     "... {i}\"See you later?\"{/i} That's really nice. I didn't think that I'd get along with someone new like that."
+
     "I felt pretty awkward when talking to her though. Claudia... right?"
+
     "It's good to know that she's interested in getting to know me more. I think it'd do me some good to make friends with someone new."
     
-    play sound "sfx/digital-watch-alarm-81203.mp3"
+    play sound watchAlarm
     alex "Oh shit, I need to leave for work!"
 
     play sound "sfx/key_jingle.mp3"
