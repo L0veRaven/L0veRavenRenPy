@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "renpy/common/00gamemenu.rpy", line 177, in script
+    jump expression _game_menu_screen
+ScriptError: could not find label 'journalMenu_screen'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "renpy/common/00gamemenu.rpy", line 177, in script
+    jump expression _game_menu_screen
+  File "D:\L0veRavenRenPy\- RenPy\renpy\ast.py", line 1705, in execute
+    rv = renpy.game.script.lookup(target)
+  File "D:\L0veRavenRenPy\- RenPy\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'journalMenu_screen'.
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.3.4.24120703
+My Love 1.0
+Sun Aug  3 20:44:51 2025

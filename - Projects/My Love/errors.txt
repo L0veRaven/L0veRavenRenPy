@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/scripts/journalMenu.rpy", line 15: the ypos keyword argument was not given a value.
+    ypos 
+         ^
+
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Sun Aug  3 20:51:25 2025
