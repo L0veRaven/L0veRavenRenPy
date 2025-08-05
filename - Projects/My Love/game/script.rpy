@@ -107,7 +107,7 @@ define witness = Character('Witness', color="#000000", what_color="#000000")
     #$ lovePoints_Tsukune-=10
         ## Decrease Tsukune's love points
 init python:
-    max_love=100
+    max_love=1500
     lovePoints_Claudia=0
     lovePoints_Tsukune=25
     loveMeter=False
@@ -117,10 +117,10 @@ init python:
             ui.frame()
             ui.vbox()
             ui.text("Claudia")
-            ui.bar(max_love,lovePoints_Claudia, xmaximum=1500)
+            ui.bar(max_love,lovePoints_Claudia)
 
             ui.text("Tsukune")
-            ui.bar(max_love,lovePoints_tsukune, xmaximum=1500)
+            ui.bar(max_love,lovePoints_Tsukune)
 
             ui.close()
 
