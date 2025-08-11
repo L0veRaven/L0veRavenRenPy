@@ -1244,6 +1244,7 @@ screen confirm(message, yes_action, no_action):
     style_prefix "confirm"
 
     add "gui/confirm.png"
+    # add "gui/overlay/confirm.png"
 
     frame:
 
