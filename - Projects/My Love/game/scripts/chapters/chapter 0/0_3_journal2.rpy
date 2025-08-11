@@ -20,13 +20,13 @@ label c0_journal2:
     alexJournal "It's not normal for me to have someone so stuck on my mind, especially when I've barely met them."
 
     play sound scribble
-    alexJournal "Maybe I can talk to Tsukune or Ash about it later... but they're just coworkers... and my neighbors. Plus, I bet they'd think it's weird how my mind is so preoccupied by Claudia already. I literally just met her today."
+    alexJournal "Maybe I can talk to Tsukune about it later... but he's just a coworker... and my neighbor. Plus, I bet he'd think it's weird how my mind is so preoccupied by Claudia already. I just met her today."
 
     play sound scribble
-    alexJournal "I hardly know anything about her, so there's no reason for me to be thinking about her so much."
+    alexJournal "I hardly know anything about her, so there's no reason for me to be thinking about her so much... Right?"
 
     play sound scribble
-    alexJournal "It's probably because Claudia is new, but I really want to keep talking to her. She's seems nice..."
+    alexJournal "It's probably because Claudia is new, but I really want to keep talking to her. She's seems really nice..."
 
     stop music
     #play sound footsteps1

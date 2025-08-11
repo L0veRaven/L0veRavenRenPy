@@ -137,4 +137,6 @@ init python:
 label start:
     stop music fadeout 3.0
 
+    $ persistent.journal_unlock = False
+
     jump chapter_0_start

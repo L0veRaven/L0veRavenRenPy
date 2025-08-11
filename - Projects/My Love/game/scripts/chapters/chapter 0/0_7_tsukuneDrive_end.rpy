@@ -9,7 +9,7 @@ label c0_tsukuneDrive_end:
 
     alex "It's no problem. See you later!"
 
-    tsukune "Wait, did you want to go to the gym with Ash and I later? It'll be Ash's first time back in a while back in the gym."
+    tsukune "Wait, did you want to go to the gym with me later?"
 
     alex "I would, but I've actually got some stuff on my mind right now. Maybe next time?"
 
