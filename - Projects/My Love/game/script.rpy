@@ -139,4 +139,6 @@ label start:
 
     $ persistent.journal_unlock = False
 
+    $ _skipping = False
+
     jump chapter_0_start

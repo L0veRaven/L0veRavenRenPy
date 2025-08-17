@@ -22,6 +22,7 @@ label c0_meetClaudia:
     pause 1.0
     
     show alex_neutral:
+        xzoom -1.0
         xpos -600
         ease 2.0 xpos 0.02
     alex "..."
@@ -74,14 +75,22 @@ label c0_meetClaudia:
     pause 2.0
     
     scene bg_car_driver with Dissolve(1.0)
+
+    show alex_thinking with Dissolve(1.0)
     pause 1.0
 
     "... {i}\"See you later?\"{/i} That's really nice. I didn't think that I'd get along with someone new like that."
 
     "I felt pretty awkward when talking to her though. Claudia... right?"
 
+    hide alex_thinking
+    show alex_neutral
+
     "It's good to know that she's interested in getting to know me more. I think it'd do me some good to make friends with someone new."
     
+    hide alex_neutral
+    show alex_surprised
+
     play sound watchAlarm
     alex "Oh shit, I need to leave for work!"
 
@@ -91,14 +100,25 @@ label c0_meetClaudia:
     pause 2.0
 
     scene black with fade
+    hide alex_surprised with Dissolve(1.0)
 
+    pause 1.0
+
+    show alex_thinking with Dissolve(1.0)
     pause 1.0
 
     "That woman... Claudia..."
 
     "There's something about her that's really sticking out to me..."
     
+    hide alex_thinking
+    show alex_neutral
+
     alex "Maybe I should try journaling about it... That might help me get it off my mind."
+
+    pause 1.0
+
+    hide alex_neutral with Dissolve(1.0)
 
     pause 1.0
 

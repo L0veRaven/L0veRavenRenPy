@@ -71,12 +71,17 @@ screen journalMenu():
 
         text _("\n\n{u}Current Objective{/u}\n")
         text _([currentObjective])
+        
+        if persistent.tsukuneDrive_end == True:
+            text _("Get some rest."):
+                xpos 0.5
 
         if (lovePoints_Claudia > 100):
             text _("Ask Claudia on a date.")
             
         if (lovePoints_Tsukune > 100):
             text _("Ask Tsukune on a date.")
+
     
 screen claudiaPage():
     style_prefix "journal_menu"
@@ -85,27 +90,16 @@ screen claudiaPage():
 
     tag menu
 
-    text _("Claudia Notes"):
-        xalign 0.5
-        ypos 150
-    
-    text _("\nLove Points: [lovePoints_Claudia]\n"):
+    vbox:
         xalign 0.5
 
-    text _("\n\n{u}Notes of Interest{/u}\n"):
-        xpos 0.5
+        text _("Claudia Notes\n\n"):
+            xalign 0.5
+            ypos 150
 
-    if persistent.tsukuneDrive_end == True:
-        text _("Get some rest."):
-            xpos 0.5
-
-    if (lovePoints_Claudia > 100):
-        text _("Ask Claudia on a date."):
-            xpos 0.5
-        
-    if (lovePoints_Tsukune > 100):
-        text _("Ask Tsukune on a date."):
-            xpos 0.5
+        text _("{u}Notes of Interest{/u}\n"):
+            xalign 0.5
+            ypos 105
 
 
     
@@ -116,9 +110,22 @@ screen tsukunePage():
 
     tag menu
 
-    text _("Tsukune"):
+    vbox:
         xalign 0.5
-        ypos 150
+
+        text _("Tsukune Notes"):
+            xalign 0.5
+            ypos 150
+
+        vbox:
+            ypos 165
+
+            text _("{u}Notes of Interest{/u}\n"):
+                xalign 0.5
+            
+            if (persistent.tsukuneNotes_cigaretteAddiction == True):
+                text _("Cigarrete addiction\n"):
+                    xalign 0.5
     
 screen imageGallery():
     style_prefix "journal_menu"

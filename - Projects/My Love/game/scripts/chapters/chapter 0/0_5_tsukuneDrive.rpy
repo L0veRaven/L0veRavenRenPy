@@ -9,6 +9,7 @@ label c0_tsukuneDrive:
 
     show alex_neutral with Dissolve(1.0):
         xpos 0.15
+        xzoom -1.0
 
     show tsukune_neutral with Dissolve(1.5):
         xpos 0.65
@@ -31,7 +32,6 @@ label c0_tsukuneDrive:
     alex "See, you get me! This is why you're cool."
 
     menu:
-        "What should I talk about?"
 
         "Check in with Tsukune":
             jump c0_tsukuneTherapy

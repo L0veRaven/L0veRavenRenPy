@@ -21,7 +21,7 @@ label c0_journal1:
     alexJournal "It's about feeling heard."
 
     play sound scribble
-    alexJournal "I noticed a pretty big difference since I've started journaling."
+    alexJournal "I noticed a difference since I've started journaling."
     
     play sound scribble
     alexJournal "It's not a huge change, but it's nice to start learning how to identify the emotions I'm feeling."

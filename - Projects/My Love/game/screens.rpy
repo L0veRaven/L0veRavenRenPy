@@ -242,26 +242,49 @@ screen quick_menu():
 
     if quick_menu:
 
-        hbox:
-            style_prefix "quick"
+        vbox:
+            yalign 0.98
+            spacing 25
 
-            xalign 0.5
-            yalign 1.0
+            imagebutton auto "gui/button/hover_idle/left_arrow_%s.png":
+                focus_mask True
+                action Rollback()
 
-            textbutton _("Back") action Rollback()
-            # textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            # textbutton _("Q.Save") action QuickSave()
-            # textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+            imagebutton auto "gui/button/hover_idle/auto_%s.png":
+                focus_mask True
+                action Preference("auto-forward", "toggle")
+
+        vbox:
+            xalign 1.0
+            yalign 0.98
+            spacing 25
+
+            imagebutton auto "gui/button/hover_idle/ib_settings_%s.png":
+                focus_mask True
+                xalign 0.5
+                action ShowMenu('preferences')
             
             if persistent.journal_unlock == True:
-                imagebutton:
-                    auto "gui/button/hover_idle/journal_%s.png"
+                imagebutton auto "gui/button/hover_idle/journal_%s.png":
                     focus_mask True
+                    xalign 0.5
                     action ShowMenu('journalMenu')
+
+
+            #hbox:
+            #    style_prefix "quick"
+
+            #    xalign 0.5
+            #    yalign 1.0
+
+            #    textbutton _("Back") action Rollback()
+            #    textbutton _("History") action ShowMenu('history')
+            #    textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            #    textbutton _("Auto") action Preference("auto-forward", "toggle")
+            #    textbutton _("Save") action ShowMenu('save')
+            #    textbutton _("Q.Save") action QuickSave()
+            #    textbutton _("Q.Load") action QuickLoad()
+            #    textbutton _("Prefs") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -329,14 +352,14 @@ screen navigation():
 
             textbutton _("End Replay") action EndReplay(confirm=True)
 
-        elif not main_menu:
+        if not main_menu:
 
             textbutton _("Main Menu") action MainMenu()
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
+            textbutton _("Controls") action ShowMenu("help")
 
         if renpy.variant("pc"):
 
@@ -828,6 +851,7 @@ screen preferences():
 
             hbox:
                 box_wrap True
+                xalign 0.5
 
                 if renpy.variant("pc") or renpy.variant("web"):
 
@@ -837,12 +861,14 @@ screen preferences():
                         textbutton _("Window") action Preference("display", "window")
                         textbutton _("Fullscreen") action Preference("display", "fullscreen")
 
-                vbox:
-                    style_prefix "check"
-                    label _("Skip")
-                    textbutton _("Unseen Text") action Preference("skip", "toggle")
-                    textbutton _("After Choices") action Preference("after choices", "toggle")
-                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
+                ## Skip - Uncomment to enable
+
+                #vbox:
+                #    style_prefix "check"
+                #    label _("Skip")
+                #    textbutton _("Unseen Text") action Preference("skip", "toggle")
+                #    textbutton _("After Choices") action Preference("after choices", "toggle")
+                #    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
@@ -1072,7 +1098,7 @@ screen help():
 
     default device = "keyboard"
 
-    use game_menu(_("Help"), scroll="viewport"):
+    use game_menu(_("Controls"), scroll="viewport"):
 
         style_prefix "help"
 
@@ -1080,6 +1106,7 @@ screen help():
             spacing 23
 
             hbox:
+                xalign 0.5
 
                 textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
                 textbutton _("Mouse") action SetScreenVariable("device", "mouse")
@@ -1113,21 +1140,21 @@ screen keyboard_help():
         label _("Escape")
         text _("Accesses the game menu.")
 
-    hbox:
-        label _("Ctrl")
-        text _("Skips dialogue while held down.")
+    #hbox:
+    #    label _("Ctrl")
+    #    text _("Skips dialogue while held down.")
 
-    hbox:
-        label _("Tab")
-        text _("Toggles dialogue skipping.")
+    #hbox:
+    #    label _("Tab")
+    #    text _("Toggles dialogue skipping.")
 
-    hbox:
-        label _("Page Up")
-        text _("Rolls back to earlier dialogue.")
+    #hbox:
+    #    label _("Page Up")
+    #    text _("Rolls back to earlier dialogue.")
 
-    hbox:
-        label _("Page Down")
-        text _("Rolls forward to later dialogue.")
+    #hbox:
+    #    label _("Page Down")
+    #    text _("Rolls forward to later dialogue.")
 
     hbox:
         label "H"
@@ -1195,7 +1222,9 @@ screen gamepad_help():
         label _("Y/Top Button")
         text _("Hides the user interface.")
 
-    textbutton _("Calibrate") action GamepadCalibrate()
+    textbutton _("Calibrate"):
+        action GamepadCalibrate()
+        xalign 0.5
 
 
 style help_button is gui_button
@@ -1298,21 +1327,21 @@ style confirm_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#skip-indicator
 
-screen skip_indicator():
-
-    zorder 100
-    style_prefix "skip"
-
-    frame:
-
-        hbox:
-            spacing 9
-
-            text _("Skipping")
-
-            text "▸" at delayed_blink(0.0, 1.0) style "skip_triangle"
-            text "▸" at delayed_blink(0.2, 1.0) style "skip_triangle"
-            text "▸" at delayed_blink(0.4, 1.0) style "skip_triangle"
+#screen skip_indicator():
+#
+#    zorder 100
+#    style_prefix "skip"
+#
+#    frame:
+#
+#        hbox:
+#            spacing 9
+#
+#            text _("Skipping")
+#
+#            text "▸" at delayed_blink(0.0, 1.0) style "skip_triangle"
+#            text "▸" at delayed_blink(0.2, 1.0) style "skip_triangle"
+#            text "▸" at delayed_blink(0.4, 1.0) style "skip_triangle"
 
 
 ## This transform is used to blink the arrows one after another.

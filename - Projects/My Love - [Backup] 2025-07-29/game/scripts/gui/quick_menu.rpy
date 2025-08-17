@@ -43,15 +43,16 @@ screen quick_menu():
 
                 imagebutton:
                     auto "gui/button/hover_idle/ib_settings_%s.png"
+                    focus_mask True
                     xpos -50
                     action ShowMenu('preferences')
 
-            hbox:
-                style_prefix "quick"
-
-                xalign 0.5
-                yalign 1.0
-                spacing 50
+            #hbox:
+            #    style_prefix "quick"
+            #
+            #    xalign 0.5
+            #    yalign 1.0
+            #    spacing 50
 
                 #imagebutton:
                 #    auto "gui/button/hover_idle/history_%s.png"
