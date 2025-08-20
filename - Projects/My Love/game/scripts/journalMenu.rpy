@@ -113,18 +113,18 @@ screen tsukunePage():
     vbox:
         xalign 0.5
 
-        text _("Tsukune Notes"):
+        text _("Tsukune Notes\n\n"):
             xalign 0.5
             ypos 150
 
         vbox:
-            ypos 165
+            ypos 105
 
-            text _("{u}Notes of Interest{/u}\n"):
+            text _("{u}Notes of Interest{/u}"):
                 xalign 0.5
             
             if (persistent.tsukuneNotes_cigaretteAddiction == True):
-                text _("Cigarrete addiction\n"):
+                text _("\nCigarrete addiction"):
                     xalign 0.5
     
 screen imageGallery():
