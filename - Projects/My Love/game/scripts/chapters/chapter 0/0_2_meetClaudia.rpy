@@ -16,8 +16,6 @@ label c0_meetClaudia:
     show claudia_neutral:
         xpos 0.65
         ease 1.0 xpos 0.6
-    claudiaUnknown "Alright, time to unpack all those boxes."
-
     play sound doorLock
     pause 1.0
     
@@ -33,7 +31,7 @@ label c0_meetClaudia:
 
     show claudia_neutral:
         ease 1.2 xpos 0.58
-    claudiaUnknown "Oh, hey there! I didn't mean to startle you. I just moved my things in. Were my friend and I too loud?"
+    claudiaUnknown "Hi! I didn't mean to startle you. I just moved my things in. Were my friend and I too loud?"
 
     show alex_neutral:
         ease 1 xpos 0.12

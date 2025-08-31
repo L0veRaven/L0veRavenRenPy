@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/scripts/journalMenu.rpy", line 116: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a " at the end of the first line.)
-            text _("Tsukune Notes\n\"):
+File "game/scripts/chapters/chapter 0/0_1_journal1.rpy", line 34: end of line expected.
+    alex "{i}"It's usually never noisy this early in the morning unless it's the landscapers. I've been hearing noise all morning. I wonder what it's all about?"{/i}"
+              ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Sun Aug 17 19:48:02 2025
+Sat Aug 30 21:40:57 2025
