@@ -8,7 +8,7 @@ define journal = Character(None, kind=nvl)
 define claudia = Character("Claudia", kind=adv)
 define tsukune = Character("Tsukune", kind=adv)
 define rando = Character("???", kind=adv)
-
+define witness = Character("Witness", kind=adv)
 
 # The game starts here.
 
@@ -62,7 +62,7 @@ label chapter_0_meet_claudia:
     ## INSERT RACING MINIGAME
     jump chapter_0_journal_2
 
-label journal_2:
+label chapter_0_journal_2:
     "I didn't spend as much time as I wanted to on my journaling this morning."
     "Maybe if I spend a couple of minutes doing it now, now one will notice?"
     journal "8:02 AM"
