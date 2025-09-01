@@ -113,7 +113,7 @@ screen say(who, what):
     ## If there's a side image, display it above the text. Do not display on the
     ## phone variant - there's no room.
     if not renpy.variant("small"):
-        add SideImage("characters/witnesses/witness a.png") xalign 0.0 yalign 1.0
+        add SideImage() xalign 0.0 yalign 1.0
 
 
 ## Make the namebox available for styling through the Character object.
@@ -242,49 +242,20 @@ screen quick_menu():
 
     if quick_menu:
 
-        vbox:
-            yalign 0.98
-            spacing 25
+        hbox:
+            style_prefix "quick"
 
-            imagebutton auto "gui/button/hover_idle/left_arrow_%s.png":
-                focus_mask True
-                action Rollback()
+            xalign 0.5
+            yalign 1.0
 
-            imagebutton auto "gui/button/hover_idle/auto_%s.png":
-                focus_mask True
-                action Preference("auto-forward", "toggle")
-
-        vbox:
-            xalign 1.0
-            yalign 0.98
-            spacing 25
-
-            imagebutton auto "gui/button/hover_idle/ib_settings_%s.png":
-                focus_mask True
-                xalign 0.5
-                action ShowMenu('preferences')
-            
-            if persistent.journal_unlock == True:
-                imagebutton auto "gui/button/hover_idle/journal_%s.png":
-                    focus_mask True
-                    xalign 0.5
-                    action ShowMenu('journalMenu')
-
-
-            #hbox:
-            #    style_prefix "quick"
-
-            #    xalign 0.5
-            #    yalign 1.0
-
-            #    textbutton _("Back") action Rollback()
-            #    textbutton _("History") action ShowMenu('history')
-            #    textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            #    textbutton _("Auto") action Preference("auto-forward", "toggle")
-            #    textbutton _("Save") action ShowMenu('save')
-            #    textbutton _("Q.Save") action QuickSave()
-            #    textbutton _("Q.Load") action QuickLoad()
-            #    textbutton _("Prefs") action ShowMenu('preferences')
+            textbutton _("Back") action Rollback()
+            textbutton _("History") action ShowMenu('history')
+            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("Auto") action Preference("auto-forward", "toggle")
+            textbutton _("Save") action ShowMenu('save')
+            textbutton _("Q.Save") action QuickSave()
+            textbutton _("Q.Load") action QuickLoad()
+            textbutton _("Prefs") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -327,39 +298,30 @@ screen navigation():
 
             textbutton _("Start") action Start()
 
-            textbutton _("Load") action ShowMenu("load")
-
-            textbutton _("Preferences") action ShowMenu("preferences")
-
-            textbutton _("About") action ShowMenu("about")
-
-            textbutton _("Credits") action ShowMenu("credits")
-
-
         else:
-
-            textbutton _("Save") action ShowMenu("save")
-
-            textbutton _("Load") action ShowMenu("load")
 
             textbutton _("History") action ShowMenu("history")
 
-            textbutton _("Preferences") action ShowMenu("preferences")
+            textbutton _("Save") action ShowMenu("save")
 
-            textbutton _("Credits") action ShowMenu("credits")
+        textbutton _("Load") action ShowMenu("load")
+
+        textbutton _("Preferences") action ShowMenu("preferences")
 
         if _in_replay:
 
             textbutton _("End Replay") action EndReplay(confirm=True)
 
-        if not main_menu:
+        elif not main_menu:
 
             textbutton _("Main Menu") action MainMenu()
+
+        textbutton _("About") action ShowMenu("about")
 
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Controls") action ShowMenu("help")
+            textbutton _("Help") action ShowMenu("help")
 
         if renpy.variant("pc"):
 
@@ -442,7 +404,6 @@ style main_menu_version:
 
 
 ## Game Menu screen ############################################################
-## Journal
 ##
 ## This lays out the basic common structure of a game menu screen. It's called
 ## with the screen title, and displays the background, title, and navigation.
@@ -572,82 +533,6 @@ style return_button:
     xpos gui.navigation_xpos
     yalign 1.0
     yoffset -45
-
-
-## About screen ################################################################
-##
-## This screen gives credit and copyright information about the game and Ren'Py.
-##
-## There's nothing special about this screen, and hence it also serves as an
-## example of how to make a custom screen.
-
-define gui.credits_audio = _p("""
-Title: {a=https://ko-fi.com/s/ab76dd25a9}{i}Blurred{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
-
-Chapter 0: scene5 by KADOKAWA's {a=https://www.rpgmakerweb.com/products/rpg-maker-mz}RPG Maker MZ{/a}, {a=https://ko-fi.com/s/f0e8490a78}{i}Shiny{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
-
-Chapter 1: {a=https://ko-fi.com/s/38443fd4f1}{i}Triangle Elevator{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
-
-Chapter 2: {a=https://ko-fi.com/s/045759065c}{i}People Factory{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
-
-Chapter 3: {a=https://ko-fi.com/s/9244c061a3}{i}Strawberry Blossoms{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
-
-Chapter 4: {a=https://ko-fi.com/s/c58a72ebbf}{i}Karmic Blunder{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
-
-Chapter 5: {a=https://ko-fi.com/s/894338d609}{i}Contact Glow{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
-
-Chapter 6: {a=https://ko-fi.com/s/91c0372829}{i}Polar Float{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
-
-Chapter 7: {a=https://ko-fi.com/s/1896a262c9}{i}Swim On, Little One{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
-""")
-
-define gui.credits_plugins = _p("""
-{a=https://wattson.itch.io/}Wattson{/a}'s {a=https://wattson.itch.io/kinetic-text-tags}{i}Kinetic Text Tags{/i}{/a}
-""")
-
-define gui.credits_software = _p("""
-{a=https://procreate.com/}Procreate{/a}, {a=https://krita.org/en/}Krita{/a}, {a=https://code.visualstudio.com/}Visual Studio Code{/a}, {a=https://www.live2d.com/en/}Live2D Cubism{/a}, {a=https://www.audacityteam.org/}Audacity{/a{}, {a=https://www.renpy.org/}Ren'Py{/a}
-""")
-
-define gui.credits_hotlines = _p("""
-For anyone in need, please go to
-{a=https://nomoredirectory.org/}No More Directory{/a} 
-to find support hotlines in your region.
-""")
-
-screen credits():
-
-    tag menu
-
-    ## This use statement includes the game_menu screen inside this one. The
-    ## vbox child is then included inside the viewport inside the game_menu
-    ## screen.
-    use game_menu(_("Credits"), scroll="viewport"):
-
-        style_prefix "credits"
-
-        vbox:
-            label "[config.name!t] v[config.version!t]"
-            text _("Developed by {a=https://www.l0veraven.com}L0veRaven{/a}\n\n")
-            text _("{u}Audio Credits{/u}\n")
-            text "[gui.credits_audio!t]\n\n\n"
-            text _("{u}Plugin Credits{/u}\n")
-            text "[gui.credits_plugins!t]\n\n\n"
-            text _("{u}Software Used{/u}\n")
-            text "[gui.credits_software!t]\n\n\n"
-            text _("{u}Hotlines{/u}\n")
-            text "[gui.credits_hotlines!t]\n"
-
-            text _("[renpy.license!t]")
-
-
-
-style credits_label is gui_label
-style credits_label_text is gui_label_text
-style credits_text is gui_text
-
-style credits_label_text:
-    size gui.label_text_size
 
 
 ## About screen ################################################################
@@ -851,7 +736,6 @@ screen preferences():
 
             hbox:
                 box_wrap True
-                xalign 0.5
 
                 if renpy.variant("pc") or renpy.variant("web"):
 
@@ -861,14 +745,12 @@ screen preferences():
                         textbutton _("Window") action Preference("display", "window")
                         textbutton _("Fullscreen") action Preference("display", "fullscreen")
 
-                ## Skip - Uncomment to enable
-
-                #vbox:
-                #    style_prefix "check"
-                #    label _("Skip")
-                #    textbutton _("Unseen Text") action Preference("skip", "toggle")
-                #    textbutton _("After Choices") action Preference("after choices", "toggle")
-                #    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
+                vbox:
+                    style_prefix "check"
+                    label _("Skip")
+                    textbutton _("Unseen Text") action Preference("skip", "toggle")
+                    textbutton _("After Choices") action Preference("after choices", "toggle")
+                    textbutton _("Transitions") action InvertSelected(Preference("transitions", "toggle"))
 
                 ## Additional vboxes of type "radio_pref" or "check_pref" can be
                 ## added here, to add additional creator-defined preferences.
@@ -1098,7 +980,7 @@ screen help():
 
     default device = "keyboard"
 
-    use game_menu(_("Controls"), scroll="viewport"):
+    use game_menu(_("Help"), scroll="viewport"):
 
         style_prefix "help"
 
@@ -1106,7 +988,6 @@ screen help():
             spacing 23
 
             hbox:
-                xalign 0.5
 
                 textbutton _("Keyboard") action SetScreenVariable("device", "keyboard")
                 textbutton _("Mouse") action SetScreenVariable("device", "mouse")
@@ -1140,21 +1021,21 @@ screen keyboard_help():
         label _("Escape")
         text _("Accesses the game menu.")
 
-    #hbox:
-    #    label _("Ctrl")
-    #    text _("Skips dialogue while held down.")
+    hbox:
+        label _("Ctrl")
+        text _("Skips dialogue while held down.")
 
-    #hbox:
-    #    label _("Tab")
-    #    text _("Toggles dialogue skipping.")
+    hbox:
+        label _("Tab")
+        text _("Toggles dialogue skipping.")
 
-    #hbox:
-    #    label _("Page Up")
-    #    text _("Rolls back to earlier dialogue.")
+    hbox:
+        label _("Page Up")
+        text _("Rolls back to earlier dialogue.")
 
-    #hbox:
-    #    label _("Page Down")
-    #    text _("Rolls forward to later dialogue.")
+    hbox:
+        label _("Page Down")
+        text _("Rolls forward to later dialogue.")
 
     hbox:
         label "H"
@@ -1222,9 +1103,7 @@ screen gamepad_help():
         label _("Y/Top Button")
         text _("Hides the user interface.")
 
-    textbutton _("Calibrate"):
-        action GamepadCalibrate()
-        xalign 0.5
+    textbutton _("Calibrate") action GamepadCalibrate()
 
 
 style help_button is gui_button
@@ -1272,8 +1151,7 @@ screen confirm(message, yes_action, no_action):
 
     style_prefix "confirm"
 
-    add "gui/confirm.png"
-    # add "gui/overlay/confirm.png"
+    add "gui/overlay/confirm.png"
 
     frame:
 
@@ -1327,21 +1205,21 @@ style confirm_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#skip-indicator
 
-#screen skip_indicator():
-#
-#    zorder 100
-#    style_prefix "skip"
-#
-#    frame:
-#
-#        hbox:
-#            spacing 9
-#
-#            text _("Skipping")
-#
-#            text "▸" at delayed_blink(0.0, 1.0) style "skip_triangle"
-#            text "▸" at delayed_blink(0.2, 1.0) style "skip_triangle"
-#            text "▸" at delayed_blink(0.4, 1.0) style "skip_triangle"
+screen skip_indicator():
+
+    zorder 100
+    style_prefix "skip"
+
+    frame:
+
+        hbox:
+            spacing 9
+
+            text _("Skipping")
+
+            text "▸" at delayed_blink(0.0, 1.0) style "skip_triangle"
+            text "▸" at delayed_blink(0.2, 1.0) style "skip_triangle"
+            text "▸" at delayed_blink(0.4, 1.0) style "skip_triangle"
 
 
 ## This transform is used to blink the arrows one after another.

@@ -30,7 +30,6 @@ define config.version = "1.0"
 ## triple-quotes, and leave a blank line between paragraphs.
 
 define gui.about = _p("""
-Claudia moves in next door, and Alex progressively becomes lethally obsessed with her. With his friend and coworker, Tsukune, becoming more of an obstacle, there are few options for how to deal with him. What will Alex choose?
 """)
 
 
@@ -63,7 +62,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-define config.main_menu_music = "bgm/blurred.mp3"
+# define config.main_menu_music = "main-menu-theme.ogg"
 
 
 ## Transitions #################################################################
@@ -112,8 +111,8 @@ define config.window = "auto"
 
 ## Transitions used to show and hide the dialogue window
 
-define config.window_show_transition = None
-define config.window_hide_transition = None
+define config.window_show_transition = Dissolve(.2)
+define config.window_hide_transition = Dissolve(.2)
 
 
 ## Preference defaults #########################################################
@@ -121,13 +120,13 @@ define config.window_hide_transition = None
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 120
+default preferences.text_cps = 0
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
 ## to 30 being the valid range.
 
-default preferences.afm_time = 30
+default preferences.afm_time = 15
 
 
 ## Save directory ##############################################################
@@ -144,7 +143,7 @@ default preferences.afm_time = 30
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "MyLove-L0veRaven"
+define config.save_directory = "MyLove-1756736536"
 
 
 ## Icon ########################################################################
@@ -207,4 +206,4 @@ init python:
 ## The username and project name associated with an itch.io project, separated
 ## by a slash.
 
-# define build.itch_project = "L0veRaven/My-Love"
+# define build.itch_project = "renpytom/test-project"
