@@ -44,3 +44,7 @@ Version: b'4.6.0 Compatibility Profile Context 25.5.1.250226'
 Display Info: None
 Screen sizes: virtual=(800, 600) physical=(800, 600) drawable=(800, 600)
 Maximum texture size: 4096x4096
+Screen sizes: virtual=(800, 600) physical=(1920, 1017) drawable=(1920, 1017)
+Maximum texture size: 4096x4096
+Screen sizes: virtual=(800, 600) physical=(800, 600) drawable=(800, 600)
+Maximum texture size: 4096x4096
