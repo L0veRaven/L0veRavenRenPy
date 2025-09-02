@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 68: expected 'simple_expression' not found.
-    scene black with 
-                     ^
+File "game/script.rpy", line 152: end of line expected.
+    tsukune "No big deal, I'll catch you later!"+
+                                                ^
 
 Ren'Py Version: Ren'Py 8.3.4.24120703
-Mon Sep  1 13:00:37 2025
+Mon Sep  1 21:06:16 2025
