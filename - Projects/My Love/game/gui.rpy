@@ -57,13 +57,13 @@ define gui.interface_text_color = '#404040'
 ## Fonts and Font Sizes ########################################################
 
 ## The font used for in-game text.
-define gui.text_font = "DejaVuSans.ttf"
+define gui.text_font = "fonts/you_font.ttf" # "DejaVuSans.ttf"
 
 ## The font used for character names.
-define gui.name_text_font = "DejaVuSans.ttf"
+define gui.name_text_font = "fonts/you_font.ttf" # "DejaVuSans.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "DejaVuSans.ttf"
+define gui.interface_text_font = "fonts/you_font.ttf" # "DejaVuSans.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 33
@@ -106,7 +106,7 @@ define gui.textbox_yalign = 1.0
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 360
+define gui.name_xpos = 395
 define gui.name_ypos = 0
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
@@ -341,10 +341,10 @@ define config.history_length = 250
 
 ## The height of a history screen entry, or None to make the height variable at
 ## the cost of performance.
-define gui.history_height = 210
+define gui.history_height = None # 210
 
 ## Additional space to add between history screen entries.
-define gui.history_spacing = 0
+define gui.history_spacing = 50 # 0
 
 ## The position, width, and alignment of the label giving the name of the
 ## speaking character.
@@ -377,7 +377,7 @@ define gui.nvl_height = None
 
 ## The spacing between NVL-mode entries when gui.nvl_height is None, and between
 ## NVL-mode entries and an NVL-mode menu.
-define gui.nvl_spacing = 15
+define gui.nvl_spacing = 5
 
 ## The position, width, and alignment of the label giving the name of the
 ## speaking character.
@@ -387,9 +387,9 @@ define gui.nvl_name_width = 225
 define gui.nvl_name_xalign = 1.0
 
 ## The position, width, and alignment of the dialogue text.
-define gui.nvl_text_xpos = 675
+define gui.nvl_text_xpos = 720
 define gui.nvl_text_ypos = 12
-define gui.nvl_text_width = 885
+define gui.nvl_text_width = 500
 define gui.nvl_text_xalign = 0.0
 
 ## The position, width, and alignment of nvl_thought text (the text said by the

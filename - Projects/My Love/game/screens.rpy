@@ -242,20 +242,72 @@ screen quick_menu():
 
     if quick_menu:
 
-        hbox:
-            style_prefix "quick"
+        vbox:
+            xalign 0.02
+            yalign 0.857
+            spacing 20
 
-            xalign 0.5
-            yalign 1.0
+            textbutton _("Back"):
+                text_size 50
+                action Rollback()
 
-            textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
-            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
-            textbutton _("Q.Save") action QuickSave()
-            textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Prefs") action ShowMenu('preferences')
+        vbox:
+            xalign 0.025
+            yalign 0.945
+            spacing 20
+
+            textbutton _("Skip"):
+                text_size 50
+                action Skip()
+
+        vbox:
+            xalign 0.98
+            yalign 0.857
+            spacing 20
+
+            textbutton _("Save"):
+                text_size 50
+                action ShowMenu('save')
+        vbox:
+            xalign 0.994
+            yalign 0.945
+            spacing 20
+
+            textbutton _("Options"):
+                text_size 50
+                action ShowMenu('preferences')
+
+        # hbox:
+            # style_prefix "quick"
+
+            # xalign 0.5
+            # yalign 0.98
+            # spacing 20
+
+            # textbutton _("Back"):
+                # text_size 30
+                # action Rollback()
+            # textbutton _("History"):
+                # text_size 30
+                # action ShowMenu('history')
+            # textbutton _("Skip"):
+                # text_size 30
+                # action Skip() alternate Skip(fast=True, # confirm=True)
+            # textbutton _("Auto"):
+                # text_size 30
+                # action Preference("auto-forward", "toggle")
+            # textbutton _("Save"):
+                # text_size 30
+                # action ShowMenu('save')
+            # textbutton _("Q.Save"):
+                # text_size 30
+                # action QuickSave()
+            # textbutton _("Q.Load"):
+                # text_size 30
+                # action QuickLoad()
+            # textbutton _("Prefs"):
+                # text_size 30
+                # action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -279,6 +331,53 @@ style quick_button_text:
 ## Main and Game Menu Screens
 ################################################################################
 
+## Title Screen Nav ############################################################
+##
+## The navigation for the title screen only
+
+screen titleScreenNav():
+    hbox:
+        style_prefix "titleScreenNav"
+
+        xalign 0.5
+        yalign 0.8
+
+        spacing 100
+
+        textbutton _("Start"):
+            text_size 50
+            action Start()
+
+        textbutton _("Load"):
+            text_size 50
+            action ShowMenu("load")
+
+        textbutton _("Preferences"):
+            text_size 50
+            action ShowMenu("preferences")
+
+        textbutton _("Credits"):
+            text_size 50
+            action ShowMenu("about")
+
+        if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
+
+            ## Help isn't necessary or relevant to mobile devices.
+            textbutton _("Help"):
+                text_size 50
+                action ShowMenu("help")
+
+        if renpy.variant("pc"):
+
+            ## The quit button is banned on iOS and unnecessary on Android and
+            ## Web.
+            textbutton _("Quit"):
+                text_size 50
+                action Quit()
+
+
+
+
 ## Navigation screen ###########################################################
 ##
 ## This screen is included in the main and game menus, and provides navigation
@@ -294,12 +393,7 @@ screen navigation():
 
         spacing gui.navigation_spacing
 
-        if main_menu:
-
-            textbutton _("Start") action Start()
-
-        else:
-
+        if not main_menu:
             textbutton _("History") action ShowMenu("history")
 
             textbutton _("Save") action ShowMenu("save")
@@ -312,8 +406,7 @@ screen navigation():
 
             textbutton _("End Replay") action EndReplay(confirm=True)
 
-        elif not main_menu:
-
+        if not main_menu:
             textbutton _("Main Menu") action MainMenu()
 
         textbutton _("Credits") action ShowMenu("about")
@@ -321,13 +414,8 @@ screen navigation():
         if renpy.variant("pc") or (renpy.variant("web") and not renpy.variant("mobile")):
 
             ## Help isn't necessary or relevant to mobile devices.
-            textbutton _("Help") action ShowMenu("help")
-
-        if renpy.variant("pc"):
-
-            ## The quit button is banned on iOS and unnecessary on Android and
-            ## Web.
-            textbutton _("Quit") action Quit(confirm=not main_menu)
+            textbutton _("Help"):
+                action ShowMenu("help")
 
 
 style navigation_button is gui_button
@@ -360,18 +448,18 @@ screen main_menu():
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+    use titleScreenNav
 
     if gui.show_name:
 
-        vbox:
-            style "main_menu_vbox"
+        text "[config.name!t]":
+            xalign 0.5
+            yalign 0.4
+            size 200
 
-            text "[config.name!t]":
-                style "main_menu_title"
-
-            text "[config.version]":
-                style "main_menu_version"
+        text "ver. [config.version]":
+            xalign 0.98
+            yalign 0.02
 
 
 style main_menu_frame is empty
@@ -384,20 +472,10 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
-
-style main_menu_vbox:
-    xalign 1.0
-    xoffset -30
-    xmaximum 1200
-    yalign 1.0
-    yoffset -30
+    # background "gui/overlay/main_menu.png"
 
 style main_menu_text:
     properties gui.text_properties("main_menu", accent=True)
-
-style main_menu_title:
-    properties gui.text_properties("title")
 
 style main_menu_version:
     properties gui.text_properties("version")
@@ -542,6 +620,40 @@ style return_button:
 ## There's nothing special about this screen, and hence it also serves as an
 ## example of how to make a custom screen.
 
+define gui.about_audio = _p("""
+Title: {a=https://ko-fi.com/s/ab76dd25a9}{i}Blurred{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+
+Chapter 0: {a=https://ko-fi.com/s/f0e8490a78}{i}Shiny{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+
+Chapter 1: {a=https://ko-fi.com/s/38443fd4f1}{i}Triangle Elevator{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+
+Chapter 2: {a=https://ko-fi.com/s/045759065c}{i}People Factory{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+
+Chapter 3: {a=https://ko-fi.com/s/9244c061a3}{i}Strawberry Blossoms{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+
+Chapter 4: {a=https://ko-fi.com/s/c58a72ebbf}{i}Karmic Blunder{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+
+Chapter 5: {a=https://ko-fi.com/s/894338d609}{i}Contact Glow{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+
+Chapter 6: {a=https://ko-fi.com/s/91c0372829}{i}Polar Float{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+
+Chapter 7: {a=https://ko-fi.com/s/1896a262c9}{i}Swim On, Little One{/i}{/a} by {a=https://x.com/SquaLLio777}SquaLLio{/a}
+""")
+
+define gui.about_plugins = _p("""
+{a=https://wattson.itch.io/}Wattson{/a}'s {a=https://wattson.itch.io/kinetic-text-tags}{i}Kinetic Text Tags{/i}{/a}
+""")
+
+define gui.about_software = _p("""
+{a=https://procreate.com/}Procreate{/a}, {a=https://krita.org/en/}Krita{/a}, {a=https://code.visualstudio.com/}Visual Studio Code{/a}, {a=https://www.live2d.com/en/}Live2D Cubism{/a}, {a=https://www.audacityteam.org/}Audacity{/a{}, {a=https://www.renpy.org/}Ren'Py{/a}
+""")
+
+define gui.about_hotlines = _p("""
+For anyone in need, please go to
+{a=https://nomoredirectory.org/}No More Directory{/a} 
+to find support hotlines in your region.
+""")
+
 screen about():
 
     tag menu
@@ -554,15 +666,18 @@ screen about():
         style_prefix "about"
 
         vbox:
+            label "[config.name!t] ver. [config.version!t]"
+            text _("Developed by {a=https://www.l0veraven.com}L0veRaven{/a}\n\n")
+            text _("{u}Hotlines{/u}\n")
+            text "[gui.about_hotlines!t]\n\n"
+            text _("{u}Audio Credits{/u}\n")
+            text "[gui.about_audio!t]\n\n"
+            text _("{u}Plugin Credits{/u}\n")
+            text "[gui.about_plugins!t]\n\n"
+            text _("{u}Software Used{/u}\n")
+            text "[gui.about_software!t]\n\n"
 
-            label "[config.name!t]"
-            text _("Version [config.version!t]\n")
-
-            ## gui.about is usually set in options.rpy.
-            if gui.about:
-                text "[gui.about!t]\n"
-
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+            text _("[renpy.license!t]")
 
 
 style about_label is gui_label
@@ -921,7 +1036,7 @@ screen history():
                     substitute False
 
         if not _history_list:
-            label _("The dialogue history is empty.")
+            label _("No one has spoken yet.")
 
 
 ## This determines what tags are allowed to be displayed on the history screen.
@@ -1320,6 +1435,7 @@ screen nvl(dialogue, items=None):
         else:
 
             use nvl_dialogue(dialogue)
+            ypos 140
 
         ## Displays the menu, if given. The menu may be displayed incorrectly if
         ## config.narrator_menu is set to True.
